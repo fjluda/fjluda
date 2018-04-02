@@ -262,6 +262,152 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/06/22/2018-04-01-随机不重复数值/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="老江@窝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/06/22/2018-04-01-随机不重复数值/" itemprop="url">随机不重复数值</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-06-22T09:06:05+08:00">
+                2015-06-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/VBA/" itemprop="url" rel="index">
+                    <span itemprop="name">VBA</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>content<br>{:toc}</li>
+</ul>
+<p>代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line">  Const bb As Integer = <span class="number">1000</span> - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  Dim RndNumber, TempArray(bb), kk(bb), i As Integer</span><br><span class="line"></span><br><span class="line">  Randomize (Timer)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">0</span> To bb</span><br><span class="line"></span><br><span class="line">      TempArray(i) = i</span><br><span class="line"></span><br><span class="line">  Next i</span><br><span class="line"></span><br><span class="line">  j = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  For i = bb To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line"></span><br><span class="line">     RndNumber = Int(i * Rnd)</span><br><span class="line"></span><br><span class="line">     kk(i) = TempArray(RndNumber) + <span class="number">1</span> <span class="string">' 随机不重复数值</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     TempArray(RndNumber) = TempArray(i)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     j = j + 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -362,152 +508,6 @@
 <h2 id="二、修改数据"><a href="#二、修改数据" class="headerlink" title="二、修改数据"></a>二、修改数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myTable = "SWHH"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">On Error GoTo hhh</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL1 = "update " &amp; myTable &amp; " set "</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = SQL1 &amp; "盒号='</span><span class="string">" &amp; [a2] &amp; "</span><span class="string">'  , 盒质量=" &amp; [b2] &amp; " , 保存时间= " &amp; da &amp; " where 盒号='</span><span class="string">" &amp; [a2] &amp; "</span><span class="string">'"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = cnn.Execute(SQL)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = New ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Open SQL, cnn, adOpenKeyset, adLockOptimistic</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">cnn.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">hhh:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    MsgBox "保存数据出现错误!" &amp; vbCrLf &amp; "原因:该编号重复或数据类型不对.", vbCritical, "保存数据"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
 <h2 id="三、查询数据"><a href="#三、查询数据" class="headerlink" title="三、查询数据"></a>三、查询数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = "select * from " &amp; myTable &amp; " where KID=" &amp; [s2] &amp; " order by ID DESC"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = cnn.Execute(SQL)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = New ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Open SQL, cnn, adOpenKeyset, adLockOptimistic</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If rs.RecordCount &gt; 0 Then    </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    For i = 1 To rs.RecordCount</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">       Cells(5 + i, 2) = rs.Fields("a")</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">       rs.MoveNext</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Else</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">       MsgBox "没有查询到相关数据", vbCritical</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">End If</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">cnn.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
 <h2 id="四、删除数据"><a href="#四、删除数据" class="headerlink" title="四、删除数据"></a>四、删除数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">if MsgBox("本数据删除后,将无法恢复!" &amp; vbCrLf &amp; "是否要删除?", vbQuestion + vbYesNo, "删除数据") = vbNo Then Exit Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myTable = "SW01"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = "delete from " &amp; myTable &amp; " where  KID= " &amp; [s2]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = cnn.Execute(SQL)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = New ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Open SQL, cnn, adOpenKeyset, adLockOptimistic</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">MsgBox "已经成功将序号为： " &amp; [s2] &amp; "    数据删除！", vbInformation</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">cnn.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/06/22/2018-04-01-随机不重复数值/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="老江@窝">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/06/22/2018-04-01-随机不重复数值/" itemprop="url">随机不重复数值</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-06-22T09:06:05+08:00">
-                2015-06-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/VBA/" itemprop="url" rel="index">
-                    <span itemprop="name">VBA</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<p>代码如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line">  Const bb As Integer = <span class="number">1000</span> - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  Dim RndNumber, TempArray(bb), kk(bb), i As Integer</span><br><span class="line"></span><br><span class="line">  Randomize (Timer)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">0</span> To bb</span><br><span class="line"></span><br><span class="line">      TempArray(i) = i</span><br><span class="line"></span><br><span class="line">  Next i</span><br><span class="line"></span><br><span class="line">  j = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  For i = bb To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line"></span><br><span class="line">     RndNumber = Int(i * Rnd)</span><br><span class="line"></span><br><span class="line">     kk(i) = TempArray(RndNumber) + <span class="number">1</span> <span class="string">' 随机不重复数值</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     TempArray(RndNumber) = TempArray(i)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     j = j + 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
 
           
         
@@ -3181,7 +3181,7 @@ console.log(converter); //Uncaught ReferenceError: converter is not defined
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">45</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
