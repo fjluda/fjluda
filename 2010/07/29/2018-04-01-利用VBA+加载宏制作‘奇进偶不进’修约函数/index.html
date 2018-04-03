@@ -110,13 +110,13 @@
 
 
 
-  <meta name="description" content="前言以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF). 函数如下： 或 但以上代码有几个缺点：  代码偏长修改容易出错；  无法像自带函数（sum、abs)简易通用；  因为Excel的BUG原因，理论上数字=0 有时会得到0.000000143056 所以会出现修约有误现象，本人以前就遇过代码没错，结果出错的现象。">
+  <meta name="description" content="前言以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF). 函数如下： 或">
 <meta name="keywords" content="函数,VBA,Excel,试验,加载宏,奇进偶不进">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用VBA+加载宏制作‘奇进偶不进’修约函数">
 <meta property="og:url" content="https://fjluda.github.io/2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/index.html">
 <meta property="og:site_name" content="JinChao&#39;s Notes">
-<meta property="og:description" content="前言以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF). 函数如下： 或 但以上代码有几个缺点：  代码偏长修改容易出错；  无法像自带函数（sum、abs)简易通用；  因为Excel的BUG原因，理论上数字=0 有时会得到0.000000143056 所以会出现修约有误现象，本人以前就遇过代码没错，结果出错的现象。">
+<meta property="og:description" content="前言以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF). 函数如下： 或">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857d40861d&690.jpeg">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857fa9d198&690.jpeg">
@@ -125,10 +125,10 @@
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85cf6f0de7&690.jpeg">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85e40d578b&690.jpeg">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85f7eb9fe8&690.jpeg">
-<meta property="og:updated_time" content="2018-04-03T12:55:12.847Z">
+<meta property="og:updated_time" content="2018-04-03T15:40:58.415Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用VBA+加载宏制作‘奇进偶不进’修约函数">
-<meta name="twitter:description" content="前言以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF). 函数如下： 或 但以上代码有几个缺点：  代码偏长修改容易出错；  无法像自带函数（sum、abs)简易通用；  因为Excel的BUG原因，理论上数字=0 有时会得到0.000000143056 所以会出现修约有误现象，本人以前就遇过代码没错，结果出错的现象。">
+<meta name="twitter:description" content="前言以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF). 函数如下： 或">
 <meta name="twitter:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857d40861d&690.jpeg">
 
 
@@ -428,9 +428,10 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF).</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF).</p>
 <p>函数如下：</p>
 <p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857d40861d&amp;690.jpeg" alt="5fe99087h8c857d40861d_690"><br>或<br><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857fa9d198&amp;690.jpeg" alt="5fe99087h8c857fa9d198_690"></p>
+ <a id="more"></a>
 <p><strong>但以上代码有几个缺点：</strong></p>
 <ol>
 <li><p>代码偏长修改容易出错；</p>

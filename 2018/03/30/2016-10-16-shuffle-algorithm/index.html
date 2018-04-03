@@ -110,20 +110,20 @@
 
 
 
-  <meta name="description" content="简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。 本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。  Fisher and Yates 的原始版 Fisher–Yates shuffle">
+  <meta name="description" content="简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。 本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。">
 <meta name="keywords" content="算法,shuffle,乱序,洗牌">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fisher–Yates shuffle 洗牌算法">
 <meta property="og:url" content="https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/index.html">
 <meta property="og:site_name" content="JinChao&#39;s Notes">
-<meta property="og:description" content="简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。 本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。  Fisher and Yates 的原始版 Fisher–Yates shuffle">
+<meta property="og:description" content="简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。 本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Riffle_shuffle.jpg/320px-Riffle_shuffle.jpg">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Biologist_and_statistician_Ronald_Fisher.jpg/189px-Biologist_and_statistician_Ronald_Fisher.jpg">
-<meta property="og:updated_time" content="2018-04-03T11:29:12.818Z">
+<meta property="og:updated_time" content="2018-04-03T15:24:16.722Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fisher–Yates shuffle 洗牌算法">
-<meta name="twitter:description" content="简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。 本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。  Fisher and Yates 的原始版 Fisher–Yates shuffle">
+<meta name="twitter:description" content="简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。 本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。">
 <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Riffle_shuffle.jpg/320px-Riffle_shuffle.jpg">
 
 
@@ -423,9 +423,10 @@
       
 
       
-        <p>简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。</p>
 <p>本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。</p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Riffle_shuffle.jpg/320px-Riffle_shuffle.jpg" alt=""></p>
+ <a id="more"></a>
 <h2 id="Fisher-and-Yates-的原始版"><a href="#Fisher-and-Yates-的原始版" class="headerlink" title="Fisher and Yates 的原始版"></a>Fisher and Yates 的原始版</h2><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Biologist_and_statistician_Ronald_Fisher.jpg/189px-Biologist_and_statistician_Ronald_Fisher.jpg" alt=""></p>
 <p>Fisher–Yates shuffle 的原始版本，最初描述在 1938 年的 Ronald Fisher（上图） 和 Frank Yates 写的书中，书名为《Statistical tables for biological, agricultural and medical research》。他们使用纸和笔去描述了这个算法，并使用了一个随机数表来提供随机数。它给出了 1 到 N 的数字的的随机排列，具体步骤如下：</p>
 <ol>
