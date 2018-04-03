@@ -1817,7 +1817,7 @@ Fisher–Yates shuffle 的原始版本，最初描述在 1938 年的 Ronald Fish
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note3/">
+    <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jiang JinChao">
@@ -1836,7 +1836,7 @@ Fisher–Yates shuffle 的原始版本，最初描述在 1938 年的 Ronald Fish
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/30/2016-06-10-JavaScript-good-parts-note3/" itemprop="url">JavaScript 语言精粹笔记3-方法、毒瘤等</a></h1>
+                <a class="post-title-link" href="/2018/03/30/2016-06-14-how-to-use-babel/" itemprop="url">如何使用 babel</a></h1>
         
 
         <div class="post-meta">
@@ -1884,9 +1884,9 @@ Fisher–Yates shuffle 的原始版本，最初描述在 1938 年的 Ronald Fish
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/30/2016-06-10-JavaScript-good-parts-note3/#comments" itemprop="discussionUrl">
+                <a href="/2018/03/30/2016-06-14-how-to-use-babel/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/03/30/2016-06-10-JavaScript-good-parts-note3/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/03/30/2016-06-14-how-to-use-babel/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1916,22 +1916,21 @@ Fisher–Yates shuffle 的原始版本，最初描述在 1938 年的 Ronald Fish
       
         
           
-          记录一下阅读蝴蝶书的笔记，本篇为书中最后一部分：方法、代码风格、优美的特性、毒瘤、糟粕等。
-方法这一章主要介绍了一些方法集。这里写几个我不太熟悉的方法和要点吧。
+          Babel 用于将 ES6 的代码转化为 ES5，使得 ES6 可以在目前的浏览器环境下使用。学习使用 babel 是为了使用 ES2015 做准备。本文将介绍如何使用 babel，以及一些相关的配置。
 
-array.join()
+学习 Babel 可以通过其手册 Babel handbook。
 
-对于IE6/7，使用array.join()连接大量字符串的效率确实优于使用+元素运算符。但是目前主流的浏览器，包括IE8以后的版本，都对+元素运算符连接字符串做了特别优化，性能已经显著高于array.join()。
+babel-handbook
 
-
-number.toExponential(fractionDigits)
-  把这个number转换成一个指数形式的字符串。
-
-number.toFixed(fractionDigits
+其中包含多语言版本，分为用户手册和插件手册。这是一个很好的学习 Babel 的资料。
+babel-cli在 node 和 npm 环境安装好的前提下，安装 babel，如下：
+1npm install --global babel-cli
+安装完成后就可以编译文件了。
+1babel main.
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/03/30/2016-06-10-JavaScript-good-parts-note3/#more" rel="contents">
+            <a class="btn" href="/2018/03/30/2016-06-14-how-to-use-babel/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
