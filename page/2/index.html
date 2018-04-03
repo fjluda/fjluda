@@ -110,20 +110,20 @@
 
 
 
-  <meta name="description" content="人生最大的快乐不在于占有什么，而在于追求什么的过程">
+  <meta name="description" content="The dog equally study, the gentleman equally plays.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Jiang JinChao&#39;S Notes">
+<meta property="og:title" content="Jiang JinChao&#39;s Notes">
 <meta property="og:url" content="https://fjluda.github.io/page/2/index.html">
-<meta property="og:site_name" content="Jiang JinChao&#39;S Notes">
-<meta property="og:description" content="人生最大的快乐不在于占有什么，而在于追求什么的过程">
+<meta property="og:site_name" content="Jiang JinChao&#39;s Notes">
+<meta property="og:description" content="The dog equally study, the gentleman equally plays.">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jiang JinChao&#39;S Notes">
-<meta name="twitter:description" content="人生最大的快乐不在于占有什么，而在于追求什么的过程">
+<meta name="twitter:title" content="Jiang JinChao&#39;s Notes">
+<meta name="twitter:description" content="The dog equally study, the gentleman equally plays.">
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Jiang JinChao'S Notes" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Jiang JinChao's Notes" type="application/atom+xml" />
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Jiang JinChao'S Notes</title>
+  <title>Jiang JinChao's Notes</title>
   
 
 
@@ -199,7 +199,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Jiang JinChao'S Notes</span>
+        <span class="site-title">Jiang JinChao's Notes</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -235,9 +235,9 @@
         
         
           
-  <li class="menu-item menu-item-工具">
-    <a href="/guestbook" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />工具</a>
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
 </li>
 
       
@@ -262,9 +262,9 @@
         
         
           
-  <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  <li class="menu-item menu-item-工具">
+    <a href="/guestbook" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />工具</a>
 </li>
 
       
@@ -333,7 +333,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -423,55 +423,19 @@
       
         
           
-            <p>记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。</p>
-<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>继承的两大好处：代码重用，引入一套类型系统的规范。</p>
-<h3 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h3><p>JavaScript 通过构造器函数产生对象。</p>
-<p>构造器调用模式，即用<code>new</code>前缀去调用一个函数。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Mammal = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Mammal.prototype.getName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Mammal.prototype.says = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.saying || <span class="string">''</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myMammal = <span class="keyword">new</span> Mammal(<span class="string">'Herb'</span>)</span><br><span class="line"><span class="built_in">console</span>.log(myMammal.getName()) <span class="comment">//Herb</span></span><br></pre></td></tr></table></figure>
-<p>书中不推荐这样的写法。有很多风险。若忘记添加<code>new</code>前缀，<code>this</code>无法绑定到新的对象上。而是绑定到了全局对象上，破坏了全局变量环境。</p>
-<h3 id="对象说明符"><a href="#对象说明符" class="headerlink" title="对象说明符"></a>对象说明符</h3><p>上一节中的构造器可能要接受一大串参数。我们可以这样写：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myObject = Maker(&#123;</span><br><span class="line">    first: f,</span><br><span class="line">    middle: m,</span><br><span class="line">    last: l,</span><br><span class="line">    state: s,</span><br><span class="line">    city: c</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>将JSON对象传递给构造器，而它返回一个构造完全的对象。</p>
-<h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><p>在一个纯粹的原型模式中，我们将摒弃类，转而专注于对象。一个新对象可以继承一个就对象的属性。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myMammal = &#123;</span><br><span class="line">    name: <span class="string">'MM'</span>,</span><br><span class="line">    getName: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.name</span><br><span class="line">    &#125;,</span><br><span class="line">    says: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.saying || <span class="string">''</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myCat = <span class="built_in">Object</span>.create(myMammal)</span><br><span class="line">myCat.name = <span class="string">'Kitty'</span></span><br><span class="line">myCat.saying = <span class="string">'meow'</span></span><br><span class="line">myCat.run = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Kitty is running'</span></span><br><span class="line">&#125;</span><br><span class="line">myCat.getName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.says + <span class="string">' '</span> + <span class="keyword">this</span>.name + <span class="string">' '</span> + <span class="keyword">this</span>.says</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这是一种差异化继承。</p>
-<h3 id="函数化"><a href="#函数化" class="headerlink" title="函数化"></a>函数化</h3><p>前文看到的继承模式没法保护隐私。对象的所有属性都是可见的。无法得到私有变量和私有函数。为了解决这一问题，我们有模块模式。</p>
-<p>构造一个生成对象的函数需要4步骤：</p>
-<ol>
-<li>创建一个新对象。</li>
-<li>有选择的定义私有变量和方法。</li>
-<li>给这个新对象扩充方法。</li>
-<li>返回那个新对象。</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mammal = <span class="function"><span class="keyword">function</span>(<span class="params">spec</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> that = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    that.getName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> spec.name</span><br><span class="line">    &#125;</span><br><span class="line">    that.says = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> spec.saying || <span class="string">''</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> that</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myMammal = mammal(&#123;</span><br><span class="line">    name: <span class="string">'Herb'</span>,</span><br><span class="line">    saying: <span class="string">'Cheers!'</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(myMammal.getName()) <span class="comment">//Herb</span></span><br><span class="line"><span class="built_in">console</span>.log(myMammal.says()) <span class="comment">//Cheers!</span></span><br></pre></td></tr></table></figure>
-<p>也可以参考上一篇文章，<a href="http://gaohaoyang.github.io/2016/06/07/JavaScript-good-parts-note1/#section-34" target="_blank" rel="noopener">JavaScript 语言精粹笔记1-语法、对象、函数 之模块部分</a>。</p>
-<h3 id="部件"><a href="#部件" class="headerlink" title="部件"></a>部件</h3><p>这一部分看的不是特别懂，我想等我学完ES2015中的类和模块部分后再看看吧。</p>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><h3 id="数组字面量"><a href="#数组字面量" class="headerlink" title="数组字面量"></a>数组字面量</h3><p>一个数组字面量是在一对方括号中包围零个或多个用逗号分隔的值的表达式。</p>
-<p>再大多数语言中，一个数组的多有元素都要求是相同的类型。JavaScript 允许数组包含任意混合类型的值。</p>
-<h3 id="长度"><a href="#长度" class="headerlink" title="长度"></a>长度</h3><p>JavaScript 数组的<code>length</code>属性是没有上界的。如果用大于或等于当前<code>length</code>的数字作为下标来存储一个元素，那么<code>length</code>值会被增大以容纳新元素，不会发生数组越界错误。</p>
-<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p>数组也是对象，可以用<code>delete</code>来删除元素</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numbers = [<span class="string">'one'</span>, <span class="string">'two'</span>, <span class="number">3</span>, <span class="string">'four'</span>, <span class="string">'wu'</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">delete</span> numbers[<span class="number">0</span>]</span><br><span class="line"><span class="built_in">console</span>.log(numbers[<span class="number">0</span>]) <span class="comment">//undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(numbers.length) <span class="comment">//5</span></span><br></pre></td></tr></table></figure>
-<p>可以使用<code>splice</code>方法，进行删除和修改操作。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">numbers.splice(<span class="number">0</span>, <span class="number">1</span>)</span><br><span class="line"><span class="built_in">console</span>.log(numbers[<span class="number">0</span>]) <span class="comment">//two</span></span><br><span class="line"><span class="built_in">console</span>.log(numbers.length) <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
-<h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>使用常规<code>for</code>循环即可，可以保证数组的顺序。</p>
-<h3 id="容易混淆的地方"><a href="#容易混淆的地方" class="headerlink" title="容易混淆的地方"></a>容易混淆的地方</h3><p>当属性名是小而连续的整数时，应该使用数组，否则使用对象。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> [<span class="number">1</span>, <span class="number">2</span>]) <span class="comment">//object</span></span><br></pre></td></tr></table></figure>
-<p>返回数组的类型是<code>object</code>，没有任何意义。</p>
-<p>判断数组类型的方法</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Array</span>.isArray(numbers)) <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-<p>ECMAScript 5.1 (ECMA-262) 和 ECMAScript 2015 (6th Edition, ECMA-262) 标准中的方法。</p>
-<p>或者下面这个方法。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> is_array = <span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Object</span>.prototype.toString.apply(value) === <span class="string">'[object Array]'</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(is_array(numbers)) <span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>数组的方法被存储在<code>Array.prototype</code>中的函数。</p>
-<p>数组是对象，因此<code>Array.prototype</code>也是可扩充的。</p>
-<h3 id="指定初始值"><a href="#指定初始值" class="headerlink" title="指定初始值"></a>指定初始值</h3><p>JavaScript 的数组不会预制值。</p>
-<p>JavaScript 没有多维数组，单项大多数类 C 语言一样，支持元素为数组的数组。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> matrix = [</span><br><span class="line">    [<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">    [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">]</span><br><span class="line"><span class="built_in">console</span>.log(matrix[<span class="number">1</span>][<span class="number">2</span>]) <span class="comment">//6</span></span><br></pre></td></tr></table></figure>
-<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><p>关于正则表达式，以前的博文写的比较多了，详情见：</p>
-<p><a href="http://gaohaoyang.github.io/2015/04/22/baidu-ife-2-javascript/#section-10" target="_blank" rel="noopener">百度Web前端技术学院(2)-JavaScript 基础 之正则表达式部分1</a></p>
-<p><a href="http://gaohaoyang.github.io/2015/04/22/baidu-ife-2-javascript/#section-12" target="_blank" rel="noopener">百度Web前端技术学院(2)-JavaScript 基础 之正则表达式部分2</a></p>
-<p><a href="http://gaohaoyang.github.io/2016/05/06/regular-expression-group/" target="_blank" rel="noopener">浅谈正则表达式中的分组和引用</a></p>
-
-          
+          记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。
+继承继承的两大好处：代码重用，引入一套类型系统的规范。
+伪类JavaScript 通过构造器函数产生对象。
+构造器调用模式，即用new前缀去调用一个函数。
+1234567891011121314var Mammal = function(name) &#123;    this.name = name&#125;Mammal.prototype.getName = function() &#123;    return this.name&#125;Mammal.prototype.says = function()
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/30/2016-06-08-JavaScript-good-parts-note2/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -532,7 +496,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -622,180 +586,24 @@
       
         
           
-            <p>记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。</p>
-<p><img src="https://img3.doubanio.com/lpic/s3651235.jpg" alt=""></p>
-<p>原书中第一章为精华，做了一些周边介绍，略去。</p>
-<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="空白"><a href="#空白" class="headerlink" title="空白"></a>空白</h3><p>这里说一下JavaScript的注释，一种是 <code>/* */</code> 包围的块注释，另一种是 <code>//</code> 开头的行注释。</p>
-<p>因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    var rm_a = /a*/</span>.match(s)</span><br><span class="line">*<span class="regexp">/</span></span><br></pre></td></tr></table></figure>
-<h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><p>标识符由一个字母开头，后面可选择性的加上一个或多个字母、数字或下划线。要避免保留字。</p>
-<p>标识符被用于语句、变量、参数、属性名、运算符和标记。</p>
-<h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h3><p>可以存在指数部分，100和1e2完全相等</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">100</span> === <span class="number">1e2</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-<p>使用<code>isNaN</code>来检测<code>NaN</code>。</p>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>当年 JavaScript 被创建的时候，Unicode 是16位字符集，因此 JavaScript 字符串是16位的。</p>
-<p>用双引号或单引号包裹。</p>
-<p>重点说一下转义字符<code>\</code></p>
-<p>反斜杠后面可以跟<code>&quot;</code>, <code>&#39;</code>, <code>\</code>, <code>/</code>, <code>b</code> (backspace), <code>f</code> (formfeed), <code>n</code>, <code>r</code> (carriage return), <code>t</code>, <code>u1234</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'A'</span> === <span class="string">'\u0041'</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>每个<code>&lt;script&gt;</code>标签的内容被一起抛到一个公共的全局名字空间中。</p>
-<p><code>{...}</code>代码块不会创建新的作用域，因此变量应该被定义在函数的头部，而不是在代码块中。</p>
-<p>下列值当做假：</p>
-<ul>
-<li><code>false</code></li>
-<li><code>null</code></li>
-<li><code>undefined</code></li>
-<li><code>&#39;&#39;</code></li>
-<li><code>0</code></li>
-<li><code>NaN</code></li>
-</ul>
-<p>其他所有值都当做真</p>
-<p><code>for in</code>语句枚举对象的所有属性名（键名），使用<code>object.hasOwnProperty(variable)</code>来确定这个属性名是该对象成员，还是来自原型链。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (myvar <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="keyword">if</span> (obj.hasOwnProperty(myvar)) &#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h3><p>运算符优先级</p>
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>.</code> <code>[]</code> <code>()</code></td>
-<td>提取属性与调用函数</td>
-</tr>
-<tr>
-<td><code>delete</code> <code>new</code> <code>typeof</code> <code>+</code> <code>-</code> <code>!</code></td>
-<td>一元运算符</td>
-</tr>
-<tr>
-<td><code>*</code> <code>/</code> <code>%</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>+</code> <code>-</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>&gt;=</code> <code>&lt;=</code> <code>&gt;</code> <code>&lt;</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>===</code> <code>!==</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>&amp;&amp;</code></td>
-<td>逻辑与</td>
-</tr>
-<tr>
-<td>`</td>
-<td></td>
-<td>`</td>
-<td>逻辑或</td>
-</tr>
-<tr>
-<td><code>?:</code></td>
-<td>三目</td>
-</tr>
-</tbody>
-</table>
-<h3 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h3><p>对象字面量是一种可以方便地按指定规格创建新对象的表示法。</p>
-<p>数组字面量是一种可以方便地按指定规格创建新数组的表示法。</p>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>函数字面量定义了函数值。后续章节详谈。</p>
-<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>对象是属性的容器，每一个属性都拥有名字和值。属性的名字可以是包含空字符串在内的任意字符串。属性的值可以是除<code>undefined</code>值之外的任何值。</p>
-<p>JavaScript 包含一种原型链的特性，允许对象继承另一个对象的属性。正确地使用它能减少对象初始化时消耗的时间和内存。</p>
-<h3 id="对象字面量"><a href="#对象字面量" class="headerlink" title="对象字面量"></a>对象字面量</h3><p>一个对象字面量就是包围在一对花括号中的零或多个“名/值”对。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> empty_object = &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> stooge = &#123;</span><br><span class="line">    firstName: <span class="string">'Haoyang'</span>,</span><br><span class="line">    lastName: <span class="string">'Gao'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="检索"><a href="#检索" class="headerlink" title="检索"></a>检索</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(stooge.firstName); <span class="comment">// Haoyang</span></span><br><span class="line"><span class="built_in">console</span>.log(stooge[<span class="string">'firstName'</span>]); <span class="comment">// Haoyang</span></span><br></pre></td></tr></table></figure>
-<p>不存在的属性返回<code>undefined</code>。</p>
-<p>使用<code>||</code>来填充默认值。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(stooge.firstName || <span class="string">'Joe'</span>); <span class="comment">// Haoyang</span></span><br><span class="line"><span class="built_in">console</span>.log(stooge.age || <span class="number">25</span>); <span class="comment">// 25</span></span><br></pre></td></tr></table></figure>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>直接使用赋值语句更新，若不存在这个属性，则作为扩充操作。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">stooge.firstName = <span class="string">'aaa'</span></span><br><span class="line">stooge.nickName = <span class="string">'peip'</span></span><br><span class="line"><span class="built_in">console</span>.log(stooge) <span class="comment">//Object &#123;firstName: "aaa", lastName: "Gao", nickName: "peip"&#125;</span></span><br></pre></td></tr></table></figure>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>对象通过引用来传递他们永远不会被复制。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = stooge</span><br><span class="line">x.hair = <span class="string">'black'</span></span><br><span class="line">stooge.hair <span class="comment">//"black"</span></span><br></pre></td></tr></table></figure>
-<h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><p>每一个对象都连接到一个原型对象，并且它可以从中继承属性。所有通过字面量创建的对象都连接到<code>Object.prototype</code>，它是JavaScript中的标配对象。</p>
-<p>可以使用<code>Object.create()</code>方法创建一个使用原对象作为其原型的新对象。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> anotherStooge = <span class="built_in">Object</span>.create(stooge)</span><br><span class="line">anotherStooge.firstName <span class="comment">//"aaa"</span></span><br><span class="line">anotherStooge.firstName = <span class="string">'bbb'</span></span><br><span class="line">anotherStooge.firstName <span class="comment">//"bbb"</span></span><br><span class="line">anotherStooge.hair <span class="comment">//"black"</span></span><br></pre></td></tr></table></figure>
-<p>新对象先查找自己的属性，若不存在则会向原型方向查找。</p>
-<p><img src="http://ww1.sinaimg.cn/large/7011d6cfjw1f4ieu7focqj207h05caaf.jpg" alt=""></p>
-<p>当我们对某个对象作出改变时，不会触及该对象的原型。</p>
-<p>原型关系是一种动态关系。如果我们添加一个新的属性到原型中，该属性会立即对所有基于该原型创建的对象可见。</p>
-<h3 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h3><p>在计算机科学中，反射是指计算机程序在运行时（Run time）可以访问、检测和修改它本身状态或行为的一种能力。</p>
-<p>检查对象并确定对象有什么属性是很容易的事情，只要试着去检索该属性并验证取得的值。</p>
-<p><code>typeof</code>用来确定对象属性的类型。</p>
-<p><code>hasOwnProperty</code>，若对象拥有独有的属性，它将返回<code>true</code>。不会检查原型链。</p>
-<h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>使用<code>for in</code>可以遍历一个对象中的所有属性名，包括原型链上的属性名。可以使用<code>hasOwnProperty</code>过滤原型链上的属性，使用<code>typeof</code>来排除函数。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> name <span class="keyword">in</span> anotherStooge) &#123;</span><br><span class="line">    <span class="keyword">if</span> (anotherStooge.hasOwnProperty(name) &amp;&amp; <span class="keyword">typeof</span> anotherStooge[name] !== <span class="string">'function'</span>) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(name + <span class="string">'---&gt;'</span> + anotherStooge[name])</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// firstName---&gt;bbb</span></span><br></pre></td></tr></table></figure>
-<p>属性名是无序的，若想保持顺序应使用数组和<code>for</code>循环。</p>
-<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3><p><code>delete</code>可以用来删除对象的属性。若对象包含该属性，则会被移除。它不会触及原型链中的任何对象。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">anotherStooge.firstName <span class="comment">//"bbb"</span></span><br><span class="line"><span class="keyword">delete</span> anotherStooge.firstName</span><br><span class="line">anotherStooge.firstName <span class="comment">//"aaa"</span></span><br></pre></td></tr></table></figure>
-<h3 id="减少全局变量污染"><a href="#减少全局变量污染" class="headerlink" title="减少全局变量污染"></a>减少全局变量污染</h3><p>JavaScript 可以随意的定义全局变量来容纳应用的所有资源。但这会削弱程序的灵活性，应避免使用全局变量。</p>
-<p>最小化使用全局变量的方法之一是为应用只创建一个唯一的全局变量。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> MYAPP = &#123;&#125;</span><br><span class="line"></span><br><span class="line">MYAPP.stooge = &#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">MYAPP.flight = &#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>下一章将使用闭包来进行信息隐藏，是另一种有效减少全局污染的方法。</p>
-<h2 id="函数-1"><a href="#函数-1" class="headerlink" title="函数"></a>函数</h2><h3 id="函数对象"><a href="#函数对象" class="headerlink" title="函数对象"></a>函数对象</h3><p>JavaScript 中的函数就是对象。函数对象连接到<code>Function.prototype</code>（该原型对象本身连接到<code>Object.prototype</code>）。每个函数对象在创建时会附加两个隐藏属性：函数的上下文和实现函数行为的代码。</p>
-<p>函数对象在创建时也随配有一个<code>prototype</code>属性。它的值是一个拥有<code>constructor</code>属性且值即为该函数对象。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="http://ww1.sinaimg.cn/large/7011d6cfjw1f4lrei2b3pj208f06et95.jpg" alt=""></p>
-<p>因为函数是对象，所以可以像任何其他的值一样被使用。函数可以保存在变量、对象和数组中。函数可以被当做参数传递给其他函数，函数也可以再返回函数。函数也可以拥有方法。</p>
-<p>函数的与众不同之处在于可以被调用。</p>
-<h3 id="函数字面量"><a href="#函数字面量" class="headerlink" title="函数字面量"></a>函数字面量</h3><p>函数对象通过函数字面量来创建。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> add = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>函数字面量包含4部分，分别是：保留字 function、函数名、参数、花括号中的语句。</p>
-<h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><p>调用一个函数会暂停当前函数的执行，传递控制权和参数给新函数。除了声明时定义的形式参数，还有两个附加参数：<code>this</code>和<code>arguments</code>。参数<code>this</code>在面向对象编程中非常重要，它的值取决于调用的模式。JavaScript中一共有4中调用模式：方法调用模式、函数调用模式、构造器调用模式、apply调用模式。</p>
-<p>实参和形参个数不匹配时，不会有运行时错误。实参过多时，超出的实参被忽略。形参过多时，缺失的值被替换为<code>undefined</code>。</p>
-<p>下面的内容也可以参考我以前的博文 <a href="http://gaohaoyang.github.io/2015/06/12/JavaScript-this/" target="_blank" rel="noopener">JavaScript 中的 this</a></p>
-<h4 id="方法调用模式"><a href="#方法调用模式" class="headerlink" title="方法调用模式"></a>方法调用模式</h4><p>当一个函数被保存为对象的一个属性时，我们称它为一个方法。当一个方法被调用时，<code>this</code>被绑定到该对象。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myObject = &#123;</span><br><span class="line">    value: <span class="number">0</span>,</span><br><span class="line">    increment: <span class="function"><span class="keyword">function</span>(<span class="params">inc</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.value += <span class="keyword">typeof</span> inc === <span class="string">'number'</span> ? inc : <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">myObject.increment()</span><br><span class="line"><span class="built_in">console</span>.log(myObject.value) <span class="comment">//1</span></span><br><span class="line"></span><br><span class="line">myObject.increment(<span class="number">3</span>)</span><br><span class="line"><span class="built_in">console</span>.log(myObject.value) <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
-<h4 id="函数调用模式"><a href="#函数调用模式" class="headerlink" title="函数调用模式"></a>函数调用模式</h4><p>当一个函数并非一个对象的属性时，那么它就是被当做一个函数来调用的。</p>
-<p>此时<code>this</code>被绑定到全局对象。即时是内部函数也会将<code>this</code>绑定到全局对象。</p>
-<p>可以在函数内创建一个属性并赋值为<code>this</code>来解决这个问题。如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> add = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">myObject.double = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> that = <span class="keyword">this</span></span><br><span class="line">    <span class="keyword">var</span> helper = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        that.value = add(that.value, that.value)</span><br><span class="line">    &#125;</span><br><span class="line">    helper()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">myObject.double()</span><br><span class="line"><span class="built_in">console</span>.log(myObject.value) <span class="comment">//8</span></span><br></pre></td></tr></table></figure>
-<h4 id="构造器调用模式"><a href="#构造器调用模式" class="headerlink" title="构造器调用模式"></a>构造器调用模式</h4><p>JavaScript是一门基于原型继承的语言。对象可以直接从其他对象继承属性。该语言是无类型的。</p>
-<p>如果在一个函数前面带上<code>new</code>来调用，那么背地里将会创建一个连接到该函数的<code>prototype</code>成员的新对象，同时<code>this</code>会被绑定到那个新对象上。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建构造器函数</span></span><br><span class="line"><span class="keyword">var</span> Quo = <span class="function"><span class="keyword">function</span>(<span class="params">string</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.status = string</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//给Que的所有实例提供一个公共方法</span></span><br><span class="line">Quo.prototype.getStatus = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.status</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//实例化</span></span><br><span class="line"><span class="keyword">var</span> myQuo = <span class="keyword">new</span> Quo(<span class="string">'confused'</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(myQuo.getStatus()) <span class="comment">//confused</span></span><br></pre></td></tr></table></figure>
-<p>书中不推荐这种形式的构造器函数，下一章有更好的解决方案。</p>
-<h4 id="Apply-调用模式"><a href="#Apply-调用模式" class="headerlink" title="Apply 调用模式"></a>Apply 调用模式</h4><p><code>apply</code>方法让我们构建一个参数数组传递给调用函数。他也允许我们选择<code>this</code>的值。<code>apply</code>方法接受两个参数，第一个是要绑定给<code>this</code>的值，第二个是参数数组。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">3</span>, <span class="number">4</span>]</span><br><span class="line"><span class="keyword">var</span> sum = add.apply(<span class="literal">null</span>, arr)</span><br><span class="line"><span class="built_in">console</span>.log(sum) <span class="comment">//7</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> statusObject = &#123;</span><br><span class="line">    status: <span class="string">'hello'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> status = Quo.prototype.getStatus.apply(statusObject)</span><br><span class="line"><span class="built_in">console</span>.log(status) <span class="comment">//hello</span></span><br></pre></td></tr></table></figure>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><p>当函数被调用时，会得到一个<code>arguments</code>数组。通过此参数可以访问所有它被调用时传递给它的参数列表，包括那些没有被分配给函数声明时定义的形参的多余参数。这使得编写一个无须指定参数个数的函数成为可能。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> i, sum = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">        sum += <span class="built_in">arguments</span>[i]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sum</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(sum(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>)) <span class="comment">//45</span></span><br></pre></td></tr></table></figure>
-<p>因语言的设计错误，<code>arguments</code>并不是一个真正的数组。是一个“类似数组”的对象。有<code>length</code>属性，但没有任何数组的方法。</p>
-<h3 id="返回"><a href="#返回" class="headerlink" title="返回"></a>返回</h3><p>函数执行时遇到关闭函数体的<code>}</code>时结束。然后把控制权交还给调用该函数的程序。</p>
-<p><code>return</code>可以使函数提前返回，不在执行余下的语句。</p>
-<p>函数总是会返回一个值，若没有指定，则返回<code>undefined</code>。</p>
-<p>若函数调用时在前面加上了<code>new</code>前缀，且返回值不是一个对象的时候，则返回<code>this</code>（该新对象）。</p>
-<h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><p>异常是干扰程序的正常流畅的不寻常的事故。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> add2 = <span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> a !== <span class="string">'number'</span> || <span class="keyword">typeof</span> b !== <span class="string">'number'</span>) &#123;</span><br><span class="line">        <span class="keyword">throw</span> &#123;</span><br><span class="line">            name: <span class="string">'TypeError'</span>,</span><br><span class="line">            message: <span class="string">'add needs numbers'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(add2(<span class="number">2</span>, <span class="number">3</span>)) <span class="comment">//5</span></span><br><span class="line"><span class="built_in">console</span>.log(add2(<span class="string">'a'</span>, <span class="number">6</span>))</span><br></pre></td></tr></table></figure>
-<p><img src="http://ww1.sinaimg.cn/large/7011d6cfjw1f4mprafcvhj20ml00xjrj.jpg" alt=""></p>
-<p><code>throw</code>语句中断函数的执行。抛出一个<code>exception</code>对象，该对象包含一个用来识别异常类型的<code>name</code>属性和一个描述性的<code>message</code>属性。也可以自定义其他属性。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> try_it = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        add2(<span class="string">'a'</span>)</span><br><span class="line">    &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(e.name + <span class="string">': '</span> + e.message)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">try_it() <span class="comment">//TypeError: add needs numbers</span></span><br></pre></td></tr></table></figure>
-<p>如果在<code>try</code>代码块内抛出一个异常，控制权就会跳转到它的<code>catch</code>语句中。</p>
-<h3 id="扩充类型的功能"><a href="#扩充类型的功能" class="headerlink" title="扩充类型的功能"></a>扩充类型的功能</h3><p>JavaScript 允许给语言的基本类型扩充功能。通过<code>Object.prototype</code>添加方法，可以让该方法对所有对象都适用。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 先添加方法使得该方法对所有函数可用</span></span><br><span class="line"><span class="built_in">Function</span>.prototype.method = <span class="function"><span class="keyword">function</span>(<span class="params">name, func</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.prototype[name] = func</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//添加一个取整方法</span></span><br><span class="line"><span class="built_in">Number</span>.method(<span class="string">'integer'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Math</span>[<span class="keyword">this</span> &lt; <span class="number">0</span> ? <span class="string">'ceil'</span> : <span class="string">'floor'</span>](<span class="keyword">this</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log((<span class="number">-10</span> / <span class="number">3</span>).integer()) <span class="comment">//-3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//添加 trim()</span></span><br><span class="line"><span class="built_in">String</span>.method(<span class="string">'trim'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.replace(<span class="regexp">/^\s+|\s+$/g</span>, <span class="string">''</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'  hello alibaba  '</span>.trim()) <span class="comment">//hello alibaba</span></span><br></pre></td></tr></table></figure>
-<p>JavaScript 原型继承是动态的，因此新的方法立刻被赋予到所有的对象实例上，即使对象实例是在方法被增加之前就创建好了。</p>
-<h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>递归函数就是会直接或者间接地调用自身的一种函数。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> walkTheDom = <span class="function"><span class="keyword">function</span> <span class="title">walk</span>(<span class="params">node, func</span>) </span>&#123;</span><br><span class="line">    func(node)</span><br><span class="line">    node = node.firstChild</span><br><span class="line">    <span class="keyword">while</span> (node) &#123;</span><br><span class="line">        walk(node, func)</span><br><span class="line">        node = node.nextSibling</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> getElementsByAttribute = <span class="function"><span class="keyword">function</span>(<span class="params">att, value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> results = []</span><br><span class="line">    walkTheDom(<span class="built_in">document</span>.body, <span class="function"><span class="keyword">function</span>(<span class="params">node</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> actual = node.nodeType === <span class="number">1</span> &amp;&amp; node.getAttribute(att)</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">typeof</span> actual === <span class="string">'string'</span> &amp;&amp; (actual === value || <span class="keyword">typeof</span> value !== <span class="string">'string'</span>)) &#123;</span><br><span class="line">            results.push(node)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">return</span> results</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//在知乎主页上操作</span></span><br><span class="line"><span class="built_in">console</span>.log(getElementsByAttribute(<span class="string">'data-za-module'</span>, <span class="string">'AnswerItem'</span>))</span><br><span class="line"><span class="comment">//得到下列数据</span></span><br><span class="line"><span class="comment">//[div.feed-content, div.feed-content, div.feed-content, div.feed-content, div.feed-content, div.feed-content, div.feed-content]</span></span><br></pre></td></tr></table></figure>
-<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><p>作用域控制着变量与参数的可见性及生命周期。它减少了名称冲突，并提供了自动内存管理。</p>
-<p>无块级作用域。</p>
-<p>有函数作用域。</p>
-<p>建议在函数体的顶部声明函数中可能用到的所有变量。</p>
-<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><p>作用域的好处是内部函数可以访问定义他们的外部函数的参数和变量（除了<code>this</code>和<code>arguments</code>）。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> quo = <span class="function"><span class="keyword">function</span>(<span class="params">status</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        get_status: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> status</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myQuo = quo(<span class="string">'amazed'</span>)</span><br><span class="line"><span class="built_in">console</span>.log(myQuo.get_status()) <span class="comment">//amazed</span></span><br></pre></td></tr></table></figure>
-<p>狭义的说，返回的那个对象即闭包，它里面的方法可以访问它被创建时所处的上下文环境。</p>
-<p>避免在循环中创建函数，容易引起混淆。可以现在循环之外创建一个辅助函数，让辅助函数在返回一个绑定了当前<code>i</code>值的函数，这样就不会导致混淆了。</p>
-<h3 id="回调"><a href="#回调" class="headerlink" title="回调"></a>回调</h3><p>将一个函数作为参数，一旦接收到响应，再调用这个函数。</p>
-<h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><p>可以用函数和闭包构造模块。</p>
-<p>模块模式的一般形式是：一个定义了私有变量和函数的函数；利用闭包创建可以访问私有变量和函数的特权函数；最后返回这个特权函数，或者把他们保存到一个可访问到的地方。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numberCal = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> half = <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n / <span class="number">2</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> double = <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n * <span class="number">2</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> tribble = <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n * <span class="number">3</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        half: half,</span><br><span class="line">        double: double,</span><br><span class="line">        tribble: tribble</span><br><span class="line">    &#125;</span><br><span class="line">&#125;())</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(numberCal.half(<span class="number">5</span>)) <span class="comment">//2.5</span></span><br><span class="line"><span class="built_in">console</span>.log(numberCal.half(<span class="number">6</span>)) <span class="comment">//3</span></span><br><span class="line"><span class="built_in">console</span>.log(numberCal.double(<span class="number">7</span>)) <span class="comment">//14</span></span><br><span class="line"><span class="built_in">console</span>.log(numberCal.tribble(<span class="number">7</span>)) <span class="comment">//21</span></span><br></pre></td></tr></table></figure>
-<h3 id="级联"><a href="#级联" class="headerlink" title="级联"></a>级联</h3><p>如果让方法返回<code>this</code>而不是默认的<code>undefined</code>，就可以启用级联，即连续调用。</p>
-<h3 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h3><p>柯里化允许我们把函数与传递给它的参数相结合，产生出一个新的函数。</p>
-<p>详情见以前的博文 <a href="http://gaohaoyang.github.io/2015/06/11/JavaScript-function/#bind--currying" target="_blank" rel="noopener">JavaScript 函数 -bind 与 currying</a>。</p>
-<h3 id="记忆"><a href="#记忆" class="headerlink" title="记忆"></a>记忆</h3><p>函数可以将先前操作的结果记录在某个对象里，从而避免无谓的重复运算。这种优化被称为记忆（memoization）。</p>
+          记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。
 
-          
+原书中第一章为精华，做了一些周边介绍，略去。
+语法空白这里说一下JavaScript的注释，一种是 /* */ 包围的块注释，另一种是 // 开头的行注释。
+因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如：
+123/*    var rm_a = /a*/.match(s)*/
+标识符标识符由一个字母开头，后面可选择性的加上一个或多个字母、数字或下划线。要避免保留字。
+标识符被用于语句、变量、参数、属性名、运算符和标记。
+数字可以存在指数部分，100和1e2完全相等
+1100 =
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/30/2016-06-07-JavaScript-good-parts-note1/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -856,7 +664,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -1006,167 +814,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2016/11/09/2018-4-2-hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/11/09/2018-4-2-hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-09T00:00:00+08:00">2016-11-09</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/搭建博客/" itemprop="url" rel="index"><span itemprop="name">搭建博客</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2016/11/09/2018-4-2-hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2016/11/09/2018-4-2-hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2016/05/06/2016-05-06-regular-expression-group/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1176,7 +823,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -1266,48 +913,23 @@
       
         
           
-            <p>由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。</p>
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在外刊君读者群中看到有人提出这样的一个需求：</p>
-<blockquote>
-<p>把字符串切成连续相同字符的正则怎么写？比如<code>abbcccdddd</code>切成<code>a,bb,ccc,dddd</code></p>
-</blockquote>
-<p>之前我对正则表达式也是略有研究，想尝试一下。其实我对正则表达式的学习基本完全来源于犀牛书的第10章，真正看懂这一章，我觉得操作正则表达式应该不在话下。</p>
-<h2 id="我的答案"><a href="#我的答案" class="headerlink" title="我的答案"></a>我的答案</h2><p>先给出我的答案吧：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'abbccddd'</span>.match(<span class="regexp">/(\w)\1*/g</span>) <span class="comment">// ["a", "bb", "cc", "ddd"]</span></span><br></pre></td></tr></table></figure>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>拿到这个问题，首先要匹配字符<code>[a-zA-Z0-9]</code>，这里直接使用<code>\w</code>。然后是全局匹配，在最后加上<code>g</code>。难点在于怎么判断重复。</p>
-<p>翻看了犀牛书后，又读了一遍分组和引用的部分。使用小括号<code>()</code>将字符作为一个最小单元，同时小括号还能记忆这个组合相匹配的字符串。再使用反斜杠<code>\</code>引用前面分组的表达式，数字1表示第一个小括号。这时完成了2个字符重复的要求。最后再使用<code>*</code>来匹配出现0次或n次。这个正则表达式就写完了。</p>
-<p>下面详细说说分组和引用。</p>
-<p><strong>正则表达式的选择、分组和引用字符表</strong></p>
-<table>
-<thead>
-<tr>
-<th>字符</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>`</td>
-<td>`</td>
-<td>选择，匹配的是该符号左边的子表达式或右边的子表达式</td>
-</tr>
-<tr>
-<td><code>(...)</code></td>
-<td>组合，将几个项组合为一个单元，这个单元可通过<code>*</code> <code>+</code> <code>?</code> `</td>
-<td>` 等符号加以修饰，<strong>而且可以记住和这个组合相匹配的字符串以提供伺候的引用使用</strong></td>
-</tr>
-<tr>
-<td><code>(?:...)</code></td>
-<td>只组合，把项组合到一个段元，但不记忆与该组相匹配的字符</td>
-</tr>
-<tr>
-<td><code>\n</code></td>
-<td>和第n个分组第一次匹配的字符相匹配，组是圆括号中的子表达式（也有可能是嵌套的），组索引是从左到右的左括号数，<code>(?:</code>形式的分组不编码</td>
-</tr>
-</tbody>
-</table>
+          由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。
+问题在外刊君读者群中看到有人提出这样的一个需求：
 
-          
+把字符串切成连续相同字符的正则怎么写？比如abbcccdddd切成a,bb,ccc,dddd
+
+之前我对正则表达式也是略有研究，想尝试一下。其实我对正则表达式的学习基本完全来源于犀牛书的第10章，真正看懂这一章，我觉得操作正则表达式应该不在话下。
+我的答案先给出我的答案吧：
+1'abbccddd'.match(/(\w)\1*/g) // ["a", "bb", "cc", "ddd"]
+说明拿到这个问题，首先要匹配字符[a-zA-Z0-9]，这里直接使用\w。然后是全局
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/05/06/2016-05-06-regular-expression-group/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1368,7 +990,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -1458,80 +1080,18 @@
       
         
           
-            <p>本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对<code>Jekyll</code>也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时<code>Jekyll</code>如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。</p>
-<p>主要想做这些事情有：添加归档，添加标签，添加分类页面，主页显示文章摘要，代码去除 jQuery 和 BootStrap，优化移动端显示，将所有变量写入配置文件<code>_config.yml</code>中等。再优化一些细节吧。希望更多人会喜欢。</p>
-<h2 id="改版重构说明"><a href="#改版重构说明" class="headerlink" title="改版重构说明"></a>改版重构说明</h2><ul>
-<li><p><strong>使用 GitHub 风格的代码块 Markdown 写法 (Fenced code blocks)。</strong></p>
-<p>  即 GFM(github flavored markdown) 的方式。</p>
-<p>  Jekyll 已经升级至 3.1.2（2016-03），其中有一些新的要注意的地方，比如官网上说使用了 <code>Rouge</code> 去做代码高亮而不是默认的 <code>Pygments</code>，因为 <code>Jekyll</code> 本身是基于 Ruby 的，因此我看到官方说希望不再使用基于 Python 的 <code>Pygments</code> 了，而是都使用基于 Ruby 的代码。详情见官网升级说明 <a href="https://jekyllrb.com/docs/upgrading/2-to-3/#syntax-highlighter-changed" target="_blank" rel="noopener">syntax-highlighter-changed</a>。</p>
-</li>
-<li><p><strong>首页中添加摘要</strong></p>
-<p>  摘要可以在每一篇 md 文件头中使用 excerpt 属性写出来。也可以在正文中，4个换行符来分割，这个设置见配置文件<code>_config.yml</code>。</p>
-</li>
-<li><p><strong>添加归档</strong></p>
-<p>  上一版中没有归档，现在专门做了一个归档页面，当文章很多时方便根据年份快速查阅。</p>
-</li>
-<li><p><strong>添加标签</strong></p>
-<p>  标签还是很有必要添加的，上一版中也没有这个功能。现在也可以根据标签查找文章了。同时标签还有一个重要的作用是，用来获取相似文章的。</p>
-</li>
-<li><p><strong>添加分类页</strong></p>
-<p>  之前的分类就是在首页中直接完成的，现在和标签和归档类似，我将分类单独制作为一页，方便查阅。</p>
-</li>
-<li><p><strong>去掉 jQuery 和 BootStrap</strong></p>
-<p>  我觉得太重了，没必要使用这两个库，使用原生 JavaScript 和 CSS就可以做到一样的效果，代码量大大减轻，载入速度略有提高。</p>
-</li>
-<li><p><strong>重写了demo页的瀑布流布局</strong></p>
-<p>  改变数据写死的方式，将数据用 json 格式录入，由 JavaScript 拼接为 HTML 代码。同时，使用 <a href="http://masonry.desandro.com/" target="_blank" rel="noopener">Masonry</a>，重写了瀑布流布局。</p>
-</li>
-<li><p><strong>简化评论配置，支持 多说 和 disqus</strong></p>
-<p>  在<code>_config.yml</code>中评论配置直接添加自己的<code>short_name</code>，评论就能正常使用了。</p>
-</li>
-</ul>
-<p>下面列举一些可能遇到的问题，至少我是遇到了：</p>
-<h2 id="RubyGems-无法访问，SSL-证书问题"><a href="#RubyGems-无法访问，SSL-证书问题" class="headerlink" title="RubyGems 无法访问，SSL 证书问题"></a>RubyGems 无法访问，SSL 证书问题</h2><p>以前我使用的是 RubyGems 的淘宝镜像<a href="https://ruby.taobao.org/" target="_blank" rel="noopener">https://ruby.taobao.org/</a>。现在这个镜像已经不再维护了，作者 <a href="https://ruby-china.org/huacnlee" target="_blank" rel="noopener">huacnlee (李华顺)</a> 转到 <a href="https://ruby-china.org/" target="_blank" rel="noopener">Ruby China</a> 中继续维护了，详情见 <a href="https://gems.ruby-china.org/" target="_blank" rel="noopener">RubyGems 镜像- Ruby China</a>。</p>
-<h3 id="错误呈现"><a href="#错误呈现" class="headerlink" title="错误呈现"></a>错误呈现</h3><p>在执行任何<code>gem</code>命令的时候出现以下错误：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ERROR:  While executing gem ... (Gem::RemoteFetcher::FetchError)</span><br><span class="line">    SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://gems.ruby-china.org/specs.4.8.gz)</span><br></pre></td></tr></table></figure>
-<h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>根据 <a href="https://gems.ruby-china.org/" target="_blank" rel="noopener">https://gems.ruby-china.org/</a> 页面最下方提供的 GitHub Issue 地址。</p>
-<p>可以进入这个 issue：<a href="https://github.com/ruby-china/rubygems-mirror/issues/3" target="_blank" rel="noopener">https://github.com/ruby-china/rubygems-mirror/issues/3</a></p>
-<p>其中 sanlengjingvv 给出了一个链接地址 <a href="https://gist.github.com/fnichol/867550" target="_blank" rel="noopener">https://gist.github.com/fnichol/867550</a> 里面提供了方法。我就是采用这里面的方法解决的。</p>
-<p>我使用的是 <a href="https://gist.github.com/fnichol/867550#the-manual-way-boring" target="_blank" rel="noopener">The Manual Way</a>，因为 <a href="https://gist.github.com/fnichol/867550#the-ruby-way-fun" target="_blank" rel="noopener">The Ruby Way</a> 我没有成功，不知道什么原因，有兴趣的朋友可以试试。下面说说我的具体操作吧。</p>
-<p>首先从 <a href="https://curl.haxx.se/ca/cacert.pem" target="_blank" rel="noopener">https://curl.haxx.se/ca/cacert.pem</a> 将文件<code>cacert.pem</code>下载至 <code>C:\RailsInstaller\cacert.pem</code></p>
-<p>然后执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set SSL_CERT_FILE=C:\RailsInstaller\cacert.pem</span><br></pre></td></tr></table></figure>
-<p>就成功了，不会再出现 SSL 错误了。</p>
-<p>最后原文中说，为了长久设置，将这个目录存入控制面板中。我没理解是什么意思，是指环境变量吗？有朋友知道的话，欢迎留言告知我。</p>
-<p>我存入环境变量后，还是会出现 SSL 错误，这时再次执行上面那条命令即可。</p>
-<h2 id="jekyll-paginate-依赖缺失"><a href="#jekyll-paginate-依赖缺失" class="headerlink" title="jekyll-paginate 依赖缺失"></a>jekyll-paginate 依赖缺失</h2><p>因为 jekyll 3 中默认安装已经没有这个分页组件了，官方把这个分页组件插件化了，因此要独立安装。详情见 <a href="https://jekyllrb.com/docs/pagination/" target="_blank" rel="noopener">https://jekyllrb.com/docs/pagination/</a>。</p>
-<h3 id="错误呈现-1"><a href="#错误呈现-1" class="headerlink" title="错误呈现"></a>错误呈现</h3><p>在启动 jekyll 服务的时候出现以下错误：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">jekyll serve</span><br><span class="line">Configuration file: c:/gitWorkSpace/blog-based-on-jekyll-3/_config.yml</span><br><span class="line">  Dependency Error: Yikes! It looks like you don&apos;t have jekyll-paginate or one of its dependencies installed. In order to use Jekyll as currently configured, you&apos;ll need to install this gem. The full error message from Ruby is: &apos;cannot load such file -- jekyll-paginate&apos; If you run into trouble, you can find helpful resources at http://jekyllrb.com/help/!</span><br><span class="line">jekyll 3.1.2 | Error:  jekyll-paginate</span><br></pre></td></tr></table></figure>
-<h3 id="解决方法-1"><a href="#解决方法-1" class="headerlink" title="解决方法"></a>解决方法</h3><p>我们安装这个插件到本地即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gem install jekyll-paginate</span><br><span class="line">Fetching: jekyll-paginate-1.1.0.gem (100%)</span><br><span class="line">Successfully installed jekyll-paginate-1.1.0</span><br><span class="line">Parsing documentation for jekyll-paginate-1.1.0</span><br><span class="line">Installing ri documentation for jekyll-paginate-1.1.0</span><br><span class="line">Done installing documentation for jekyll-paginate after 3 seconds</span><br><span class="line">1 gem installed</span><br></pre></td></tr></table></figure>
-<h2 id="被-Foxit-pdf-reader-占用4000端口"><a href="#被-Foxit-pdf-reader-占用4000端口" class="headerlink" title="被 Foxit pdf reader 占用4000端口"></a>被 Foxit pdf reader 占用4000端口</h2><h3 id="错误呈现-2"><a href="#错误呈现-2" class="headerlink" title="错误呈现"></a>错误呈现</h3><p>在本地使用命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jekyll serve</span><br></pre></td></tr></table></figure>
-<p>出现错误，如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">jekyll serve</span><br><span class="line">Configuration file: E:/GitWorkSpace/blog/_config.yml</span><br><span class="line">           Source: E:/GitWorkSpace/blog</span><br><span class="line">      Destination: E:/GitWorkSpace/blog/_site</span><br><span class="line">Incremental build: disabled. Enable with --incremental</span><br><span class="line">     Generating...</span><br><span class="line">                   done in 0.547 seconds.</span><br><span class="line"> Please add the following to your Gemfile to avoid polling for changes:</span><br><span class="line">   gem &apos;wdm&apos;, &apos;&gt;= 0.1.0&apos; if Gem.win_platform?</span><br><span class="line">Auto-regeneration: enabled for &apos;E:/GitWorkSpace/blog&apos;</span><br><span class="line">Configuration file: E:/GitWorkSpace/blog/_config.yml</span><br><span class="line">jekyll 3.1.1 | Error:  Permission denied - bind(2) for 127.0.0.1:4000</span><br></pre></td></tr></table></figure>
-<p>网上查阅后，这篇博文解决了我的问题。<a href="http://lxconan.github.io/2016/01/07/who-is-using-my-port/" target="_blank" rel="noopener">谁占了我的端口 for Windows –By Liu Xia, ThoughtWorks Senior Consultant. .NET Expert</a></p>
-<p>上述报错主要原因是，jekyll 启动使用的4000端口被福昕pdf阅读器的自动更新进程占用了，关掉这个进程，jekyll在本地调试启动服务时就没有问题了。</p>
-<h3 id="解决方法-2"><a href="#解决方法-2" class="headerlink" title="解决方法"></a>解决方法</h3><p>简单的解决方法是：</p>
-<p>输入命令，查看各端口被占用情况</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -ano</span><br></pre></td></tr></table></figure>
-<p>找到4000端口被占用的<code>PID</code></p>
-<p>我的结果如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">协议  本地地址          外部地址          状态           PID</span><br><span class="line">TCP  0.0.0.0:80        0.0.0.0:0         LISTENING     4</span><br><span class="line">TCP  0.0.0.0:135       0.0.0.0:0         LISTENING     836</span><br><span class="line">TCP  0.0.0.0:445       0.0.0.0:0         LISTENING     4</span><br><span class="line">TCP  0.0.0.0:1801      0.0.0.0:0         LISTENING     2312</span><br><span class="line">TCP  0.0.0.0:2103      0.0.0.0:0         LISTENING     2312</span><br><span class="line">TCP  0.0.0.0:2105      0.0.0.0:0         LISTENING     2312</span><br><span class="line">TCP  0.0.0.0:2107      0.0.0.0:0         LISTENING     2312</span><br><span class="line">TCP  0.0.0.0:3306      0.0.0.0:0         LISTENING     2404</span><br><span class="line">TCP  0.0.0.0:3389      0.0.0.0:0         LISTENING     1172</span><br><span class="line">TCP  0.0.0.0:49664     0.0.0.0:0         LISTENING     584</span><br><span class="line">TCP  0.0.0.0:49665     0.0.0.0:0         LISTENING     1072</span><br><span class="line">TCP  0.0.0.0:49666     0.0.0.0:0         LISTENING     460</span><br><span class="line">TCP  0.0.0.0:49667     0.0.0.0:0         LISTENING     1000</span><br><span class="line">TCP  0.0.0.0:49670     0.0.0.0:0         LISTENING     696</span><br><span class="line">TCP  0.0.0.0:49678     0.0.0.0:0         LISTENING     2312</span><br><span class="line">TCP  0.0.0.0:49692     0.0.0.0:0         LISTENING     688</span><br><span class="line">TCP  127.0.0.1:4000    0.0.0.0:0         LISTENING     2476</span><br><span class="line">TCP  127.0.0.1:4000    127.0.0.1:55160   ESTABLISHED   2476</span><br><span class="line">TCP  127.0.0.1:4012    0.0.0.0:0         LISTENING     12724</span><br></pre></td></tr></table></figure>
-<p>可以看到4000端口的PID是2476。下面查看是什么进程，命令行中输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tasklist /svc /FI &quot;PID eq 2476&quot;</span><br></pre></td></tr></table></figure>
-<p>得到结果：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">映像名称                       PID 服务</span><br><span class="line">========================= ======== ============================================</span><br><span class="line">FoxitProtect.exe              2476 FxService</span><br></pre></td></tr></table></figure>
-<p>可以看到正是福昕阅读器。下面关掉这个服务就好了。在 win10 中进入任务管理器，选择服务选项卡，关闭这个服务就好了，如下图：</p>
-<p><img src="http://ww4.sinaimg.cn/large/7011d6cfjw1f1ty28wwj4j20g00aiju7.jpg" alt=""></p>
-<p>当然也可以在启动jekyll服务的时候指定端口号，如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jekyll serve --port 3000</span><br></pre></td></tr></table></figure>
-<p>这样在浏览器中输入 <a href="http://localhost:3000/" target="_blank" rel="noopener">http://localhost:3000/</a> 就可以访问了。</p>
-<p>还可以在配置文件<code>_config.yml</code>中添加端口号设置（参考<a href="https://jekyllrb.com/docs/configuration/#serve-command-options" target="_blank" rel="noopener">官网文档-Serve Command OptionsPermalink</a>），如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># port</span><br><span class="line">port: 1234</span><br></pre></td></tr></table></figure>
-<p>此时，启动jekyll服务后，访问 <a href="http://localhost:1234/" target="_blank" rel="noopener">http://localhost:1234/</a> 即可</p>
-
-          
+          本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对Jekyll也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时Jekyll如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。
+主要想做这些事情有：添加归档，添加标签，添加分类页面，主页显示文章摘要，代码去除 jQuery 和 BootStrap，优化移动端显示，将所有变量写入配置文件_config.yml中等。再优化一些细节吧。希望更多人会喜欢。
+改版重构说明
+使用 GitHub 风格的代码
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/03/12/2016-03-12-jekyll-theme-version-2.0/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1592,7 +1152,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -1682,15 +1242,22 @@
       
         
           
-            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>当我们点击一个空的、没有任何内容的 div 或者其他块级元素时。在 IE11 以下，是没有反应的。</p>
-<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>这类问题使用场景还是很普遍的。比如 UI 给了一张大图，要点击图上的某一块位置的时候。可以用一个空的 div 定位到相应的位置，然后对它进行绑定事件。</p>
-<hr>
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>解决方法很简单，即给这个块级元素填充任意颜色，然后将其透明度设置为0。代码如下：</p>
-<pre><code>background-color: #fff;
+          问题描述当我们点击一个空的、没有任何内容的 div 或者其他块级元素时。在 IE11 以下，是没有反应的。
+使用场景这类问题使用场景还是很普遍的。比如 UI 给了一张大图，要点击图上的某一块位置的时候。可以用一个空的 div 定位到相应的位置，然后对它进行绑定事件。
+
+解决办法解决方法很简单，即给这个块级元素填充任意颜色，然后将其透明度设置为0。代码如下：
+background-color: #fff;
 opacity: 0;
 filter:alpha(opacity=0);
-</code></pre>
+
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/07/24/2015-07-24-low-IE-click-empty-block-bug/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1751,7 +1318,7 @@ filter:alpha(opacity=0);
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -1841,10 +1408,17 @@ filter:alpha(opacity=0);
       
         
           
-            <p>做了一张思维导图。总结这几个月对 JavaScript 的学习吧，也是一个复习。也是我目前的技能树。</p>
-<p><img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-JavaScriptNet2.png" alt="JavaScriptNet"></p>
+          做了一张思维导图。总结这几个月对 JavaScript 的学习吧，也是一个复习。也是我目前的技能树。
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/07/09/2015-07-09-JavaScript-Net/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1905,7 +1479,7 @@ filter:alpha(opacity=0);
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -1995,10 +1569,16 @@ filter:alpha(opacity=0);
       
         
           
-            <p>代码如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line">  Const bb As Integer = <span class="number">1000</span> - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  Dim RndNumber, TempArray(bb), kk(bb), i As Integer</span><br><span class="line"></span><br><span class="line">  Randomize (Timer)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">0</span> To bb</span><br><span class="line"></span><br><span class="line">      TempArray(i) = i</span><br><span class="line"></span><br><span class="line">  Next i</span><br><span class="line"></span><br><span class="line">  j = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  For i = bb To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line"></span><br><span class="line">     RndNumber = Int(i * Rnd)</span><br><span class="line"></span><br><span class="line">     kk(i) = TempArray(RndNumber) + <span class="number">1</span> <span class="string">' 随机不重复数值</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     TempArray(RndNumber) = TempArray(i)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     j = j + 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
-
-          
+          代码如下：
+1234567891011121314151617181920212223242526272829sub a()  Const bb As Integer = 1000 - 1  Dim RndNumber, TempArray(bb), kk(bb), i As Integer  Randomize (Timer)For i = 0 To bb      TempArray(i) = i  Next i  j = 1  For i = bb To 1 Step -1     RndNumber = Int(i * Rnd)     kk(i) = TempArray(RndNum
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/06/22/2018-04-01-随机不重复数值/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2059,7 +1639,7 @@ filter:alpha(opacity=0);
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Notes">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
     </span>
 
     
@@ -2149,12 +1729,177 @@ filter:alpha(opacity=0);
       
         
           
-            <h2 id="一、添加数据"><a href="#一、添加数据" class="headerlink" title="一、添加数据"></a>一、添加数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">Sub a()</span><br><span class="line"></span><br><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">On Error GoTo hhh</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myTable = "SW01"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = "select * from " &amp; myTable</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">for i=1 to 4 '</span>可添加<span class="number">4</span>次</span><br><span class="line"></span><br><span class="line">rs.Fields(<span class="string">"a"</span>) = Cells(<span class="number">5</span> + i, <span class="number">15</span>)</span><br><span class="line"></span><br><span class="line">next i</span><br><span class="line"></span><br><span class="line">rs.Update</span><br><span class="line"></span><br><span class="line">MsgBox <span class="string">"添加成功！"</span>, vbOKOnly + vbInformation, <span class="string">"创建数据"</span></span><br><span class="line"></span><br><span class="line">rs.Close</span><br><span class="line"></span><br><span class="line">cnn.Close</span><br><span class="line"></span><br><span class="line"><span class="built_in">Set</span> rs = Nothing</span><br><span class="line"></span><br><span class="line"><span class="built_in">Set</span> cnn = Nothing</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">hhh:</span><br><span class="line"></span><br><span class="line">MsgBox <span class="string">"添加数据时出现错误!"</span> &amp; vbCrLf &amp; <span class="string">"原因:该编号重复或数据类型不对，请查找原因."</span>, vbCritical, <span class="string">"提示！！！！"</span></span><br><span class="line"></span><br><span class="line">end sub</span><br></pre></td></tr></table></figure>
-<h2 id="二、修改数据"><a href="#二、修改数据" class="headerlink" title="二、修改数据"></a>二、修改数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myTable = "SWHH"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">On Error GoTo hhh</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL1 = "update " &amp; myTable &amp; " set "</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = SQL1 &amp; "盒号='</span><span class="string">" &amp; [a2] &amp; "</span><span class="string">'  , 盒质量=" &amp; [b2] &amp; " , 保存时间= " &amp; da &amp; " where 盒号='</span><span class="string">" &amp; [a2] &amp; "</span><span class="string">'"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = cnn.Execute(SQL)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = New ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Open SQL, cnn, adOpenKeyset, adLockOptimistic</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">cnn.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">hhh:</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    MsgBox "保存数据出现错误!" &amp; vbCrLf &amp; "原因:该编号重复或数据类型不对.", vbCritical, "保存数据"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
-<h2 id="三、查询数据"><a href="#三、查询数据" class="headerlink" title="三、查询数据"></a>三、查询数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = "select * from " &amp; myTable &amp; " where KID=" &amp; [s2] &amp; " order by ID DESC"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = cnn.Execute(SQL)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = New ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Open SQL, cnn, adOpenKeyset, adLockOptimistic</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If rs.RecordCount &gt; 0 Then    </span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    For i = 1 To rs.RecordCount</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">       Cells(5 + i, 2) = rs.Fields("a")</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">       rs.MoveNext</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Else</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">       MsgBox "没有查询到相关数据", vbCritical</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">End If</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">cnn.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
-<h2 id="四、删除数据"><a href="#四、删除数据" class="headerlink" title="四、删除数据"></a>四、删除数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">if MsgBox("本数据删除后,将无法恢复!" &amp; vbCrLf &amp; "是否要删除?", vbQuestion + vbYesNo, "删除数据") = vbNo Then Exit Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myTable = "SW01"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = "delete from " &amp; myTable &amp; " where  KID= " &amp; [s2]</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = cnn.Execute(SQL)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = New ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Open SQL, cnn, adOpenKeyset, adLockOptimistic</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">MsgBox "已经成功将序号为： " &amp; [s2] &amp; "    数据删除！", vbInformation</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">rs.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">cnn.Close</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set rs = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Set cnn = Nothing</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
+          一、添加数据1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253Sub a()'Option ExplicitPublic myData As String, myTable As String, SQL As StringPublic cnn As ADODB.ConnectionPublic rs As ADODB.RecordsetOn Error GoTo hhhmyData = ThisWorkbook.Path &amp; "\SWDB.md
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2015/06/18/2015-06-18-weinre/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiang JinChao's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/06/18/2015-06-18-weinre/" itemprop="url">Weinre --WebApp 调试工具</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-18T00:06:05+08:00">2015-06-18</time>
+            
+
+            
+            
+
+            
+          </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/06/18/2015-06-18-weinre/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2015/06/18/2015-06-18-weinre/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          什么是 weinre？weinre官网 上有两句有意思的介绍：
+
+weinre is WEb INspector REmote. Pronounced like the word “winery”. Or maybe like the word “weiner”. Who knows, really.
+weinre is a debugger for web pages, like FireBug (for FireFox) and Web Inspector (for WebKit-based browsers), except it’s designed to work remotely,
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/06/18/2015-06-18-weinre/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -2232,7 +1977,7 @@ filter:alpha(opacity=0);
                 alt="Jiang JinChao" />
             
               <p class="site-author-name" itemprop="name">Jiang JinChao</p>
-              <p class="site-description motion-element" itemprop="description">人生最大的快乐不在于占有什么，而在于追求什么的过程</p>
+              <p class="site-description motion-element" itemprop="description">The dog equally study, the gentleman equally plays.</p>
           </div>
 
           
@@ -2242,7 +1987,7 @@ filter:alpha(opacity=0);
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">37</span>
+                    <span class="site-state-item-count">36</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2254,6 +1999,8 @@ filter:alpha(opacity=0);
                 <div class="site-state-item site-state-categories">
                   <a href="/categories/index.html">
                     
+                    
+                      
                     
                       
                     
@@ -2544,6 +2291,14 @@ filter:alpha(opacity=0);
                     
                       
                     
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
                     <span class="site-state-item-count">87</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
@@ -2589,6 +2344,12 @@ filter:alpha(opacity=0);
 
           
           
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
 
           
           
@@ -2622,8 +2383,8 @@ filter:alpha(opacity=0);
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 &mdash; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="animate"> 
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Jiang JinChao</span>
@@ -2644,7 +2405,7 @@ filter:alpha(opacity=0);
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.1.0</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.1.0</div>-->
 
 
 
@@ -2861,6 +2622,15 @@ filter:alpha(opacity=0);
   
 
   
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.loadBookmark();
+  
+  </script>
+
 
 </body>
 </html>
