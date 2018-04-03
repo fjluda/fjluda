@@ -120,7 +120,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c5acaf6d1ab&690.jpeg">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h746f9c204906&690.jpeg">
-<meta property="og:updated_time" content="2018-04-03T11:28:34.767Z">
+<meta property="og:updated_time" content="2018-04-03T12:54:58.378Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于Excel VBA应用三次样条插值法开发CBR曲线">
 <meta name="twitter:description" content="说明CBR又称加州承载比，是California Bearing Ration的缩写，由美国加利福尼亚州公路局首先提出来，用于评定路基土和路面材料的强度指标。在国外多采用CBR作为路面材料和路基土的设计参数。 我国现行沥青和水泥混凝土路面设计规范，对路面、路基的设计参数系采用回弹模量指标，而在境外修建的公路工程多采用CBR指标。为了进一步积累经验用于实际，以促进国际学术交流，参考了国内外的情况，将">
@@ -427,8 +427,8 @@
 <p>我国现行沥青和水泥混凝土路面设计规范，对路面、路基的设计参数系采用回弹模量指标，而在境外修建的公路工程多采用CBR指标。为了进一步积累经验用于实际，以促进国际学术交流，参考了国内外的情况，将CBR指标列入《公路路基设计规范》（JTG D30-2004）和《公路路基施工技术规范》（JTG F10-2006），作为路基填料选择的依据。</p>
 <p>CBR数据是根据试验检测得出系列结果,以贯入量L为纵坐标,以单位压力P为横坐标,在直角坐标系上标出这些点,根据点的位置,用模糊数学(线形回归)的理论,推出曲线的公式,根据公式,将这些点绘制出一个圆滑的关系曲线,必要时进行原点修正。然后就可以根据曲线得出贯入量L=2.5mm 和贯入量L=5.0mm 时候单位压力P的数值了。</p>
 <p>介绍了<strong>CBR制图</strong>基本情况，在试验检测中对L-P分析曲线图常遇到以下问题：</p>
-<h2 id="一、L-P分析曲线的制图及数据精确度？"><a href="#一、L-P分析曲线的制图及数据精确度？" class="headerlink" title="一、L-P分析曲线的制图及数据精确度？"></a>一、L-P分析曲线的制图及数据精确度？</h2><p>目前，试验检测工程师对L-P分析曲线的绘制都是应用Excel的制图功能实现的，但Excel制图中存在一个问题就是贯入量L=2.5mm和贯入量L=5.0mm所对应P的数据无法直接计算出来，还是要用内插计算（已影响精度）。如果个别数据不是很理想时，可能出现“弹簧”现象而且曲线也不够平滑。</p>
-<h2 id="二、什么是原点修正，如何在图中表示出来？"><a href="#二、什么是原点修正，如何在图中表示出来？" class="headerlink" title="二、什么是原点修正，如何在图中表示出来？"></a>二、什么是原点修正，如何在图中表示出来？</h2><p>下图曲线1是适合的，曲线2在接近原点的一段出现凹曲线,这是由于试验过程中由于试件表面不平贯入阻力没有成比例的增加造成的。对此需要进行修正。<strong>修正方法:在变曲率点引一切线,与纵坐标交与O′点,O′即为修正后的原点</strong>。</p>
+<h2 id="L-P分析曲线的制图及数据精确度？"><a href="#L-P分析曲线的制图及数据精确度？" class="headerlink" title="L-P分析曲线的制图及数据精确度？"></a>L-P分析曲线的制图及数据精确度？</h2><p>目前，试验检测工程师对L-P分析曲线的绘制都是应用Excel的制图功能实现的，但Excel制图中存在一个问题就是贯入量L=2.5mm和贯入量L=5.0mm所对应P的数据无法直接计算出来，还是要用内插计算（已影响精度）。如果个别数据不是很理想时，可能出现“弹簧”现象而且曲线也不够平滑。</p>
+<h2 id="什么是原点修正，如何在图中表示出来？"><a href="#什么是原点修正，如何在图中表示出来？" class="headerlink" title="什么是原点修正，如何在图中表示出来？"></a>什么是原点修正，如何在图中表示出来？</h2><p>下图曲线1是适合的，曲线2在接近原点的一段出现凹曲线,这是由于试验过程中由于试件表面不平贯入阻力没有成比例的增加造成的。对此需要进行修正。<strong>修正方法:在变曲率点引一切线,与纵坐标交与O′点,O′即为修正后的原点</strong>。</p>
 <p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c5acaf6d1ab&amp;690.jpeg" alt="5fe99087h8c5acaf6d1ab_690"></p>
 <p>什么是三次样条插值法,浏览《<strong>三次样条函数计算</strong>》或网络查找.</p>
 <p>以下是基于Excel VBA 应用三次样条插值法原理开发的L-P曲线图，能够自动计算曲线任意点对应的x,y值，同时自动计算出贯入量L=2.5mm 和贯入量L=5.0mm 时候单位压力P的精确数值。曲线稳定性与光滑性好。</p>
@@ -856,22 +856,27 @@
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="https://github.com/fjluda" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i>500px</a>
+                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
                   
                 </span>
               
@@ -908,7 +913,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一、L-P分析曲线的制图及数据精确度？"><span class="nav-number">2.</span> <span class="nav-text">一、L-P分析曲线的制图及数据精确度？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、什么是原点修正，如何在图中表示出来？"><span class="nav-number">3.</span> <span class="nav-text">二、什么是原点修正，如何在图中表示出来？</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L-P分析曲线的制图及数据精确度？"><span class="nav-number">2.</span> <span class="nav-text">L-P分析曲线的制图及数据精确度？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是原点修正，如何在图中表示出来？"><span class="nav-number">3.</span> <span class="nav-text">什么是原点修正，如何在图中表示出来？</span></a></li></ol></div>
             
 
           </div>
