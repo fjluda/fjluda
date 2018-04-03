@@ -93,6 +93,17 @@
   };
 </script>
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
 
   
 
@@ -221,9 +232,9 @@
         
         
           
-  <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  <li class="menu-item menu-item-工具">
+    <a href="/guestbook" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />工具</a>
 </li>
 
       
@@ -232,8 +243,7 @@
           
   <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">47</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
 </li>
 
       
@@ -242,8 +252,7 @@
           
   <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">16</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
 </li>
 
       
@@ -252,8 +261,16 @@
           
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">40</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
 </li>
 
       
@@ -288,597 +305,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/15/2015-04-15-baidu-ife-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Pit">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/04/15/2015-04-15-baidu-ife-1/" itemprop="url">百度Web前端技术学院(1)-HTML, CSS基础</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-15T19:06:05+08:00">2015-04-15</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/HTML-CSS/" itemprop="url" rel="index"><span itemprop="name">HTML CSS</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/04/15/2015-04-15-baidu-ife-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/04/15/2015-04-15-baidu-ife-1/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<p>百度前端学院的第一次任务笔记，HTML、CSS 基础。主要有 CSS 工作原理，选择器的使用，常用属性，行高属性，盒模型与定位，最后根据设计图实现4个页面。</p>
-<h2 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h2><p><strong>任务：</strong> <a href="https://github.com/Gaohaoyang/ife/tree/master/task/task0001" target="_blank" rel="noopener">HTML、CSS基础</a>   </p>
-<p>有人问到提交作业 fork 同步的问题，真心觉得官方 GitHub 的帮助文档讲的很好，我上一篇博客 <a href="http://gaohaoyang.github.io/2015/04/12/Syncing-a-fork/" target="_blank" rel="noopener">同步一个 fork</a> 就是翻译的这个官方文档，如果懒得看英文可以参考我的博客。   </p>
-<p>写点东西记录一下我的做题过程吧。   </p>
-<h2 id="CSS-如何工作"><a href="#CSS-如何工作" class="headerlink" title="CSS 如何工作"></a>CSS 如何工作</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started/How_CSS_works" target="_blank" rel="noopener">CSS 如何工作</a> Mozilla 的开发者文档讲的很好。</p>
-<blockquote>
-<p>浏览器在展现一个文档的时候，必须要把文档内容和相应的样式信息结合起来展示。 这个处理过程一般分两个阶段：   </p>
-<ol>
-<li>浏览器先将标记语言和 CSS 转换成 DOM (文档对象模型)结构。 这时 DOM 就代表了电脑内存中的相应文档，因为它已经融合了文档内容和相应的样式表。   </li>
-<li>最后浏览器把 DOM 的内容展示出来。   </li>
-</ol>
-</blockquote>
-<h2 id="层叠和继承"><a href="#层叠和继承" class="headerlink" title="层叠和继承"></a>层叠和继承</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_started/Cascading_and_inheritance" target="_blank" rel="noopener">参考资料: 层叠和继承</a></p>
-<blockquote>
-<p>对于层叠来说，共有三种主要的样式来源：</p>
-<ul>
-<li>浏览器对HTML定义的默认样式。</li>
-<li>用户定义的样式。</li>
-<li><p>开发者定义的样式，可以有三种形式：</p>
-<ul>
-<li>定义在外部文件（外链样式）：本教程中案例主要是通过这种形式定义样式。</li>
-<li>在页面的头部定义（内联样式）：通过这种形式定义的样式只在本页面内生效。</li>
-<li>定义在特定的元素身上（行内样式）：这种形式多用于测试，可维护性较差。</li>
-</ul>
-</li>
-</ul>
-<p>用户定义的样式表会覆盖浏览器定义的默认样式，然后网页开发者定义的样式又会覆盖用户样式。</p>
-<p>再来看看优先级，从高到低依次为：网页开发者定义的样式、网页阅读者定义的样式、浏览器的默认样式。</p>
-<p>对继承的元素来说，子元素自身的样式优先级高于从父级继承来的样式。</p>
-<blockquote>
-<p>更多细节<br>CSS 另外提供了一个 !important 关键字，用户可以通过使用这个关键字使自己定义的样式覆盖掉开发者定义的样式。<br>这就意味着，作为开发者，你很难准确的预知页面最终在用户电脑上的显示效果。   </p>
-</blockquote>
-</blockquote>
-<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Getting_Started/Selectors" target="_blank" rel="noopener">参考资料:选择器（Selectors）</a></p>
-<h3 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h3><h3 id="类选择器（Class-selectors）"><a href="#类选择器（Class-selectors）" class="headerlink" title="类选择器（Class selectors）"></a>类选择器（Class selectors）</h3><blockquote>
-<p>通过设置元素的 class 属性，可以为元素指定类名。类名由开发者自己指定。 文档中的多个元素可以拥有同一个类名。</p>
-<p>在写样式表时，类选择器是以英文句号（.）开头的。</p>
-</blockquote>
-<h3 id="ID选择器（ID-selectors）"><a href="#ID选择器（ID-selectors）" class="headerlink" title="ID选择器（ID selectors）"></a>ID选择器（ID selectors）</h3><blockquote>
-<p>通过设置元素的 id 属性为该元素制定ID。ID名由开发者指定。每个ID在文档中必须是唯一的。</p>
-<p>在写样式表时，ID选择器是以#开头的。</p>
-</blockquote>
-<h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><blockquote>
-<ul>
-<li>如果多余一个规则指定了相同的属性值都应用到一个元素上，CSS规定拥有更高确定度的选择器优先级更高。ID选择器比类选择器更具确定度, 而类选择器比标签选择器（tag selector）更具确定度。</li>
-<li>如果样式中包含冲突的规则，且它们具有相同的确定度。那么，后出现的规则优先级高。</li>
-<li>如果你遇到规则冲突，你可以增加其中一条的确定度或将之移到后面以使它具有更高优先级。</li>
-</ul>
-</blockquote>
-<h3 id="伪类选择器（Pseudo-classes-selectors）"><a href="#伪类选择器（Pseudo-classes-selectors）" class="headerlink" title="伪类选择器（Pseudo-classes selectors）"></a>伪类选择器（Pseudo-classes selectors）</h3><h3 id="基于关系的选择器"><a href="#基于关系的选择器" class="headerlink" title="基于关系的选择器"></a>基于关系的选择器</h3><p>选择器    |选择的元素<br>A E    |任何是元素A的后代元素E (后代节点指A的子节点，子节点的子节点，以此类推)<br>A &gt; E    |任何元素A的子元素<br>E:first-child    |任何元素的第一个子元素E<br>B + E    |任何元素B的下一个兄弟元素E</p>
-<h2 id="其他属性"><a href="#其他属性" class="headerlink" title="其他属性"></a>其他属性</h2><h3 id="text-indent"><a href="#text-indent" class="headerlink" title="text-indent"></a><code>text-indent</code></h3><p><strong>定义和用法</strong><br>text-indent 属性规定文本块中首行文本的缩进。<br>注释：允许使用负值。如果使用负值，那么首行会被缩进到左边。   </p>
-<p><strong>可能的值</strong>    </p>
-<p>值    |描述<br>length    |定义固定的缩进。默认值：0。<br>%    |定义基于父元素宽度的百分比的缩进。<br>inherit    |规定应该从父元素继承 text-indent 属性的值。</p>
-<h3 id="text-transform"><a href="#text-transform" class="headerlink" title="text-transform"></a><code>text-transform</code></h3><p><strong>定义和用法</strong><br>text-transform 属性控制文本的大小写。      </p>
-<p><strong>说明</strong><br>这个属性会改变元素中的字母大小写，而不论源文档中文本的大小写。如果值为 capitalize，则要对某些字母大写，但是并没有明确定义如何确定哪些字母要大写，这取决于用户代理如何识别出各个“词”。   </p>
-<p><strong>可能的值</strong>  </p>
-<p>值    |描述<br>none    |默认。定义带有小写字母和大写字母的标准的文本。<br>capitalize    |文本中的每个单词以大写字母开头。<br>uppercase    |定义仅有大写字母。<br>lowercase    |定义无大写字母，仅有小写字母。<br>inherit    |规定应该从父元素继承 text-transform 属性的值。</p>
-<h3 id="text-decoration"><a href="#text-decoration" class="headerlink" title="text-decoration"></a><code>text-decoration</code></h3><p><strong>定义和用法</strong><br>text-decoration 属性规定添加到文本的修饰。<br>注释：修饰的颜色由 “color” 属性设置。<br>注释：IE、Chrome 或 Safari 不支持 “blink” 属性值。    </p>
-<p><strong>说明</strong><br>这个属性允许对文本设置某种效果，如加下划线。如果后代元素没有自己的装饰，祖先元素上设置的装饰会“延伸”到后代元素中。不要求用户代理支持 blink。</p>
-<h3 id="text-align"><a href="#text-align" class="headerlink" title="text-align"></a><code>text-align</code></h3><p><strong>定义和用法</strong><br>text-align 属性规定元素中的文本的水平对齐方式。<br>该属性通过指定行框与哪个点对齐，从而设置块级元素内文本的水平对齐方式。通过允许用户代理调整行内容中字母和字之间的间隔，可以支持值 justify；不同用户代理可能会得到不同的结果。   </p>
-<p><strong>可能的值</strong>   </p>
-<p>值    |描述<br>left    |把文本排列到左边。默认值：由浏览器决定。<br>right    |把文本排列到右边。<br>center    |把文本排列到中间。<br>justify    |实现两端对齐文本效果。<br>inherit    |规定应该从父元素继承 text-align 属性的值。</p>
-<h3 id="word-spacing"><a href="#word-spacing" class="headerlink" title="word-spacing"></a><code>word-spacing</code></h3><p><strong>定义</strong><br>word-spacing 属性增加或减少单词间的空白（即字间隔）。<br>该属性定义元素中字之间插入多少空白符。针对这个属性，“字” 定义为由空白符包围的一个字符串。如果指定为长度值，会调整字之间的通常间隔；所以，normal 就等同于设置为 0。允许指定负长度值，这会让字之间挤得更紧。<br>注释：允许使用负值。</p>
-<h3 id="white-space"><a href="#white-space" class="headerlink" title="white-space"></a><code>white-space</code></h3><p><strong>定义和用法</strong><br>white-space 属性设置如何处理元素内的空白。<br>这个属性声明建立布局过程中如何处理元素中的空白符。值 pre-wrap 和 pre-line 是 CSS 2.1 中新增的。</p>
-<p><strong>可能的值</strong></p>
-<p>值    |描述<br>normal    |默认。空白会被浏览器忽略。<br>pre    |空白会被浏览器保留。其行为方式类似 HTML 中的 <code>&lt;pre&gt;</code> 标签。<br>nowrap    |文本不会换行，文本会在在同一行上继续，直到遇到 <code>&lt;br&gt;</code> 标签为止。<br>pre-wrap    |保留空白符序列，但是正常地进行换行。<br>pre-line    |合并空白符序列，但是保留换行符。<br>inherit    |规定应该从父元素继承 white-space 属性的值。</p>
-<h3 id="font-face"><a href="#font-face" class="headerlink" title="@font-face"></a><code>@font-face</code></h3><p><strong>CSS3 @font-face 规则</strong><br>在 CSS3 之前，web 设计师必须使用已在用户计算机上安装好的字体。<br>通过 CSS3，web 设计师可以使用他们喜欢的任意字体。<br>当您您找到或购买到希望使用的字体时，可将该字体文件存放到 web 服务器上，它会在需要时被自动下载到用户的计算机上。<br>您“自己的”的字体是在 CSS3 @font-face 规则中定义的。   </p>
-<p>注释：Internet Explorer 8 以及更早的版本不支持新的 @font-face 规则。Internet Explorer 9+ 支持新的 @font-face 规则，但是仅支持 .eot 类型的字体 (Embedded OpenType)。</p>
-<p><strong>使用您需要的字体</strong><br>在新的 @font-face 规则中，您必须首先定义字体的名称（比如 myFirstFont），然后指向该字体文件。<br>如需为 HTML 元素使用字体，请通过 font-family 属性来引用字体的名称 (myFirstFont)：</p>
-<p><strong>实例</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">font-face</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: myFirstFont;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">'Sansation_Light.ttf'</span>),</span><br><span class="line">         <span class="built_in">url</span>(<span class="string">'Sansation_Light.eot'</span>); <span class="comment">/* IE9+ */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: myFirstFont;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>CSS3 字体描述符</strong></p>
-<p>下面的表格列出了能够在 @font-face 规则中定义的所有字体描述符：</p>
-<p>描述符    |值    |描述<br>font-family    |name    |必需。规定字体的名称。<br>src    |URL    |必需。定义字体文件的 URL。<br>font-stretch    |normal<br>condensed<br>ultra-condensed<br>extra-condensed<br>semi-condensed<br>expanded<br>semi-expanded<br>extra-expanded<br>ultra-expanded|可选。定义如何拉伸字体。默认是 “normal”。<br>font-style|ormal<br>italic<br>oblique|可选。定义字体的样式。默认是 “normal”。<br>font-weight|normal<br>bold<br>100<br>200<br>300<br>400<br>500<br>600<br>700<br>800<br>900|选。定义字体的粗细。默认是 “normal”。<br>unicode-range    |unicode-range    |可选。定义字体支持的 UNICODE 字符范围。默认是 “U+0-10FFFF”。</p>
-<h2 id="深入了解行高属性"><a href="#深入了解行高属性" class="headerlink" title="深入了解行高属性"></a>深入了解行高属性</h2><p><a href="http://www.cnblogs.com/fengzheng126/archive/2012/05/18/2507632.html" target="_blank" rel="noopener">参考：深入了解css的行高Line Height属性</a></p>
-<p>一般来说，设置行高为<code>值：纯数字</code>是最理想的方式，因为其会随着对应的 <code>font-size</code> 而缩放。</p>
-<h2 id="盒模型及定位"><a href="#盒模型及定位" class="headerlink" title="盒模型及定位"></a>盒模型及定位</h2><h3 id="已知宽度的div居中"><a href="#已知宽度的div居中" class="headerlink" title="已知宽度的div居中"></a>已知宽度的div居中</h3><ul>
-<li>用两种方法来实现一个背景色为红色、宽度为960px的<div>在浏览器中居中</div></li>
-</ul>
-<p>我的方法一：</p>
-<p>使用 <code>margin：0 auto;</code></p>
-<p>html文件</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"task0001-2.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>aaa<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css文件</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">960px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>方法二：</p>
-<p>绝对定位，左边距离 body 50%，<code>margin-left: -480px</code></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">960px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: -<span class="number">480px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="http://gaohaoyang.github.io/baidu-ife-practice/task0001/task0001-2.html" target="_blank" rel="noopener">Demo</a></p>
-<h4 id="对于居中的补充"><a href="#对于居中的补充" class="headerlink" title="对于居中的补充"></a>对于居中的补充</h4><p>参考自 <a href="http://zh.learnlayout.com/" target="_blank" rel="noopener">学习CSS布局</a>。</p>
-<p>像下面这样写css代码，使用 <code>max-width</code> 替代 <code>width</code>  可以使浏览器更好地处理小窗口的情况。这点在移动设备上显得尤为重要。</p>
-<p>有效的避免了如下问题：<br>当浏览器窗口比元素的宽度还要窄时，浏览器会显示一个水平滚动条来容纳页面。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#main</span> &#123;</span><br><span class="line">    <span class="attribute">max-width</span>: <span class="number">600px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><a href="http://www.cnblogs.com/2050/p/3392803.html" target="_blank" rel="noopener">CSS布局奇淫技巧之–各种居中</a></li>
-</ul>
-<h3 id="早期css滑动门"><a href="#早期css滑动门" class="headerlink" title="早期css滑动门"></a>早期css滑动门</h3><ul>
-<li>有的圆角矩形是复杂图案，无法直接用border-radius，请在不使用 border-radius 的情况下实现一个可复用的高度和宽度都自适应的圆角矩形<br>示例 <img src="http://7q5cdt.com1.z0.glb.clouddn.com/Baidu-Front-end-task0001_7.png" alt="圆角矩形"></li>
-</ul>
-<p>这道题我一开始不会做，查阅了资料，发现这就是所谓的 css 滑动门的应用。<a href="http://www.bkjia.com/webzh/759711.html" target="_blank" rel="noopener">妙味云课堂之css：滑动门、圆角、css精灵</a><br>使用三层嵌套，或者四层嵌套的 <code>div</code>，通过背景图定位等方式可以实现。</p>
-<h3 id="左侧固定右侧自适应宽度的两列布局"><a href="#左侧固定右侧自适应宽度的两列布局" class="headerlink" title="左侧固定右侧自适应宽度的两列布局"></a>左侧固定右侧自适应宽度的两列布局</h3><ul>
-<li>用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化 <img src="http://7q5cdt.com1.z0.glb.clouddn.com/Baidu-Front-end-task0001_3.jpg" alt="pic"></li>
-</ul>
-<p>我的方法一：</p>
-<p>不使用浮动，使用绝对定位，将左上角的块放好位置，右边的块设置<code>margin-left</code></p>
-<p>html 文件：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>layout<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"task0001-6-3.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>DIV-A<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>DIV-B<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bottom"</span>&gt;</span>DIV-C<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css 文件：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.row</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.bottom</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>方法二：   </p>
-<p>使用浮动，左边的块使用浮动，右边的块使用<code>margin-left</code></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.bottom</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="http://gaohaoyang.github.io/baidu-ife-practice/task0001/task0001-6-3.html" target="_blank" rel="noopener">Demo</a></p>
-<p><strong>补充：</strong></p>
-<p>看完了后面的 BFC 之后，本题和下一题都可以用另一种方法了<br>总之我已经震惊了！太爽了！有没有！</p>
-<p>html</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>使用 BFC 进行两列布局<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"two-col-layout-with-BFC.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>DIV-A<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>DIV-B<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bottom"</span>&gt;</span>DIV-C<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: yellow;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.bottom</span>&#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="http://gaohaoyang.github.io/baidu-ife-practice/task0001/two-col-layout-with-BFC.html" target="_blank" rel="noopener">Demo</a></p>
-<h3 id="双飞翼布局"><a href="#双飞翼布局" class="headerlink" title="双飞翼布局"></a>双飞翼布局</h3><ul>
-<li>用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化</li>
-</ul>
-<p>原题中参考资料 <a href="http://www.imooc.com/wenda/detail/254035" target="_blank" rel="noopener">双飞翼布局</a>   </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Flying Swing Layout<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"task0001-6-4.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bd"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main-wrap"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Flying Swing Layout<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"sub"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">p</span>&gt;</span>Flying Swing Layout<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">                left</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"extra"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">p</span>&gt;</span>Flying Swing Layout<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">                right</span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.bd</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*padding: 0 190px;*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#aaa</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main-wrap</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">190px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.sub</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">190px</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: -<span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;        </span><br><span class="line">    <span class="comment">/*position: relative;</span></span><br><span class="line"><span class="comment">    left: -190px;*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.extra</span> &#123;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">190px</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: -<span class="number">190px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: yellow;        </span><br><span class="line">    <span class="comment">/*position: relative;</span></span><br><span class="line"><span class="comment">    right: -190px;*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="http://gaohaoyang.github.io/baidu-ife-practice/task0001/task0001-6-4.html" target="_blank" rel="noopener">Demo</a></p>
-<p><strong>补充：</strong></p>
-<p>使用 BFC 的另一种方法，我再一次震惊！</p>
-<p>代码超级简单！</p>
-<p>html</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>flying-Swing-BFC<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"flying-Swing-BFC.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span></span><br><span class="line">            flying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.htmlflying-Swing-BFC.html</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span></span><br><span class="line">            footerfooterfooterfooterfooterfooterfooterfooterfooter</span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.left</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">    <span class="attribute">float</span>: right;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span>&#123;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#eee</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="http://gaohaoyang.github.io/baidu-ife-practice/task0001/flying-Swing-BFC.html" target="_blank" rel="noopener">Demo</a></p>
-<h3 id="浮动布局"><a href="#浮动布局" class="headerlink" title="浮动布局"></a>浮动布局</h3><ul>
-<li>实现一个浮动布局，红色容器中每一行的蓝色容器数量随着浏览器宽度的变化而变化 <img src="http://7q5cdt.com1.z0.glb.clouddn.com/Baidu-Front-end-task0001_4.jpg" alt="pic"><img src="http://7q5cdt.com1.z0.glb.clouddn.com/Baidu-Front-end-task0001_5.jpg" alt="pic"></li>
-</ul>
-<p>这个题我觉的直接将每一个块浮动起来就好了，不知我理解的对不对。</p>
-<p>html文件</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"task0001-6-5.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css文件</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">    <span class="attribute">background-color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">background-color</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="file:///E:/GitWorkSpace/baidu-ife-practice/task0001/task0001-6-5.html" target="_blank" rel="noopener">Demo</a></p>
-<h3 id="清除浮动-闭合浮动"><a href="#清除浮动-闭合浮动" class="headerlink" title="清除浮动/闭合浮动"></a>清除浮动/闭合浮动</h3><p>参考自 <a href="http://www.iyunlu.com/view/css-xhtml/55.html" target="_blank" rel="noopener">那些年我们一起清除过的浮动 by 一丝冰凉</a></p>
-<ol>
-<li>清除浮动：清除对应的单词是 clear，对应CSS中的属性是 clear：left | right | both | none；</li>
-<li>闭合浮动：更确切的含义是使浮动元素闭合，从而减少浮动带来的影响。</li>
-</ol>
-<p>我们想要达到的效果更确切地说是闭合浮动，而不是单纯的清除浮动，设置clear：both清除浮动并不能解决warp高度塌陷的问题。</p>
-<p>正是因为浮动的这种特性，导致本属于普通流中的元素浮动之后，包含框内部由于不存在其他普通流元素了，也就表现出高度为0（<strong>高度塌陷</strong>）。在实际布局中，往往这并不是我们所希望的，所以需要闭合浮动元素，使其包含框表现出正常的高度。</p>
-<p>最后一丝姐给了两个精益求精方案，我觉得方案一更易于理解，这里实践一下：</p>
-<p><a href="http://gaohaoyang.github.io/baidu-ife-practice/task0001/close-float.html" target="_blank" rel="noopener">闭合浮动的Demo</a></p>
-<p>下面是源码</p>
-<p>html</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"close-float.css"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row clearfix"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"left"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">h1</span>&gt;</span>left<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span>&gt;</span>Content or Something<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row2"</span>&gt;</span>Row2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>css</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.row</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">"\200B"</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">    *zoom: 1;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#eee</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.right</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">float</span>: right;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#eee</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.row2</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">600px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#aaa</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>其中<code>*zoom: 1</code>是为了触发<code>hasLayout</code></p>
-<p>还有另一种解决方案！</p>
-<p>参考自：<a href="http://zh.learnlayout.com/clearfix.html" target="_blank" rel="noopener">清除浮动（clearfix hack）</a></p>
-<p>直接使用，如下代码即可</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span>&#123;</span><br><span class="line">    <span class="attribute">overflow</span>: auto;</span><br><span class="line">    <span class="attribute">zoom</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="http://gaohaoyang.github.io/baidu-ife-practice/task0001/close-float-2.html" target="_blank" rel="noopener">Demo</a></p>
-<p>(实际上，我看完后面的资料，再翻到这里就明白了！正是使用了BFC原理！！！！！！！)</p>
-<p><strong>但是今天遇到一个坑！</strong></p>
-<p>如果使用了 <code>over-flow</code>，在后面如果有元素要绝对布局在父元素的外面的，意思就是出现 <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code> 的值为负值时，就会出现看不到，或者滚动条的问题！</p>
-<p>若是有这种要求，我觉得还是用一丝姐姐的解决方案比较好。</p>
-<p><strong>参考</strong></p>
-<ul>
-<li><a href="http://zfengqi.me/?p=87" target="_blank" rel="noopener">清除浮动的几种方法</a></li>
-</ul>
-<h3 id="box-sizing"><a href="#box-sizing" class="headerlink" title="box-sizing"></a><code>box-sizing</code></h3><p>当你设置一个元素为 <code>box-sizing: border-box;</code> 时，此元素的内边距和边框不再会增加它的宽度。</p>
-<p>他们的内边距和边框都是向内的挤压的。支持IE8+，需要加浏览器内核。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.simple</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">20px</span> auto;</span><br><span class="line">    <span class="attribute">-webkit-box-sizing</span>: border-box;</span><br><span class="line">    <span class="attribute">-moz-box-sizing</span>: border-box;</span><br><span class="line">    <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h3><p>媒体查询</p>
-<ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries" target="_blank" rel="noopener">MDN CSS媒体查询</a></li>
-<li><p><a href="http://zh.learnlayout.com/media-queries.html" target="_blank" rel="noopener">媒体查询-学习CSS布局</a></p>
-<p>  <code>@media screen and (min-width: 500px) and (max-width: 800px) { ... }</code></p>
-</li>
-<li><p><a href="https://dev.opera.com/articles/an-introduction-to-meta-viewport-and-viewport/" target="_blank" rel="noopener">An Introduction to Meta Viewport and @viewport</a></p>
-</li>
-</ul>
-<h3 id="多列布局"><a href="#多列布局" class="headerlink" title="多列布局"></a>多列布局</h3><ul>
-<li><a href="http://zh.learnlayout.com/column.html" target="_blank" rel="noopener">column</a></li>
-</ul>
-<h3 id="BFC-和-IE-的-hasLayout"><a href="#BFC-和-IE-的-hasLayout" class="headerlink" title="BFC 和 IE 的 hasLayout"></a>BFC 和 IE 的 hasLayout</h3><ul>
-<li><a href="http://www.cnblogs.com/pigtail/archive/2013/01/23/2871627.html" target="_blank" rel="noopener">BFC和IE的hasLayout</a></li>
-<li><a href="http://outofmemory.cn/wr/?u=http%3A%2F%2Fkkeys.me%2Fpost%2F68547473290" target="_blank" rel="noopener">Block Formatting Context 的几大用处</a></li>
-</ul>
-<p>看完这个资料后我震惊了！竟然可以这么玩儿！<br>我将本文之前提到的两列布局，双飞翼布局又重新写了一遍！太爽了！代码超级简洁！</p>
-<p><strong>Block Formatting Context 的几大用处：</strong></p>
-<ol>
-<li>防止 margin 折叠</li>
-<li>清除float</li>
-<li>不会环绕float元素</li>
-</ol>
-<p>相关资料</p>
-<ul>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Visual_formatting_model" target="_blank" rel="noopener">视觉格式化模型(visual formatting model)</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Block_formatting_context" target="_blank" rel="noopener">块格式化上下文(block formatting context)</a></li>
-</ul>
-<h3 id="div-三列等高"><a href="#div-三列等高" class="headerlink" title="div 三列等高"></a><code>div</code> 三列等高</h3><p><a href="http://show.sysu.edu.cn/?action-blogdetail-uid-2383-id-5040" target="_blank" rel="noopener">纯CSS实现三列DIV等高布局</a></p>
-<p>最关键的地方有3句：</p>
-<p>最外层div设置一个溢出隐藏</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#wrap</span> &#123;</span><br><span class="line">    <span class="attribute">overflow</span>:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>每一个子块设置 padding 和 margin</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#left</span>,<span class="selector-id">#center</span>,<span class="selector-id">#right</span>&#123;</span><br><span class="line">    <span class="attribute">margin-bottom</span>:-<span class="number">10000px</span>;</span><br><span class="line">    <span class="attribute">padding-bottom</span>:<span class="number">10000px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>overflow:hidden;    ‘隐藏溢出。如果内容溢出wrap层，则不显示。</p>
-<p>margin-bottom:-10000px;    ‘底部边距-10000px。<br>padding-bottom:10000px;    ‘底部填充10000px。<br>上面这两句能够实现的效果就是，产生10000px的填充，然后用负的边距把它给抵销掉。</p>
-<h3 id="去除inline-block元素间间距"><a href="#去除inline-block元素间间距" class="headerlink" title="去除inline-block元素间间距"></a>去除inline-block元素间间距</h3><p>一开始我不知道是因为使用了 <code>display: inline-block</code> 会有间距。后来查找资料找到了相关的方案。</p>
-<ul>
-<li><a href="http://www.zhangxinxu.com/wordpress/2012/04/inline-block-space-remove-%E5%8E%BB%E9%99%A4%E9%97%B4%E8%B7%9D/" target="_blank" rel="noopener">去除inline-block元素间间距的N种方法</a></li>
-<li><a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/" target="_blank" rel="noopener">Fighting the Space Between Inline Block Elements</a></li>
-</ul>
-<p>真正意义上的inline-block水平呈现的元素间，换行显示或空格分隔的情况下会有间距。<br>这种表现是符合规范的应该有的表现。</p>
-<p>解决方法有很多，上述博文中提到的有：</p>
-<ol>
-<li>移除空格</li>
-<li>使用 <code>margin</code> 负值</li>
-<li>取消闭合标签</li>
-<li>使用 <code>font-size: 0</code></li>
-<li>使用 <code>letter-spacing</code></li>
-<li>使用 <code>word-spacing</code></li>
-<li>其他</li>
-</ol>
-<p>我觉得使用 4 <code>font-size: 0</code> 比较好，对别的元素影响最小。代码如下：在 <code>a</code> 的外层将字体尺寸设为 0，载对内层的 <code>a</code> 重新设置字体大小，即可。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">nav</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">nav</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="最终作品"><a href="#最终作品" class="headerlink" title="最终作品"></a>最终作品</h2><ul>
-<li><a href="http://gaohaoyang.github.io/ife/task/task0001/work/Gaohaoyang/index.html" target="_blank" rel="noopener">在线Demo</a></li>
-<li><a href="https://github.com/Gaohaoyang/ife/tree/master/task/task0001/work/Gaohaoyang" target="_blank" rel="noopener">源代码</a></li>
-</ul>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="https://github.com/ecomfe/spec" target="_blank" rel="noopener">HTML、CSS的代码规范</a> 自己要试着改变一些代码风格了，规范化！  </li>
-<li><a href="http://www.zhihu.com/question/20455165" target="_blank" rel="noopener">顾轶灵:Web语义化</a><br>我看他回答最后的举例的Sildes做的非常好，可以经常看看。<a href="http://justineo.github.io/slideshows/semantic-html/" target="_blank" rel="noopener">Semantic HTML</a>。他的其他Slides也做的非常好，很喜欢这种风格！</li>
-<li><a href="http://www.w3cfuns.com/blog-5445898-5398950.html" target="_blank" rel="noopener">CSS命名规范@W3C Funs</a> 起名不再困难！</li>
-<li><a href="点击阅读: CSS浏览器兼容性列表">点击阅读: CSS浏览器兼容性列表-维基百科</a> 类似的我想到了 <a href="http://caniuse.com/" target="_blank" rel="noopener">Can I Use</a>，Can I Use 包含的更多，包括 HTML5, CSS SVG, JS API 等。</li>
-</ul>
-<ul>
-<li><a href="http://zh.learnlayout.com/" target="_blank" rel="noopener">学习CSS布局</a></li>
-<li><a href="http://mediaqueri.es/" target="_blank" rel="noopener">Media Queries</a></li>
-<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Using_CSS_gradients" target="_blank" rel="noopener">使用CSS渐变</a></li>
-<li><a href="http://www.w3cplus.com/content/css3-gradient" target="_blank" rel="noopener">CSS3 Gradient</a></li>
-<li><a href="http://www.colorzilla.com/gradient-editor/" target="_blank" rel="noopener">CSS渐变生成器</a></li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/12/2015-04-12-Syncing-a-fork/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Pit">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/04/12/2015-04-12-Syncing-a-fork/" itemprop="url">同步一个 fork</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-12T15:14:54+08:00">2015-04-12</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/GitHub/" itemprop="url" rel="index"><span itemprop="name">GitHub</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/04/12/2015-04-12-Syncing-a-fork/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/04/12/2015-04-12-Syncing-a-fork/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<p>fork 了别人的仓库后，原作者又更新了仓库，如何将自己的代码和原仓库保持一致？本文将给你解答。</p>
-<h2 id="如何使用搜索引擎"><a href="#如何使用搜索引擎" class="headerlink" title="如何使用搜索引擎"></a>如何使用搜索引擎</h2><p>其实这个问题并不难，我又被坑了。百度搜的东西不靠谱啊，以后这种问题一定要用<strong>英文</strong>在 <a href="http://www.google.com" target="_blank" rel="noopener">Google</a> 或者 <a href="http://cn.bing.com/" target="_blank" rel="noopener">Bing</a> 上搜索，这样才能搜到原汁原味的答案。就当是一个教训吧。   </p>
-<p>搜索 fork sync，就可以看到 GitHub 自己的帮助文档 <a href="https://help.github.com/articles/syncing-a-fork/" target="_blank" rel="noopener">Syncing a fork</a> 点进去看这篇的时候，注意到有一个 Tip: Before you can sync your fork with an upstream repository, you must <a href="https://help.github.com/articles/configuring-a-remote-for-a-fork/" target="_blank" rel="noopener">configure a remote that points to the upstream repository</a> in Git.   </p>
-<p>根据这两篇文章，问题迎刃而解！   </p>
-<h2 id="具体方法"><a href="#具体方法" class="headerlink" title="具体方法"></a>具体方法</h2><h3 id="Configuring-a-remote-for-a-fork"><a href="#Configuring-a-remote-for-a-fork" class="headerlink" title="Configuring a remote for a fork"></a>Configuring a remote for a fork</h3><ul>
-<li><p>给 fork 配置一个 remote   </p>
-</li>
-<li><p>主要使用 <code>git remote -v</code> 查看远程状态。   </p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br><span class="line"># origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)</span><br><span class="line"># origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>添加一个将被同步给 fork 远程的上游仓库      </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git</span><br></pre></td></tr></table></figure>
-<ul>
-<li>再次查看状态确认是否配置成功。   </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br><span class="line"># origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)</span><br><span class="line"># origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)</span><br><span class="line"># upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)</span><br><span class="line"># upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)</span><br></pre></td></tr></table></figure>
-<h3 id="Syncing-a-fork"><a href="#Syncing-a-fork" class="headerlink" title="Syncing a fork"></a>Syncing a fork</h3><ul>
-<li>从上游仓库 fetch 分支和提交点，传送到本地，并会被存储在一个本地分支 upstream/master<br><code>git fetch upstream</code>    </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git fetch upstream</span><br><span class="line"># remote: Counting objects: 75, done.</span><br><span class="line"># remote: Compressing objects: 100% (53/53), done.</span><br><span class="line"># remote: Total 62 (delta 27), reused 44 (delta 9)</span><br><span class="line"># Unpacking objects: 100% (62/62), done.</span><br><span class="line"># From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY</span><br><span class="line">#  * [new branch]      master     -&gt; upstream/master</span><br></pre></td></tr></table></figure>
-<ul>
-<li>切换到本地主分支(如果不在的话)<br><code>git checkout master</code>    </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line"># Switched to branch &apos;master&apos;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>把 upstream/master 分支合并到本地 master 上，这样就完成了同步，并且不会丢掉本地修改的内容。<br><code>git merge upstream/master</code>      </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git merge upstream/master</span><br><span class="line"># Updating a422352..5fdff0f</span><br><span class="line"># Fast-forward</span><br><span class="line">#  README                    |    9 -------</span><br><span class="line">#  README.md                 |    7 ++++++</span><br><span class="line">#  2 files changed, 7 insertions(+), 9 deletions(-)</span><br><span class="line">#  delete mode 100644 README</span><br><span class="line">#  create mode 100644 README.md</span><br></pre></td></tr></table></figure>
-<ul>
-<li>如果想更新到 GitHub 的 fork 上，直接 <code>git push origin master</code> 就好了。</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
     
       
 
@@ -994,10 +420,7 @@
       
         
           
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>题目来自 <a href="http://imooc.com/code/5760" target="_blank" rel="noopener">慕课网 JavaScript 深入浅出 1-6 编程练习</a>    </p>
+            <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>题目来自 <a href="http://imooc.com/code/5760" target="_blank" rel="noopener">慕课网 JavaScript 深入浅出 1-6 编程练习</a>    </p>
 <p>请在 index.html 文件中，编写 arraysSimilar 函数，实现判断传入的两个数组是否相似。具体需求：   </p>
 <ol>
 <li>数组中的成员类型相同，顺序可以不同。例如 [1, true] 与 [false, 2] 是相似的。</li>
@@ -1182,10 +605,7 @@
       
         
           
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<p>本文我将讲述一下 SublimeLinter 的安装过程。其组件 jshint 的安装与使用。其组件 csslint 的安装与使用。我将基于 <a href="http://sublimetext.com/3" target="_blank" rel="noopener">Sublime Text 3</a> 来安装。使用 Sublime Text 2 的用户阅读本文是没有帮助的。</p>
+            <p>本文我将讲述一下 SublimeLinter 的安装过程。其组件 jshint 的安装与使用。其组件 csslint 的安装与使用。我将基于 <a href="http://sublimetext.com/3" target="_blank" rel="noopener">Sublime Text 3</a> 来安装。使用 Sublime Text 2 的用户阅读本文是没有帮助的。</p>
 <p>SublimeLinter 是 Sublime 的插件，它的作用是检查代码语法是否有错误，并提示。习惯了 IDE 下写代码的人一定需要一款在 Sublime 上类似的语法检查工具。下面我们开始。   </p>
 <h2 id="安装-SublimeLinter"><a href="#安装-SublimeLinter" class="headerlink" title="安装 SublimeLinter"></a>安装 SublimeLinter</h2><p>如同其他插件一样使用 Package Control 来安装。   </p>
 <ol>
@@ -1251,166 +671,6 @@
 <p><img src="http://7q5cdt.com1.z0.glb.clouddn.com/SublimeLinter-csslint-test.jpg" alt="SublimeLinter-csslint-test"></p>
 <p>点击提示点后，Sublime 状态栏也会有相应的说明   </p>
 <p><img src="http://7q5cdt.com1.z0.glb.clouddn.com/SublimeLinter-csslint-test2.jpg" alt="SublimeLinter-csslint-test2"></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/02/10/2015-02-10-welcome-to-jekyll/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Pit">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/02/10/2015-02-10-welcome-to-jekyll/" itemprop="url">hello jekyll!</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-02-10T15:14:54+08:00">2015-02-10</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/jekyll/" itemprop="url" rel="index"><span itemprop="name">jekyll</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/02/10/2015-02-10-welcome-to-jekyll/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/02/10/2015-02-10-welcome-to-jekyll/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-<p>Jekyll also offers powerful support for code snippets:</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_hi</span><span class="params">(name)</span></span></span><br><span class="line">  puts <span class="string">"Hi, <span class="subst">#&#123;name&#125;</span>"</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">print_hi(<span class="string">'Tom'</span>)</span><br><span class="line"><span class="comment">#=&gt; prints 'Hi, Tom' to STDOUT.</span></span><br></pre></td></tr></table></figure>
-<p>Check out the <a href="http://jekyllrb.com" target="_blank" rel="noopener">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll" target="_blank" rel="noopener">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://github.com/jekyll/jekyll-help" target="_blank" rel="noopener">Jekyll’s dedicated Help repository</a>.</p>
-<p>Block Mathjax </p>
-<p>$$<br>f(x) = ax + b<br>$$</p>
-<p>Inline Mathjax $a \neq b$</p>
 
           
         
@@ -1563,10 +823,7 @@
       
         
           
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<p>根据美国NCHRP 第386 号项目的研究成果, 沥青混合料的级配优选可以采用混合料中的集料嵌挤状况来进行评价。本次研究借鉴了这一研究成果, 主要考察了表征<strong>ATB-25</strong>混合料中粗集料嵌挤状况的参数<code>SSC</code>, 对于SSC大于<strong>80%</strong>的级配可以认为沥青混合料中的粗集料嵌挤状况是比较理想的。</p>
+            <p>根据美国NCHRP 第386 号项目的研究成果, 沥青混合料的级配优选可以采用混合料中的集料嵌挤状况来进行评价。本次研究借鉴了这一研究成果, 主要考察了表征<strong>ATB-25</strong>混合料中粗集料嵌挤状况的参数<code>SSC</code>, 对于SSC大于<strong>80%</strong>的级配可以认为沥青混合料中的粗集料嵌挤状况是比较理想的。</p>
 <p>这种分析方法首先测定矿料混合料中<strong>13.2mm</strong>以上集料的捣实密度<strong>Dca</strong> , 基本公式如下:</p>
 <p>$$<br>Dac =\frac{(A-b)}{C}<br>$$</p>
 <p>式中, Dca 为粗集料捣实密度; A 为粗集料+干捣容器重;B 为干捣容器重; C 为干捣容器体积, 并且计算各级配混合料中13.2mm 以上颗粒的密度Dcm</p>
@@ -1577,174 +834,6 @@
 <p>式中, SSC 为混合料中粗集料嵌挤状况的量度; Dcm 为混合料粗集料密度; Dca 为粗集料捣实密度。试验结果如下：</p>
 <p><img src="http://p5mgr4bgm.bkt.clouddn.com/2442358372935826885.png" alt="2442358372935826885-w600"></p>
 <p>试验结果中可以看出, 中级配2 号级配和细级配3 号级配能够满足设计要求.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2010/07/29/2018-04-01-基于Excel VBA应用三次样条插值法开发CBR曲线/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Pit">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2010/07/29/2018-04-01-基于Excel VBA应用三次样条插值法开发CBR曲线/" itemprop="url">基于Excel VBA应用三次样条插值法开发CBR曲线</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2010-07-29T09:06:05+08:00">2010-07-29</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VBA/" itemprop="url" rel="index"><span itemprop="name">VBA</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2010/07/29/2018-04-01-基于Excel VBA应用三次样条插值法开发CBR曲线/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2010/07/29/2018-04-01-基于Excel VBA应用三次样条插值法开发CBR曲线/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>CBR又称加州承载比，是California Bearing Ration的缩写，由美国加利福尼亚州公路局首先提出来，用于评定路基土和路面材料的强度指标。在国外多采用CBR作为路面材料和路基土的设计参数。</p>
-<p>我国现行沥青和水泥混凝土路面设计规范，对路面、路基的设计参数系采用回弹模量指标，而在境外修建的公路工程多采用CBR指标。为了进一步积累经验用于实际，以促进国际学术交流，参考了国内外的情况，将CBR指标列入《公路路基设计规范》（JTG D30-2004）和《公路路基施工技术规范》（JTG F10-2006），作为路基填料选择的依据。</p>
-<p>CBR数据是根据试验检测得出系列结果,以贯入量L为纵坐标,以单位压力P为横坐标,在直角坐标系上标出这些点,根据点的位置,用模糊数学(线形回归)的理论,推出曲线的公式,根据公式,将这些点绘制出一个圆滑的关系曲线,必要时进行原点修正。然后就可以根据曲线得出贯入量L=2.5mm 和贯入量L=5.0mm 时候单位压力P的数值了。</p>
-<p>介绍了<strong>CBR制图</strong>基本情况，在试验检测中对L-P分析曲线图常遇到以下问题：</p>
-<h2 id="一、L-P分析曲线的制图及数据精确度？"><a href="#一、L-P分析曲线的制图及数据精确度？" class="headerlink" title="一、L-P分析曲线的制图及数据精确度？"></a>一、L-P分析曲线的制图及数据精确度？</h2><p>目前，试验检测工程师对L-P分析曲线的绘制都是应用Excel的制图功能实现的，但Excel制图中存在一个问题就是贯入量L=2.5mm和贯入量L=5.0mm所对应P的数据无法直接计算出来，还是要用内插计算（已影响精度）。如果个别数据不是很理想时，可能出现“弹簧”现象而且曲线也不够平滑。</p>
-<h2 id="二、什么是原点修正，如何在图中表示出来？"><a href="#二、什么是原点修正，如何在图中表示出来？" class="headerlink" title="二、什么是原点修正，如何在图中表示出来？"></a>二、什么是原点修正，如何在图中表示出来？</h2><p>下图曲线1是适合的，曲线2在接近原点的一段出现凹曲线,这是由于试验过程中由于试件表面不平贯入阻力没有成比例的增加造成的。对此需要进行修正。<strong>修正方法:在变曲率点引一切线,与纵坐标交与O′点,O′即为修正后的原点</strong>。</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c5acaf6d1ab&amp;690.jpeg" alt="5fe99087h8c5acaf6d1ab_690"></p>
-<p>什么是三次样条插值法,浏览《<strong>三次样条函数计算</strong>》或网络查找.</p>
-<p>以下是基于Excel VBA 应用三次样条插值法原理开发的L-P曲线图，能够自动计算曲线任意点对应的x,y值，同时自动计算出贯入量L=2.5mm 和贯入量L=5.0mm 时候单位压力P的精确数值。曲线稳定性与光滑性好。</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h746f9c204906&amp;690.jpeg" alt="5fe99087h746f9c204906_690"></p>
-<p>VBA代码：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br></pre></td><td class="code"><pre><span class="line">Public x() As Double</span><br><span class="line">Public y() As Double</span><br><span class="line">Public N As Integer</span><br><span class="line">Public yp1, ypn As Double</span><br><span class="line">Public y2() As Double</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="string">'初始化数据</span></span><br><span class="line"><span class="string">Sub initdata()</span></span><br><span class="line"><span class="string">Dim i As Integer</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>判断点数</span><br><span class="line">N = [b1]</span><br><span class="line"></span><br><span class="line"><span class="string">'定义动态数组大小</span></span><br><span class="line"><span class="string">ReDim x(N)</span></span><br><span class="line"><span class="string">ReDim y(N)</span></span><br><span class="line"><span class="string">ReDim y2(N)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>赋值</span><br><span class="line">For i = <span class="number">1</span> To N</span><br><span class="line">    x(i) = Cells(i + <span class="number">2</span>, <span class="number">1</span>)</span><br><span class="line">    y(i) = Cells(i + <span class="number">2</span>, <span class="number">2</span>)</span><br><span class="line">Next i</span><br><span class="line"></span><br><span class="line"><span class="string">'头尾点的一介导数</span></span><br><span class="line"><span class="string">'</span>yp1 = (y(<span class="number">2</span>) - y(<span class="number">1</span>)) / (x(<span class="number">2</span>) - x(<span class="number">1</span>))</span><br><span class="line"><span class="string">'ypn = (y(N) - y(N - 1)) / (x(N) - x(N - 1))</span></span><br><span class="line"><span class="string">yp1 = 0</span></span><br><span class="line"><span class="string">ypn = 0</span></span><br><span class="line"><span class="string">End Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>求二阶导</span><br><span class="line">Sub spline()</span><br><span class="line">Dim u(<span class="number">500</span>) As Double</span><br><span class="line">Dim aaa, sig, bbb, ccc, p, qn, un As Double</span><br><span class="line">Dim i, k As Integer</span><br><span class="line"></span><br><span class="line">If yp1 &gt; <span class="number">9.9E+29</span> Then</span><br><span class="line">    y2(<span class="number">1</span>) = <span class="number">0</span></span><br><span class="line">    u(<span class="number">1</span>) = <span class="number">0</span></span><br><span class="line">Else</span><br><span class="line">    y2(<span class="number">1</span>) = <span class="number">-0.5</span></span><br><span class="line">    aaa = (y(<span class="number">2</span>) - y(<span class="number">1</span>)) / (x(<span class="number">2</span>) - x(<span class="number">1</span>))</span><br><span class="line">    u(<span class="number">1</span>) = (<span class="number">3</span> / (x(<span class="number">2</span>) - x(<span class="number">1</span>))) * (aaa - yp1)</span><br><span class="line">End If</span><br><span class="line"></span><br><span class="line">For i = <span class="number">2</span> To N - <span class="number">1</span></span><br><span class="line">    sig = (x(i) - x(i - <span class="number">1</span>)) / (x(i + <span class="number">1</span>) - x(i - <span class="number">1</span>))</span><br><span class="line">    p = sig * y2(i - <span class="number">1</span>) + <span class="number">2</span></span><br><span class="line">    y2(i) = (sig - <span class="number">1</span>) / p</span><br><span class="line">    aaa = (y(i + <span class="number">1</span>) - y(i)) / (x(i + <span class="number">1</span>) - x(i))</span><br><span class="line">    bbb = (y(i) - y(i - <span class="number">1</span>)) / (x(i) - x(i - <span class="number">1</span>))</span><br><span class="line">    ccc = x(i + <span class="number">1</span>) - x(i - <span class="number">1</span>)</span><br><span class="line">    u(i) = (<span class="number">6</span> * (aaa - bbb) / ccc - sig * u(i - <span class="number">1</span>)) / p</span><br><span class="line">Next i</span><br><span class="line"></span><br><span class="line">If yp1 &gt; <span class="number">9.9E+29</span> Then</span><br><span class="line">    qn = <span class="number">0</span></span><br><span class="line">    un = <span class="number">0</span></span><br><span class="line">Else</span><br><span class="line">    qn = <span class="number">0.5</span></span><br><span class="line">    aaa = ypn - (y(N) - y(N - <span class="number">1</span>)) / (x(N) - x(N - <span class="number">1</span>))</span><br><span class="line">    un = (<span class="number">3</span> / (x(N) - x(N - <span class="number">1</span>))) * aaa</span><br><span class="line">End If</span><br><span class="line"></span><br><span class="line">y2(N) = (un - qn * u(N - <span class="number">1</span>)) / (qn * y2(N - <span class="number">1</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">For k = N - <span class="number">1</span> To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line">    y2(k) = y2(k) * y2(k + <span class="number">1</span>) + u(k)</span><br><span class="line">Next k</span><br><span class="line"></span><br><span class="line">End Sub</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Sub splint(px As Double, py As Double)</span><br><span class="line">Dim k, klo, khi As Integer</span><br><span class="line">Dim h, a, b, aaa, bbb, q, qq As Double</span><br><span class="line">klo = <span class="number">1</span></span><br><span class="line">khi = N</span><br><span class="line"></span><br><span class="line"><span class="string">'二分法</span></span><br><span class="line"><span class="string">L1: If khi - klo &gt; 1 Then</span></span><br><span class="line"><span class="string">        k = Int((khi + klo) / 2)</span></span><br><span class="line"><span class="string">        If x(k) &gt; px Then</span></span><br><span class="line"><span class="string">            khi = k</span></span><br><span class="line"><span class="string">        Else</span></span><br><span class="line"><span class="string">            klo = k</span></span><br><span class="line"><span class="string">        End If</span></span><br><span class="line"><span class="string">        GoTo L1</span></span><br><span class="line"><span class="string">    End If</span></span><br><span class="line"><span class="string">h = x(khi) - x(klo)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If h = 0 Then</span></span><br><span class="line"><span class="string">    Exit Sub</span></span><br><span class="line"><span class="string">End If</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">a = (x(khi) - px) / h</span></span><br><span class="line"><span class="string">b = (px - x(klo)) / h</span></span><br><span class="line"><span class="string">aaa = a * y(klo) + b * y(khi)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If a = 0 Then</span></span><br><span class="line"><span class="string">    q = 0</span></span><br><span class="line"><span class="string">Else</span></span><br><span class="line"><span class="string">    If a &gt; 0 Then</span></span><br><span class="line"><span class="string">        q = Exp(3 * Log(a))</span></span><br><span class="line"><span class="string">    Else</span></span><br><span class="line"><span class="string">        q = -Exp(3 * Log(-a))</span></span><br><span class="line"><span class="string">    End If</span></span><br><span class="line"><span class="string">End If</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If b = 0 Then</span></span><br><span class="line"><span class="string">    qq = 0</span></span><br><span class="line"><span class="string">Else</span></span><br><span class="line"><span class="string">    If b &gt; 0 Then</span></span><br><span class="line"><span class="string">        qq = Exp(3 * Log(b))</span></span><br><span class="line"><span class="string">    Else</span></span><br><span class="line"><span class="string">        qq = -Exp(3 * Log(-b))</span></span><br><span class="line"><span class="string">    End If</span></span><br><span class="line"><span class="string">End If</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">bbb = (q - a) * y2(klo) + (qq - b) * y2(khi)</span></span><br><span class="line"><span class="string">py = aaa + bbb * (h * h) / 6</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">End Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>求值</span><br><span class="line">Sub caldata()</span><br><span class="line">Dim i As Integer</span><br><span class="line">Dim j As Integer</span><br><span class="line">Dim z As Integer</span><br><span class="line">Dim MY_Y As Double</span><br><span class="line">Dim q As Double</span><br><span class="line">Dim PList() As Double</span><br><span class="line"></span><br><span class="line">Call initdata</span><br><span class="line">Call spline</span><br><span class="line"></span><br><span class="line">ReDim PList((N - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">1</span> To N - <span class="number">1</span></span><br><span class="line">    PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">1</span>) = x(i)</span><br><span class="line">    PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">2</span>) = y(i)</span><br><span class="line">   </span><br><span class="line">    If i = <span class="number">1</span> Then</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">3</span>) = <span class="number">0</span></span><br><span class="line">    Else</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">3</span>) = (PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">2</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span>, <span class="number">2</span>)) / (PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">1</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span>, <span class="number">1</span>))</span><br><span class="line">    End If</span><br><span class="line">   </span><br><span class="line">    PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">4</span>) = y2(i)</span><br><span class="line">   </span><br><span class="line">    For j = <span class="number">2</span> To <span class="number">40</span></span><br><span class="line">       </span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">1</span>) = PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">1</span>) + (x(i + <span class="number">1</span>) - x(i)) / <span class="number">40</span></span><br><span class="line">        Call splint(PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">1</span>), MY_Y)</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">2</span>) = MY_Y</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">3</span>) = (PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">2</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">2</span>)) / (PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">1</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">1</span>))</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">4</span>) = (PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">3</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">3</span>)) / (PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">1</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">1</span>))</span><br><span class="line">       </span><br><span class="line">    Next j</span><br><span class="line">   </span><br><span class="line">Next i</span><br><span class="line"></span><br><span class="line"><span class="string">'最后一点</span></span><br><span class="line"><span class="string">PList((N - 1) * 40 + 1, 1) = x(N)</span></span><br><span class="line"><span class="string">PList((N - 1) * 40 + 1, 2) = y(N)</span></span><br><span class="line"><span class="string">PList((N - 1) * 40 + 1, 3) = 0</span></span><br><span class="line"><span class="string">PList((N - 1) * 40 + 1, 4) = y2(N)</span></span><br><span class="line"><span class="string">'</span>计算<span class="number">2.5</span>mm的P值</span><br><span class="line">Call splint(<span class="number">2.5</span>, MY_Y)</span><br><span class="line">Cells(<span class="number">1</span>, <span class="number">8</span>) = MY_Y</span><br><span class="line"><span class="string">'计算5.0mm的P值</span></span><br><span class="line"><span class="string">Call splint(5, MY_Y)</span></span><br><span class="line"><span class="string">Cells(1, 10) = MY_Y</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Range("K:L").Select</span></span><br><span class="line"><span class="string">Selection.ClearContents</span></span><br><span class="line"><span class="string">Range("a3").Select</span></span><br><span class="line"><span class="string">For i = 1 To (N - 1) * 40 + 1</span></span><br><span class="line"><span class="string">    Cells(i + 2, 11) = PList(i, 1)</span></span><br><span class="line"><span class="string">    Cells(i + 2, 12) = PList(i, 2)</span></span><br><span class="line"><span class="string">Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Range("e4:h4").Select</span></span><br><span class="line"><span class="string">Selection.ClearContents</span></span><br><span class="line"><span class="string">Range("a3").Select</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Dim la, lb As Integer</span></span><br><span class="line"><span class="string">For i = 2 To (N - 1) * 40 - 1</span></span><br><span class="line"><span class="string"> '</span>查找变曲率点</span><br><span class="line">    If PList(i, <span class="number">4</span>) = <span class="number">0</span> Then</span><br><span class="line">  <span class="string">'x</span></span><br><span class="line"><span class="string">        Cells(4, 5) = PList(i, 1)</span></span><br><span class="line"><span class="string">  '</span>y</span><br><span class="line">        Cells(<span class="number">4</span>, <span class="number">6</span>) = PList(i, <span class="number">2</span>)</span><br><span class="line">  <span class="string">'y'</span></span><br><span class="line">        Cells(<span class="number">4</span>, <span class="number">7</span>) = PList(i, <span class="number">3</span>)</span><br><span class="line">  <span class="string">'y'</span><span class="string">'</span></span><br><span class="line"><span class="string">        Cells(4, 8) = PList(i, 4)</span></span><br><span class="line"><span class="string">  '</span>变曲率点致O<span class="string">'直线参数，y=ax+b b=lb,a=la</span></span><br><span class="line"><span class="string">        lb = PList(i, 2) - PList(i, 1) * PList(i, 3)</span></span><br><span class="line"><span class="string">        la = lb / PList(i, 3)</span></span><br><span class="line"><span class="string">        Exit For</span></span><br><span class="line"><span class="string">    Else</span></span><br><span class="line"><span class="string">        If PList(i, 4) * PList(i + 1, 4) &lt; 0 Then</span></span><br><span class="line"><span class="string">            If Abs(PList(i, 4)) &lt; Abs(PList(i + 1, 4)) Then</span></span><br><span class="line"><span class="string">                Cells(4, 5) = PList(i, 1)</span></span><br><span class="line"><span class="string">                Cells(4, 6) = PList(i, 2)</span></span><br><span class="line"><span class="string">                Cells(4, 7) = PList(i, 3)</span></span><br><span class="line"><span class="string">                Cells(4, 8) = PList(i, 4)</span></span><br><span class="line"><span class="string">                lb = PList(i, 2) - PList(i, 1) * PList(i, 3)</span></span><br><span class="line"><span class="string">                la = lb / PList(i, 3)</span></span><br><span class="line"><span class="string">                Exit For</span></span><br><span class="line"><span class="string">            Else</span></span><br><span class="line"><span class="string">                Cells(4, 5) = PList(i + 1, 1)</span></span><br><span class="line"><span class="string">                Cells(4, 6) = PList(i + 1, 2)</span></span><br><span class="line"><span class="string">                Cells(4, 7) = PList(i + 1, 3)</span></span><br><span class="line"><span class="string">                Cells(4, 8) = PList(i + 1, 4)</span></span><br><span class="line"><span class="string">                lb = PList(i + 1, 2) - PList(i + 1, 1) * PList(i + 1, 3)</span></span><br><span class="line"><span class="string">                la = lb / PList(i + 1, 3)</span></span><br><span class="line"><span class="string">                Exit For</span></span><br><span class="line"><span class="string">            End If</span></span><br><span class="line"><span class="string">        End If</span></span><br><span class="line"><span class="string">    End If</span></span><br><span class="line"><span class="string">Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>修正后<span class="number">2.5</span>mm,<span class="number">5.0</span>mm的P值</span><br><span class="line">Call splint(<span class="number">2.5</span> - la, MY_Y)</span><br><span class="line">Cells(<span class="number">1</span>, <span class="number">8</span>) = MY_Y</span><br><span class="line">Call splint(<span class="number">5</span> - la, MY_Y)</span><br><span class="line">Cells(<span class="number">1</span>, <span class="number">10</span>) = MY_Y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'图表美化，不用了解</span></span><br><span class="line"><span class="string">Call Macro1</span></span><br><span class="line"><span class="string">End Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Sub Macro1()</span></span><br><span class="line"><span class="string">   Dim a, b, c, d, e</span></span><br><span class="line"><span class="string">   a = Range("f1")</span></span><br><span class="line"><span class="string">   b = Range("d1")</span></span><br><span class="line"><span class="string">   c = Range("e18")</span></span><br><span class="line"><span class="string">   d = Range("f18")</span></span><br><span class="line"><span class="string">      ActiveSheet.ChartObjects("图表 7").Activate</span></span><br><span class="line"><span class="string">    ActiveChart.Axes(xlValue).Select</span></span><br><span class="line"><span class="string">    With ActiveChart.Axes(xlValue)</span></span><br><span class="line"><span class="string">        If a - (a + b) / 10 &lt;= 0 Then .MinimumScale = 0 Else .MinimumScale = a - (a + b) / 10</span></span><br><span class="line"><span class="string">        .MaximumScale = Int(b + (a + b) / 10)</span></span><br><span class="line"><span class="string">        .MinorUnit = ((a + b) / 20)</span></span><br><span class="line"><span class="string">        .MajorUnit = ((a + b) / 10)</span></span><br><span class="line"><span class="string">        .Crosses = xlAutomatic</span></span><br><span class="line"><span class="string">        .ReversePlotOrder = True</span></span><br><span class="line"><span class="string">        .ScaleType = xlLinear</span></span><br><span class="line"><span class="string">        .DisplayUnit = xlNone</span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string">    ActiveChart.Axes(xlCategory).MajorGridlines.Select</span></span><br><span class="line"><span class="string">    With ActiveChart.Axes(xlCategory)</span></span><br><span class="line"><span class="string">        If c - (c + d) / 10 &lt;= 0 Then .MinimumScale = 0 Else .MinimumScale = c - (c + d) / 10 &lt; 0</span></span><br><span class="line"><span class="string">        .MaximumScale = Int(d + (c + d) / 10)</span></span><br><span class="line"><span class="string">        .MinorUnit = (c + d) / 20</span></span><br><span class="line"><span class="string">        .MajorUnit = (c + d) / 10</span></span><br><span class="line"><span class="string">        .Crosses = xlAutomatic</span></span><br><span class="line"><span class="string">        .ReversePlotOrder = False</span></span><br><span class="line"><span class="string">        .ScaleType = xlLinear</span></span><br><span class="line"><span class="string">        .DisplayUnit = xlNone</span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string">End Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">```</span></span><br></pre></td></tr></table></figure>
-<p>作者：江锦朝，如果需要文件留下Email,希望与大家交个朋友。<br><code>`</code></p>
 
           
         
@@ -1897,10 +986,7 @@
       
         
           
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<p>试验检测技术人员都知道，已知五、六档甚至七档集料计算合成成符合技术规范及级配关键点的控制要求,是非常消耗脑力和时间，特别是没有经验的检测人员更困难。因此我们可利用计算机的信息处理能力，为我们分忧解难。Excel是办公中最常用的办公软件之一，其功能非常强大，能利用好相关功能,会有意想不到的效果。</p>
+            <p>试验检测技术人员都知道，已知五、六档甚至七档集料计算合成成符合技术规范及级配关键点的控制要求,是非常消耗脑力和时间，特别是没有经验的检测人员更困难。因此我们可利用计算机的信息处理能力，为我们分忧解难。Excel是办公中最常用的办公软件之一，其功能非常强大，能利用好相关功能,会有意想不到的效果。</p>
 <p>规划求解也称作“假设分析”，是一个非常好用的工具，经常用于查看更改某些单元格中的变量对工作表中公式结果的影响，例如：</p>
 <ol>
 <li>根据已知结果倒推变量应赋予的初值：已知各档级配通过率及矿料的级配范围，可以用单变量求解、循环引用，也可规划求解得出配合比例。</li>
@@ -1915,195 +1001,6 @@
 <p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c5e603e5185&amp;690.jpeg" alt="5fe99087h8c5e603e5185_690"></p>
 <p>最后点击“<strong>合成级配线</strong>”一切OK！</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注：泰勒曲线绘制可以看我写的《Excel绘制泰勒曲线级配图》</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiang JinChao'S Pit">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/" itemprop="url">利用VBA+加载宏制作‘奇进偶不进’修约函数</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2010-07-29T09:06:05+08:00">2010-07-29</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VBA/" itemprop="url" rel="index"><span itemprop="name">VBA</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF).</p>
-<p>函数如下：</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857d40861d&amp;690.jpeg" alt="5fe99087h8c857d40861d_690"><br>或<br><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857fa9d198&amp;690.jpeg" alt="5fe99087h8c857fa9d198_690"></p>
-<p><strong>但以上代码有几个缺点：</strong></p>
-<ol>
-<li><p>代码偏长修改容易出错；</p>
-</li>
-<li><p>无法像自带函数（sum、abs)简易通用；</p>
-</li>
-<li><p>因为Excel的BUG原因，理论上数字=0 有时会得到0.000000143056 所以会出现修约有误现象，本人以前就遇过代码没错，结果出错的现象。</p>
-</li>
-</ol>
-<p>今天花点时间写个，像<code>sum</code>,<code>abs</code>，<code>round</code>等函数一样调用简单方便而且各个报表都能通用，参数修改方便不易出错。如图：</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c8533442412&amp;690.jpeg" alt="5fe99087h8c8533442412_690"></p>
-<p>首先了解下加载宏.加载宏可以扩展EXCEL的功能，将代码写在加载宏中和写在普通的工作簿中相比，有如下优点：</p>
-<ul>
-<li>加载宏对所有打开的EXCEL文件都生效。普通工作簿的代码一般只在特定的工作簿中才生效。</li>
-<li>加载宏不受宏安全级的限制，也不会有宏运行的提示。即使将安全级设为“非常高”，加载宏就象EXCEL本身固有的功能一样工作。同样，它也不会被按住的Shift屏蔽。</li>
-<li>加载宏在运行时其工作簿窗口是隐藏的，因此普通用户并不会感觉到它的存在。</li>
-</ul>
-<p>加载宏函数似乎是制作加载宏中最简单的，通常它只需要在模块中写一段Function代码，它就会和EXCEL自身的函数一样使用，并且出现在“插入函数”对话框的列表中。因此今天我们就用Function来实现上述功能。</p>
-<h2 id="第一步：编写代码"><a href="#第一步：编写代码" class="headerlink" title="第一步：编写代码"></a>第一步：编写代码</h2><p>在VBA代码编辑窗口中，点击菜单命令“插入→模块”，得到“模块1”编辑窗口， 在其中输入如下自定义函数的代码，如图所示。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span> Mround(ByVal X As Double, Optional ByVal Factor As Double = <span class="number">1</span>) As Double</span><br><span class="line">Dim Temp As Double, FixTemp As Double</span><br><span class="line"></span><br><span class="line"><span class="string">'X 要修约的数</span></span><br><span class="line"><span class="string">'</span>Factor 保留小数位数(如:<span class="number">1000</span>，<span class="number">100</span>，<span class="number">10</span>，<span class="number">1</span>，<span class="number">0.1</span>,<span class="number">0.01</span>)</span><br><span class="line">If (Factor &gt; <span class="number">1</span> And Factor Mod <span class="number">10</span> &lt;&gt; <span class="number">0</span>) Or (Factor &lt; <span class="number">1</span> And <span class="number">1</span> / Factor Mod <span class="number">10</span> &lt;&gt; <span class="number">0</span>) Then Factor = Application.InputBox(Prompt:=<span class="string">"输入正确的参数（如:100，10，1，0.1,0.01）："</span>, <span class="attr">Type</span>:=<span class="number">1</span>)</span><br><span class="line">If Factor &lt;&gt; <span class="number">0</span> Then</span><br><span class="line">    Factor = <span class="number">1</span> / Factor</span><br><span class="line">    Temp = X * Factor</span><br><span class="line">    FixTemp = Fix(Temp + <span class="number">0.5</span> * Sgn(X))</span><br><span class="line">        If Temp - Int(Temp) = <span class="number">0.5</span> Then</span><br><span class="line">            If FixTemp / <span class="number">2</span> &lt;&gt; Int(FixTemp / <span class="number">2</span>) Then</span><br><span class="line">            FixTemp = FixTemp - Sgn(X)</span><br><span class="line">            End If</span><br><span class="line">        End If</span><br><span class="line">    Mround = FixTemp / Factor</span><br><span class="line">Else</span><br><span class="line">    Mround = X</span><br><span class="line">End If</span><br><span class="line">End <span class="built_in">Function</span></span><br></pre></td></tr></table></figure>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85b9ddf02b&amp;690.jpeg" alt="5fe99087h8c85b9ddf02b_690"></p>
-<p>完成后，选择菜单中[<code>文件</code>]→[<code>关闭并返回到Microsoft Excel</code>]命令，返回到Excel工作表窗口。</p>
-<p>现在，在E1单元格输入公式“=Mround(D1,0.1)”，回车后就可以看到结果了。拖动E1单元格的填充句柄向下复制公式，则可以轻松地得到所需要的结果，如图所示。</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85cf6f0de7&amp;690.jpeg" alt="5fe99087h8c85cf6f0de7_690"></p>
-<h2 id="第二步：Excel中加载宏"><a href="#第二步：Excel中加载宏" class="headerlink" title="第二步：Excel中加载宏"></a>第二步：Excel中加载宏</h2><p>函数“Mround”是我们自定义的函数，它可以象Excel本身自带的函数一样使用。但是在默认的情况下它只能在当前工作薄使用。如果我们需要经常在其它工作薄中使用该函数，则点击“Office按钮”，在弹出的菜单中点击“另存为→其它格式”命令，打开“另存为”对话框，在“保存类型”下拉列表中选择“Excel加载宏”，然后输入一个文件名，如“Mround”，如图所示。单击“确定”后文件就被保存为加载宏。</p>
-<p> <img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85e40d578b&amp;690.jpeg" alt="5fe99087h8c85e40d578b_690"></p>
-<p>再点击“Office按钮”，点击右下角的“Excel选项”按钮，打开“Excel选项”对话框，点击左侧的“加载项”项目，然后右侧“管理”下拉列表中选择“Excel加载项”，单击其右侧的“转到”按钮。打开“加载宏”对话框，勾选“可用加载宏”列表框中的“Mround”复选框，如下图所示，单击“确定”按钮后，就可以在本机上的所有工作薄中使用该自定义函数了。</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85f7eb9fe8&amp;690.jpeg" alt="5fe99087h8c85f7eb9fe8_690"></p>
-<p>如果您在这个对话框中看不到“Mround”复选项，可以点击“浏览”按钮查找。我们所保存的“Mround”加载宏会保存在“C:\Documents and Settings\用户名\Application Data\Microsoft\AddIns”文件夹中。如果我们想在其它的机器中使用此自定义函数，那么也需要将加载宏文件保存到其它机器中相应的文件夹中。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[Mround]函数说明：</span><br><span class="line"></span><br><span class="line">格式： Mround(ByVal X As Double, Optional ByVal Factor As Double = 1)，X：修约的数字；Factor：修约参数(如:1000，100，10，1，0.1,0.01)。如果Factor输入错误会影响修约结果，所以我加了一个提示框。</span><br></pre></td></tr></table></figure>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>从上面我们可以举一反三，可以编写击实试验得出的结果求最大干密度与最佳含水量,沥青针入度的结果判定等试验参数。如果想自己写的函数不被别人随意修改，可以进行封装成DLL文件。</p>
 
           
         
@@ -2256,10 +1153,7 @@
       
         
           
-            <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>矿料级配在公路工程中有着重要的应用，合理设置不同矿料间的比例对工程质量、成本等方面有着很大影响。因此，在配合比计划阶段经常需要先绘制出合成级配图，为分析配料比例提供详细的信息。我们知道现行技术规范规定级配图的绘制必须采用泰勒曲线。而泰勒曲线的特点是X轴（<code>孔径</code>）是不等距的，且需要按某一个规律变化间距。实际上我们需要在图表X轴上显示的是筛孔孔径（如：<code>31.5</code>、<code>26.5</code>、<code>19</code>和<code>16</code>等）。这为我们在绘制级配图时制造了困难。</p>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>矿料级配在公路工程中有着重要的应用，合理设置不同矿料间的比例对工程质量、成本等方面有着很大影响。因此，在配合比计划阶段经常需要先绘制出合成级配图，为分析配料比例提供详细的信息。我们知道现行技术规范规定级配图的绘制必须采用泰勒曲线。而泰勒曲线的特点是X轴（<code>孔径</code>）是不等距的，且需要按某一个规律变化间距。实际上我们需要在图表X轴上显示的是筛孔孔径（如：<code>31.5</code>、<code>26.5</code>、<code>19</code>和<code>16</code>等）。这为我们在绘制级配图时制造了困难。</p>
 <p>朋友和同事经常问我要怎样才能准确绘制级配图，今天我把主要绘制步骤和小技巧写出来，供大家参考。所谓条条大路通罗马，大家有更好方法可以一起分享！</p>
 <h2 id="一、绘制前准备工作"><a href="#一、绘制前准备工作" class="headerlink" title="一、绘制前准备工作"></a>一、绘制前准备工作</h2><p>准备好矿料筛分数据（<code>以下沥青矿料数据</code>），如图:</p>
 <p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c71314619ac&amp;690.jpeg" alt="`5fe99087h8c71314619ac_690`"></p>
@@ -2298,6 +1192,357 @@
 <blockquote>
 <p>最后,矿料合成级配图与Excel的规划求解功能（具体看“VBA调用‘规划求解’自动合成矿料级配”）结合使用，能大大提高你的工作效率。成为你工作中非常实用的工具。</p>
 </blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2010/07/29/2018-04-01-基于Excel VBA应用三次样条插值法开发CBR曲线/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiang JinChao'S Pit">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2010/07/29/2018-04-01-基于Excel VBA应用三次样条插值法开发CBR曲线/" itemprop="url">基于Excel VBA应用三次样条插值法开发CBR曲线</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2010-07-29T09:06:05+08:00">2010-07-29</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VBA/" itemprop="url" rel="index"><span itemprop="name">VBA</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/07/29/2018-04-01-基于Excel VBA应用三次样条插值法开发CBR曲线/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/07/29/2018-04-01-基于Excel VBA应用三次样条插值法开发CBR曲线/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>CBR又称加州承载比，是California Bearing Ration的缩写，由美国加利福尼亚州公路局首先提出来，用于评定路基土和路面材料的强度指标。在国外多采用CBR作为路面材料和路基土的设计参数。</p>
+<p>我国现行沥青和水泥混凝土路面设计规范，对路面、路基的设计参数系采用回弹模量指标，而在境外修建的公路工程多采用CBR指标。为了进一步积累经验用于实际，以促进国际学术交流，参考了国内外的情况，将CBR指标列入《公路路基设计规范》（JTG D30-2004）和《公路路基施工技术规范》（JTG F10-2006），作为路基填料选择的依据。</p>
+<p>CBR数据是根据试验检测得出系列结果,以贯入量L为纵坐标,以单位压力P为横坐标,在直角坐标系上标出这些点,根据点的位置,用模糊数学(线形回归)的理论,推出曲线的公式,根据公式,将这些点绘制出一个圆滑的关系曲线,必要时进行原点修正。然后就可以根据曲线得出贯入量L=2.5mm 和贯入量L=5.0mm 时候单位压力P的数值了。</p>
+<p>介绍了<strong>CBR制图</strong>基本情况，在试验检测中对L-P分析曲线图常遇到以下问题：</p>
+<h2 id="一、L-P分析曲线的制图及数据精确度？"><a href="#一、L-P分析曲线的制图及数据精确度？" class="headerlink" title="一、L-P分析曲线的制图及数据精确度？"></a>一、L-P分析曲线的制图及数据精确度？</h2><p>目前，试验检测工程师对L-P分析曲线的绘制都是应用Excel的制图功能实现的，但Excel制图中存在一个问题就是贯入量L=2.5mm和贯入量L=5.0mm所对应P的数据无法直接计算出来，还是要用内插计算（已影响精度）。如果个别数据不是很理想时，可能出现“弹簧”现象而且曲线也不够平滑。</p>
+<h2 id="二、什么是原点修正，如何在图中表示出来？"><a href="#二、什么是原点修正，如何在图中表示出来？" class="headerlink" title="二、什么是原点修正，如何在图中表示出来？"></a>二、什么是原点修正，如何在图中表示出来？</h2><p>下图曲线1是适合的，曲线2在接近原点的一段出现凹曲线,这是由于试验过程中由于试件表面不平贯入阻力没有成比例的增加造成的。对此需要进行修正。<strong>修正方法:在变曲率点引一切线,与纵坐标交与O′点,O′即为修正后的原点</strong>。</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c5acaf6d1ab&amp;690.jpeg" alt="5fe99087h8c5acaf6d1ab_690"></p>
+<p>什么是三次样条插值法,浏览《<strong>三次样条函数计算</strong>》或网络查找.</p>
+<p>以下是基于Excel VBA 应用三次样条插值法原理开发的L-P曲线图，能够自动计算曲线任意点对应的x,y值，同时自动计算出贯入量L=2.5mm 和贯入量L=5.0mm 时候单位压力P的精确数值。曲线稳定性与光滑性好。</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h746f9c204906&amp;690.jpeg" alt="5fe99087h746f9c204906_690"></p>
+<p>VBA代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br></pre></td><td class="code"><pre><span class="line">Public x() As Double</span><br><span class="line">Public y() As Double</span><br><span class="line">Public N As Integer</span><br><span class="line">Public yp1, ypn As Double</span><br><span class="line">Public y2() As Double</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line"><span class="string">'初始化数据</span></span><br><span class="line"><span class="string">Sub initdata()</span></span><br><span class="line"><span class="string">Dim i As Integer</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>判断点数</span><br><span class="line">N = [b1]</span><br><span class="line"></span><br><span class="line"><span class="string">'定义动态数组大小</span></span><br><span class="line"><span class="string">ReDim x(N)</span></span><br><span class="line"><span class="string">ReDim y(N)</span></span><br><span class="line"><span class="string">ReDim y2(N)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>赋值</span><br><span class="line">For i = <span class="number">1</span> To N</span><br><span class="line">    x(i) = Cells(i + <span class="number">2</span>, <span class="number">1</span>)</span><br><span class="line">    y(i) = Cells(i + <span class="number">2</span>, <span class="number">2</span>)</span><br><span class="line">Next i</span><br><span class="line"></span><br><span class="line"><span class="string">'头尾点的一介导数</span></span><br><span class="line"><span class="string">'</span>yp1 = (y(<span class="number">2</span>) - y(<span class="number">1</span>)) / (x(<span class="number">2</span>) - x(<span class="number">1</span>))</span><br><span class="line"><span class="string">'ypn = (y(N) - y(N - 1)) / (x(N) - x(N - 1))</span></span><br><span class="line"><span class="string">yp1 = 0</span></span><br><span class="line"><span class="string">ypn = 0</span></span><br><span class="line"><span class="string">End Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>求二阶导</span><br><span class="line">Sub spline()</span><br><span class="line">Dim u(<span class="number">500</span>) As Double</span><br><span class="line">Dim aaa, sig, bbb, ccc, p, qn, un As Double</span><br><span class="line">Dim i, k As Integer</span><br><span class="line"></span><br><span class="line">If yp1 &gt; <span class="number">9.9E+29</span> Then</span><br><span class="line">    y2(<span class="number">1</span>) = <span class="number">0</span></span><br><span class="line">    u(<span class="number">1</span>) = <span class="number">0</span></span><br><span class="line">Else</span><br><span class="line">    y2(<span class="number">1</span>) = <span class="number">-0.5</span></span><br><span class="line">    aaa = (y(<span class="number">2</span>) - y(<span class="number">1</span>)) / (x(<span class="number">2</span>) - x(<span class="number">1</span>))</span><br><span class="line">    u(<span class="number">1</span>) = (<span class="number">3</span> / (x(<span class="number">2</span>) - x(<span class="number">1</span>))) * (aaa - yp1)</span><br><span class="line">End If</span><br><span class="line"></span><br><span class="line">For i = <span class="number">2</span> To N - <span class="number">1</span></span><br><span class="line">    sig = (x(i) - x(i - <span class="number">1</span>)) / (x(i + <span class="number">1</span>) - x(i - <span class="number">1</span>))</span><br><span class="line">    p = sig * y2(i - <span class="number">1</span>) + <span class="number">2</span></span><br><span class="line">    y2(i) = (sig - <span class="number">1</span>) / p</span><br><span class="line">    aaa = (y(i + <span class="number">1</span>) - y(i)) / (x(i + <span class="number">1</span>) - x(i))</span><br><span class="line">    bbb = (y(i) - y(i - <span class="number">1</span>)) / (x(i) - x(i - <span class="number">1</span>))</span><br><span class="line">    ccc = x(i + <span class="number">1</span>) - x(i - <span class="number">1</span>)</span><br><span class="line">    u(i) = (<span class="number">6</span> * (aaa - bbb) / ccc - sig * u(i - <span class="number">1</span>)) / p</span><br><span class="line">Next i</span><br><span class="line"></span><br><span class="line">If yp1 &gt; <span class="number">9.9E+29</span> Then</span><br><span class="line">    qn = <span class="number">0</span></span><br><span class="line">    un = <span class="number">0</span></span><br><span class="line">Else</span><br><span class="line">    qn = <span class="number">0.5</span></span><br><span class="line">    aaa = ypn - (y(N) - y(N - <span class="number">1</span>)) / (x(N) - x(N - <span class="number">1</span>))</span><br><span class="line">    un = (<span class="number">3</span> / (x(N) - x(N - <span class="number">1</span>))) * aaa</span><br><span class="line">End If</span><br><span class="line"></span><br><span class="line">y2(N) = (un - qn * u(N - <span class="number">1</span>)) / (qn * y2(N - <span class="number">1</span>) + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">For k = N - <span class="number">1</span> To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line">    y2(k) = y2(k) * y2(k + <span class="number">1</span>) + u(k)</span><br><span class="line">Next k</span><br><span class="line"></span><br><span class="line">End Sub</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Sub splint(px As Double, py As Double)</span><br><span class="line">Dim k, klo, khi As Integer</span><br><span class="line">Dim h, a, b, aaa, bbb, q, qq As Double</span><br><span class="line">klo = <span class="number">1</span></span><br><span class="line">khi = N</span><br><span class="line"></span><br><span class="line"><span class="string">'二分法</span></span><br><span class="line"><span class="string">L1: If khi - klo &gt; 1 Then</span></span><br><span class="line"><span class="string">        k = Int((khi + klo) / 2)</span></span><br><span class="line"><span class="string">        If x(k) &gt; px Then</span></span><br><span class="line"><span class="string">            khi = k</span></span><br><span class="line"><span class="string">        Else</span></span><br><span class="line"><span class="string">            klo = k</span></span><br><span class="line"><span class="string">        End If</span></span><br><span class="line"><span class="string">        GoTo L1</span></span><br><span class="line"><span class="string">    End If</span></span><br><span class="line"><span class="string">h = x(khi) - x(klo)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If h = 0 Then</span></span><br><span class="line"><span class="string">    Exit Sub</span></span><br><span class="line"><span class="string">End If</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">a = (x(khi) - px) / h</span></span><br><span class="line"><span class="string">b = (px - x(klo)) / h</span></span><br><span class="line"><span class="string">aaa = a * y(klo) + b * y(khi)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If a = 0 Then</span></span><br><span class="line"><span class="string">    q = 0</span></span><br><span class="line"><span class="string">Else</span></span><br><span class="line"><span class="string">    If a &gt; 0 Then</span></span><br><span class="line"><span class="string">        q = Exp(3 * Log(a))</span></span><br><span class="line"><span class="string">    Else</span></span><br><span class="line"><span class="string">        q = -Exp(3 * Log(-a))</span></span><br><span class="line"><span class="string">    End If</span></span><br><span class="line"><span class="string">End If</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">If b = 0 Then</span></span><br><span class="line"><span class="string">    qq = 0</span></span><br><span class="line"><span class="string">Else</span></span><br><span class="line"><span class="string">    If b &gt; 0 Then</span></span><br><span class="line"><span class="string">        qq = Exp(3 * Log(b))</span></span><br><span class="line"><span class="string">    Else</span></span><br><span class="line"><span class="string">        qq = -Exp(3 * Log(-b))</span></span><br><span class="line"><span class="string">    End If</span></span><br><span class="line"><span class="string">End If</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">bbb = (q - a) * y2(klo) + (qq - b) * y2(khi)</span></span><br><span class="line"><span class="string">py = aaa + bbb * (h * h) / 6</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">End Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>求值</span><br><span class="line">Sub caldata()</span><br><span class="line">Dim i As Integer</span><br><span class="line">Dim j As Integer</span><br><span class="line">Dim z As Integer</span><br><span class="line">Dim MY_Y As Double</span><br><span class="line">Dim q As Double</span><br><span class="line">Dim PList() As Double</span><br><span class="line"></span><br><span class="line">Call initdata</span><br><span class="line">Call spline</span><br><span class="line"></span><br><span class="line">ReDim PList((N - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">1</span> To N - <span class="number">1</span></span><br><span class="line">    PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">1</span>) = x(i)</span><br><span class="line">    PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">2</span>) = y(i)</span><br><span class="line">   </span><br><span class="line">    If i = <span class="number">1</span> Then</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">3</span>) = <span class="number">0</span></span><br><span class="line">    Else</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">3</span>) = (PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">2</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span>, <span class="number">2</span>)) / (PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">1</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span>, <span class="number">1</span>))</span><br><span class="line">    End If</span><br><span class="line">   </span><br><span class="line">    PList((i - <span class="number">1</span>) * <span class="number">40</span> + <span class="number">1</span>, <span class="number">4</span>) = y2(i)</span><br><span class="line">   </span><br><span class="line">    For j = <span class="number">2</span> To <span class="number">40</span></span><br><span class="line">       </span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">1</span>) = PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">1</span>) + (x(i + <span class="number">1</span>) - x(i)) / <span class="number">40</span></span><br><span class="line">        Call splint(PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">1</span>), MY_Y)</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">2</span>) = MY_Y</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">3</span>) = (PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">2</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">2</span>)) / (PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">1</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">1</span>))</span><br><span class="line">        PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">4</span>) = (PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">3</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">3</span>)) / (PList((i - <span class="number">1</span>) * <span class="number">40</span> + j, <span class="number">1</span>) - PList((i - <span class="number">1</span>) * <span class="number">40</span> + j - <span class="number">1</span>, <span class="number">1</span>))</span><br><span class="line">       </span><br><span class="line">    Next j</span><br><span class="line">   </span><br><span class="line">Next i</span><br><span class="line"></span><br><span class="line"><span class="string">'最后一点</span></span><br><span class="line"><span class="string">PList((N - 1) * 40 + 1, 1) = x(N)</span></span><br><span class="line"><span class="string">PList((N - 1) * 40 + 1, 2) = y(N)</span></span><br><span class="line"><span class="string">PList((N - 1) * 40 + 1, 3) = 0</span></span><br><span class="line"><span class="string">PList((N - 1) * 40 + 1, 4) = y2(N)</span></span><br><span class="line"><span class="string">'</span>计算<span class="number">2.5</span>mm的P值</span><br><span class="line">Call splint(<span class="number">2.5</span>, MY_Y)</span><br><span class="line">Cells(<span class="number">1</span>, <span class="number">8</span>) = MY_Y</span><br><span class="line"><span class="string">'计算5.0mm的P值</span></span><br><span class="line"><span class="string">Call splint(5, MY_Y)</span></span><br><span class="line"><span class="string">Cells(1, 10) = MY_Y</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Range("K:L").Select</span></span><br><span class="line"><span class="string">Selection.ClearContents</span></span><br><span class="line"><span class="string">Range("a3").Select</span></span><br><span class="line"><span class="string">For i = 1 To (N - 1) * 40 + 1</span></span><br><span class="line"><span class="string">    Cells(i + 2, 11) = PList(i, 1)</span></span><br><span class="line"><span class="string">    Cells(i + 2, 12) = PList(i, 2)</span></span><br><span class="line"><span class="string">Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Range("e4:h4").Select</span></span><br><span class="line"><span class="string">Selection.ClearContents</span></span><br><span class="line"><span class="string">Range("a3").Select</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Dim la, lb As Integer</span></span><br><span class="line"><span class="string">For i = 2 To (N - 1) * 40 - 1</span></span><br><span class="line"><span class="string"> '</span>查找变曲率点</span><br><span class="line">    If PList(i, <span class="number">4</span>) = <span class="number">0</span> Then</span><br><span class="line">  <span class="string">'x</span></span><br><span class="line"><span class="string">        Cells(4, 5) = PList(i, 1)</span></span><br><span class="line"><span class="string">  '</span>y</span><br><span class="line">        Cells(<span class="number">4</span>, <span class="number">6</span>) = PList(i, <span class="number">2</span>)</span><br><span class="line">  <span class="string">'y'</span></span><br><span class="line">        Cells(<span class="number">4</span>, <span class="number">7</span>) = PList(i, <span class="number">3</span>)</span><br><span class="line">  <span class="string">'y'</span><span class="string">'</span></span><br><span class="line"><span class="string">        Cells(4, 8) = PList(i, 4)</span></span><br><span class="line"><span class="string">  '</span>变曲率点致O<span class="string">'直线参数，y=ax+b b=lb,a=la</span></span><br><span class="line"><span class="string">        lb = PList(i, 2) - PList(i, 1) * PList(i, 3)</span></span><br><span class="line"><span class="string">        la = lb / PList(i, 3)</span></span><br><span class="line"><span class="string">        Exit For</span></span><br><span class="line"><span class="string">    Else</span></span><br><span class="line"><span class="string">        If PList(i, 4) * PList(i + 1, 4) &lt; 0 Then</span></span><br><span class="line"><span class="string">            If Abs(PList(i, 4)) &lt; Abs(PList(i + 1, 4)) Then</span></span><br><span class="line"><span class="string">                Cells(4, 5) = PList(i, 1)</span></span><br><span class="line"><span class="string">                Cells(4, 6) = PList(i, 2)</span></span><br><span class="line"><span class="string">                Cells(4, 7) = PList(i, 3)</span></span><br><span class="line"><span class="string">                Cells(4, 8) = PList(i, 4)</span></span><br><span class="line"><span class="string">                lb = PList(i, 2) - PList(i, 1) * PList(i, 3)</span></span><br><span class="line"><span class="string">                la = lb / PList(i, 3)</span></span><br><span class="line"><span class="string">                Exit For</span></span><br><span class="line"><span class="string">            Else</span></span><br><span class="line"><span class="string">                Cells(4, 5) = PList(i + 1, 1)</span></span><br><span class="line"><span class="string">                Cells(4, 6) = PList(i + 1, 2)</span></span><br><span class="line"><span class="string">                Cells(4, 7) = PList(i + 1, 3)</span></span><br><span class="line"><span class="string">                Cells(4, 8) = PList(i + 1, 4)</span></span><br><span class="line"><span class="string">                lb = PList(i + 1, 2) - PList(i + 1, 1) * PList(i + 1, 3)</span></span><br><span class="line"><span class="string">                la = lb / PList(i + 1, 3)</span></span><br><span class="line"><span class="string">                Exit For</span></span><br><span class="line"><span class="string">            End If</span></span><br><span class="line"><span class="string">        End If</span></span><br><span class="line"><span class="string">    End If</span></span><br><span class="line"><span class="string">Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">'</span>修正后<span class="number">2.5</span>mm,<span class="number">5.0</span>mm的P值</span><br><span class="line">Call splint(<span class="number">2.5</span> - la, MY_Y)</span><br><span class="line">Cells(<span class="number">1</span>, <span class="number">8</span>) = MY_Y</span><br><span class="line">Call splint(<span class="number">5</span> - la, MY_Y)</span><br><span class="line">Cells(<span class="number">1</span>, <span class="number">10</span>) = MY_Y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">'图表美化，不用了解</span></span><br><span class="line"><span class="string">Call Macro1</span></span><br><span class="line"><span class="string">End Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Sub Macro1()</span></span><br><span class="line"><span class="string">   Dim a, b, c, d, e</span></span><br><span class="line"><span class="string">   a = Range("f1")</span></span><br><span class="line"><span class="string">   b = Range("d1")</span></span><br><span class="line"><span class="string">   c = Range("e18")</span></span><br><span class="line"><span class="string">   d = Range("f18")</span></span><br><span class="line"><span class="string">      ActiveSheet.ChartObjects("图表 7").Activate</span></span><br><span class="line"><span class="string">    ActiveChart.Axes(xlValue).Select</span></span><br><span class="line"><span class="string">    With ActiveChart.Axes(xlValue)</span></span><br><span class="line"><span class="string">        If a - (a + b) / 10 &lt;= 0 Then .MinimumScale = 0 Else .MinimumScale = a - (a + b) / 10</span></span><br><span class="line"><span class="string">        .MaximumScale = Int(b + (a + b) / 10)</span></span><br><span class="line"><span class="string">        .MinorUnit = ((a + b) / 20)</span></span><br><span class="line"><span class="string">        .MajorUnit = ((a + b) / 10)</span></span><br><span class="line"><span class="string">        .Crosses = xlAutomatic</span></span><br><span class="line"><span class="string">        .ReversePlotOrder = True</span></span><br><span class="line"><span class="string">        .ScaleType = xlLinear</span></span><br><span class="line"><span class="string">        .DisplayUnit = xlNone</span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string">    ActiveChart.Axes(xlCategory).MajorGridlines.Select</span></span><br><span class="line"><span class="string">    With ActiveChart.Axes(xlCategory)</span></span><br><span class="line"><span class="string">        If c - (c + d) / 10 &lt;= 0 Then .MinimumScale = 0 Else .MinimumScale = c - (c + d) / 10 &lt; 0</span></span><br><span class="line"><span class="string">        .MaximumScale = Int(d + (c + d) / 10)</span></span><br><span class="line"><span class="string">        .MinorUnit = (c + d) / 20</span></span><br><span class="line"><span class="string">        .MajorUnit = (c + d) / 10</span></span><br><span class="line"><span class="string">        .Crosses = xlAutomatic</span></span><br><span class="line"><span class="string">        .ReversePlotOrder = False</span></span><br><span class="line"><span class="string">        .ScaleType = xlLinear</span></span><br><span class="line"><span class="string">        .DisplayUnit = xlNone</span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string">End Sub</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">```</span></span><br></pre></td></tr></table></figure>
+<p>作者：江锦朝，如果需要文件留下Email,希望与大家交个朋友。<br><code>`</code></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiang JinChao'S Pit">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/" itemprop="url">利用VBA+加载宏制作‘奇进偶不进’修约函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2010-07-29T09:06:05+08:00">2010-07-29</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VBA/" itemprop="url" rel="index"><span itemprop="name">VBA</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2010/07/29/2018-04-01-利用VBA+加载宏制作‘奇进偶不进’修约函数/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF).</p>
+<p>函数如下：</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857d40861d&amp;690.jpeg" alt="5fe99087h8c857d40861d_690"><br>或<br><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857fa9d198&amp;690.jpeg" alt="5fe99087h8c857fa9d198_690"></p>
+<p><strong>但以上代码有几个缺点：</strong></p>
+<ol>
+<li><p>代码偏长修改容易出错；</p>
+</li>
+<li><p>无法像自带函数（sum、abs)简易通用；</p>
+</li>
+<li><p>因为Excel的BUG原因，理论上数字=0 有时会得到0.000000143056 所以会出现修约有误现象，本人以前就遇过代码没错，结果出错的现象。</p>
+</li>
+</ol>
+<p>今天花点时间写个，像<code>sum</code>,<code>abs</code>，<code>round</code>等函数一样调用简单方便而且各个报表都能通用，参数修改方便不易出错。如图：</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c8533442412&amp;690.jpeg" alt="5fe99087h8c8533442412_690"></p>
+<p>首先了解下加载宏.加载宏可以扩展EXCEL的功能，将代码写在加载宏中和写在普通的工作簿中相比，有如下优点：</p>
+<ul>
+<li>加载宏对所有打开的EXCEL文件都生效。普通工作簿的代码一般只在特定的工作簿中才生效。</li>
+<li>加载宏不受宏安全级的限制，也不会有宏运行的提示。即使将安全级设为“非常高”，加载宏就象EXCEL本身固有的功能一样工作。同样，它也不会被按住的Shift屏蔽。</li>
+<li>加载宏在运行时其工作簿窗口是隐藏的，因此普通用户并不会感觉到它的存在。</li>
+</ul>
+<p>加载宏函数似乎是制作加载宏中最简单的，通常它只需要在模块中写一段Function代码，它就会和EXCEL自身的函数一样使用，并且出现在“插入函数”对话框的列表中。因此今天我们就用Function来实现上述功能。</p>
+<h2 id="第一步：编写代码"><a href="#第一步：编写代码" class="headerlink" title="第一步：编写代码"></a>第一步：编写代码</h2><p>在VBA代码编辑窗口中，点击菜单命令“插入→模块”，得到“模块1”编辑窗口， 在其中输入如下自定义函数的代码，如图所示。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span> Mround(ByVal X As Double, Optional ByVal Factor As Double = <span class="number">1</span>) As Double</span><br><span class="line">Dim Temp As Double, FixTemp As Double</span><br><span class="line"></span><br><span class="line"><span class="string">'X 要修约的数</span></span><br><span class="line"><span class="string">'</span>Factor 保留小数位数(如:<span class="number">1000</span>，<span class="number">100</span>，<span class="number">10</span>，<span class="number">1</span>，<span class="number">0.1</span>,<span class="number">0.01</span>)</span><br><span class="line">If (Factor &gt; <span class="number">1</span> And Factor Mod <span class="number">10</span> &lt;&gt; <span class="number">0</span>) Or (Factor &lt; <span class="number">1</span> And <span class="number">1</span> / Factor Mod <span class="number">10</span> &lt;&gt; <span class="number">0</span>) Then Factor = Application.InputBox(Prompt:=<span class="string">"输入正确的参数（如:100，10，1，0.1,0.01）："</span>, <span class="attr">Type</span>:=<span class="number">1</span>)</span><br><span class="line">If Factor &lt;&gt; <span class="number">0</span> Then</span><br><span class="line">    Factor = <span class="number">1</span> / Factor</span><br><span class="line">    Temp = X * Factor</span><br><span class="line">    FixTemp = Fix(Temp + <span class="number">0.5</span> * Sgn(X))</span><br><span class="line">        If Temp - Int(Temp) = <span class="number">0.5</span> Then</span><br><span class="line">            If FixTemp / <span class="number">2</span> &lt;&gt; Int(FixTemp / <span class="number">2</span>) Then</span><br><span class="line">            FixTemp = FixTemp - Sgn(X)</span><br><span class="line">            End If</span><br><span class="line">        End If</span><br><span class="line">    Mround = FixTemp / Factor</span><br><span class="line">Else</span><br><span class="line">    Mround = X</span><br><span class="line">End If</span><br><span class="line">End <span class="built_in">Function</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85b9ddf02b&amp;690.jpeg" alt="5fe99087h8c85b9ddf02b_690"></p>
+<p>完成后，选择菜单中[<code>文件</code>]→[<code>关闭并返回到Microsoft Excel</code>]命令，返回到Excel工作表窗口。</p>
+<p>现在，在E1单元格输入公式“=Mround(D1,0.1)”，回车后就可以看到结果了。拖动E1单元格的填充句柄向下复制公式，则可以轻松地得到所需要的结果，如图所示。</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85cf6f0de7&amp;690.jpeg" alt="5fe99087h8c85cf6f0de7_690"></p>
+<h2 id="第二步：Excel中加载宏"><a href="#第二步：Excel中加载宏" class="headerlink" title="第二步：Excel中加载宏"></a>第二步：Excel中加载宏</h2><p>函数“Mround”是我们自定义的函数，它可以象Excel本身自带的函数一样使用。但是在默认的情况下它只能在当前工作薄使用。如果我们需要经常在其它工作薄中使用该函数，则点击“Office按钮”，在弹出的菜单中点击“另存为→其它格式”命令，打开“另存为”对话框，在“保存类型”下拉列表中选择“Excel加载宏”，然后输入一个文件名，如“Mround”，如图所示。单击“确定”后文件就被保存为加载宏。</p>
+<p> <img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85e40d578b&amp;690.jpeg" alt="5fe99087h8c85e40d578b_690"></p>
+<p>再点击“Office按钮”，点击右下角的“Excel选项”按钮，打开“Excel选项”对话框，点击左侧的“加载项”项目，然后右侧“管理”下拉列表中选择“Excel加载项”，单击其右侧的“转到”按钮。打开“加载宏”对话框，勾选“可用加载宏”列表框中的“Mround”复选框，如下图所示，单击“确定”按钮后，就可以在本机上的所有工作薄中使用该自定义函数了。</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85f7eb9fe8&amp;690.jpeg" alt="5fe99087h8c85f7eb9fe8_690"></p>
+<p>如果您在这个对话框中看不到“Mround”复选项，可以点击“浏览”按钮查找。我们所保存的“Mround”加载宏会保存在“C:\Documents and Settings\用户名\Application Data\Microsoft\AddIns”文件夹中。如果我们想在其它的机器中使用此自定义函数，那么也需要将加载宏文件保存到其它机器中相应的文件夹中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[Mround]函数说明：</span><br><span class="line"></span><br><span class="line">格式： Mround(ByVal X As Double, Optional ByVal Factor As Double = 1)，X：修约的数字；Factor：修约参数(如:1000，100，10，1，0.1,0.01)。如果Factor输入错误会影响修约结果，所以我加了一个提示框。</span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>从上面我们可以举一反三，可以编写击实试验得出的结果求最大干密度与最佳含水量,沥青针入度的结果判定等试验参数。如果想自己写的函数不被别人随意修改，可以进行封装成DLL文件。</p>
 
           
         
@@ -2387,7 +1632,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">37</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2539,7 +1784,157 @@
                     
                       
                     
-                    <span class="site-state-item-count">47</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">87</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -2560,22 +1955,22 @@
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i>500px</a>
+                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
                   
                 </span>
               
@@ -2789,6 +2184,54 @@
   
 
   
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
 
   
   

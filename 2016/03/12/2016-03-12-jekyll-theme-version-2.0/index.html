@@ -93,25 +93,36 @@
   };
 </script>
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
 
   
 
 
 
 
-  <meta name="description" content="content{:toc}  本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对Jekyll也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时Jekyll如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。 主要想做这些事情有：添加归档，添加标">
-<meta name="keywords" content="jekyll 端口 markdown Foxit RubyGems HTML CSS">
+  <meta name="description" content="本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对Jekyll也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时Jekyll如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。 主要想做这些事情有：添加归档，添加标签，添加分类页面，主页显示文章摘">
+<meta name="keywords" content="jekyll,HTML,CSS,端口,markdown,Foxit,RubyGems">
 <meta property="og:type" content="article">
 <meta property="og:title" content="对这个 jekyll 博客主题的改版和重构">
 <meta property="og:url" content="http://yoursite.com/2016/03/12/2016-03-12-jekyll-theme-version-2.0/index.html">
 <meta property="og:site_name" content="Jiang JinChao&#39;S Pit">
-<meta property="og:description" content="content{:toc}  本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对Jekyll也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时Jekyll如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。 主要想做这些事情有：添加归档，添加标">
+<meta property="og:description" content="本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对Jekyll也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时Jekyll如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。 主要想做这些事情有：添加归档，添加标签，添加分类页面，主页显示文章摘">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://ww4.sinaimg.cn/large/7011d6cfjw1f1ty28wwj4j20g00aiju7.jpg">
-<meta property="og:updated_time" content="2018-03-30T00:50:23.540Z">
+<meta property="og:updated_time" content="2018-04-03T00:12:10.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="对这个 jekyll 博客主题的改版和重构">
-<meta name="twitter:description" content="content{:toc}  本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对Jekyll也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时Jekyll如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。 主要想做这些事情有：添加归档，添加标">
+<meta name="twitter:description" content="本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对Jekyll也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时Jekyll如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。 主要想做这些事情有：添加归档，添加标签，添加分类页面，主页显示文章摘">
 <meta name="twitter:image" content="http://ww4.sinaimg.cn/large/7011d6cfjw1f1ty28wwj4j20g00aiju7.jpg">
 
 
@@ -227,9 +238,9 @@
         
         
           
-  <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  <li class="menu-item menu-item-工具">
+    <a href="/guestbook" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />工具</a>
 </li>
 
       
@@ -238,8 +249,7 @@
           
   <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">47</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
 </li>
 
       
@@ -248,8 +258,7 @@
           
   <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">16</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
 </li>
 
       
@@ -258,8 +267,16 @@
           
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">40</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
 </li>
 
       
@@ -405,10 +422,7 @@
       
 
       
-        <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<p>本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对<code>Jekyll</code>也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时<code>Jekyll</code>如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。</p>
+        <p>本文主要说明对这个博客主题的改版和代码重构的过程。这个简洁高雅的博客主题受到了很多朋友的喜欢。在写第一版界面时，我对前端并不是很熟悉，对<code>Jekyll</code>也不熟悉。现在距离当时也一年了，对自己当时写的代码也不太满意了，同时<code>Jekyll</code>如今也已经升级了，目前最新版为3.1.2。因此我在临近毕业尚未入职前做一下博客主题的代码重构和改版吧。</p>
 <p>主要想做这些事情有：添加归档，添加标签，添加分类页面，主页显示文章摘要，代码去除 jQuery 和 BootStrap，优化移动端显示，将所有变量写入配置文件<code>_config.yml</code>中等。再优化一些细节吧。希望更多人会喜欢。</p>
 <h2 id="改版重构说明"><a href="#改版重构说明" class="headerlink" title="改版重构说明"></a>改版重构说明</h2><ul>
 <li><p><strong>使用 GitHub 风格的代码块 Markdown 写法 (Fenced code blocks)。</strong></p>
@@ -514,7 +528,19 @@
       
         <div class="post-tags">
           
-            <a href="/tags/jekyll-端口-markdown-Foxit-RubyGems-HTML-CSS/" rel="tag"><i class="fa fa-tag"></i>jekyll 端口 markdown Foxit RubyGems HTML CSS</a>
+            <a href="/tags/jekyll/" rel="tag"><i class="fa fa-tag"></i>jekyll</a>
+          
+            <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i>HTML</a>
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i>CSS</a>
+          
+            <a href="/tags/端口/" rel="tag"><i class="fa fa-tag"></i>端口</a>
+          
+            <a href="/tags/markdown/" rel="tag"><i class="fa fa-tag"></i>markdown</a>
+          
+            <a href="/tags/Foxit/" rel="tag"><i class="fa fa-tag"></i>Foxit</a>
+          
+            <a href="/tags/RubyGems/" rel="tag"><i class="fa fa-tag"></i>RubyGems</a>
           
         </div>
       
@@ -627,7 +653,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">37</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -779,7 +805,157 @@
                     
                       
                     
-                    <span class="site-state-item-count">47</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">87</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -800,22 +976,22 @@
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i>500px</a>
+                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
                   
                 </span>
               
@@ -1066,6 +1242,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
   
   

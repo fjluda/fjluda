@@ -93,24 +93,35 @@
   };
 </script>
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
 
   
 
 
 
 
-  <meta name="description" content="content{:toc}  由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。 问题在外刊君读者群中看到有人提出这样的一个需求：  把字符串切成连续相同字符的正则怎么写？比如abbcccdddd切成a,bb,ccc,dddd  之前我对正则表达式也是略有研究，想尝试一下。其实我对正则表达式的学习基本完全来源于犀牛书的第10章，真正看懂这一章，我觉得操作正则表达式应该不在话下">
-<meta name="keywords" content="正则 分组 Regular">
+  <meta name="description" content="由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。 问题在外刊君读者群中看到有人提出这样的一个需求：  把字符串切成连续相同字符的正则怎么写？比如abbcccdddd切成a,bb,ccc,dddd  之前我对正则表达式也是略有研究，想尝试一下。其实我对正则表达式的学习基本完全来源于犀牛书的第10章，真正看懂这一章，我觉得操作正则表达式应该不在话下。 我的答案先给出我的答案吧：">
+<meta name="keywords" content="正则,Regular,分组">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈正则表达式中的分组和引用">
 <meta property="og:url" content="http://yoursite.com/2016/05/06/2016-05-06-regular-expression-group/index.html">
 <meta property="og:site_name" content="Jiang JinChao&#39;S Pit">
-<meta property="og:description" content="content{:toc}  由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。 问题在外刊君读者群中看到有人提出这样的一个需求：  把字符串切成连续相同字符的正则怎么写？比如abbcccdddd切成a,bb,ccc,dddd  之前我对正则表达式也是略有研究，想尝试一下。其实我对正则表达式的学习基本完全来源于犀牛书的第10章，真正看懂这一章，我觉得操作正则表达式应该不在话下">
+<meta property="og:description" content="由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。 问题在外刊君读者群中看到有人提出这样的一个需求：  把字符串切成连续相同字符的正则怎么写？比如abbcccdddd切成a,bb,ccc,dddd  之前我对正则表达式也是略有研究，想尝试一下。其实我对正则表达式的学习基本完全来源于犀牛书的第10章，真正看懂这一章，我觉得操作正则表达式应该不在话下。 我的答案先给出我的答案吧：">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-30T00:50:23.541Z">
+<meta property="og:updated_time" content="2018-04-03T00:12:21.787Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈正则表达式中的分组和引用">
-<meta name="twitter:description" content="content{:toc}  由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。 问题在外刊君读者群中看到有人提出这样的一个需求：  把字符串切成连续相同字符的正则怎么写？比如abbcccdddd切成a,bb,ccc,dddd  之前我对正则表达式也是略有研究，想尝试一下。其实我对正则表达式的学习基本完全来源于犀牛书的第10章，真正看懂这一章，我觉得操作正则表达式应该不在话下">
+<meta name="twitter:description" content="由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。 问题在外刊君读者群中看到有人提出这样的一个需求：  把字符串切成连续相同字符的正则怎么写？比如abbcccdddd切成a,bb,ccc,dddd  之前我对正则表达式也是略有研究，想尝试一下。其实我对正则表达式的学习基本完全来源于犀牛书的第10章，真正看懂这一章，我觉得操作正则表达式应该不在话下。 我的答案先给出我的答案吧：">
 
 
 
@@ -225,9 +236,9 @@
         
         
           
-  <li class="menu-item menu-item-about">
-    <a href="/about/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  <li class="menu-item menu-item-工具">
+    <a href="/guestbook" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />工具</a>
 </li>
 
       
@@ -236,8 +247,7 @@
           
   <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">47</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
 </li>
 
       
@@ -246,8 +256,7 @@
           
   <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">16</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
 </li>
 
       
@@ -256,8 +265,16 @@
           
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">40</span>
-      </a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
 </li>
 
       
@@ -403,10 +420,7 @@
       
 
       
-        <ul>
-<li>content<br>{:toc}</li>
-</ul>
-<p>由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。</p>
+        <p>由正则表达式如何匹配相同字符出发，讲讲正则表达式中的选择、分组和引用。</p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>在外刊君读者群中看到有人提出这样的一个需求：</p>
 <blockquote>
 <p>把字符串切成连续相同字符的正则怎么写？比如<code>abbcccdddd</code>切成<code>a,bb,ccc,dddd</code></p>
@@ -480,7 +494,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/正则-分组-Regular/" rel="tag"><i class="fa fa-tag"></i>正则 分组 Regular</a>
+            <a href="/tags/正则/" rel="tag"><i class="fa fa-tag"></i>正则</a>
+          
+            <a href="/tags/Regular/" rel="tag"><i class="fa fa-tag"></i>Regular</a>
+          
+            <a href="/tags/分组/" rel="tag"><i class="fa fa-tag"></i>分组</a>
           
         </div>
       
@@ -503,7 +521,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/11/09/hello-world/" rel="prev" title="Hello World">
+              <a href="/2016/11/09/2018-4-2-hello-world/" rel="prev" title="Hello World">
                 Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -593,7 +611,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">37</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -745,7 +763,157 @@
                     
                       
                     
-                    <span class="site-state-item-count">47</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">87</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -766,22 +934,22 @@
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i>500px</a>
+                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i></a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i></a>
                   
                 </span>
               
@@ -1032,6 +1200,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
   
   
