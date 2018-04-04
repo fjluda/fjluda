@@ -360,7 +360,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/">
+    <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2015/06/22/2018-04-01-随机不重复数值/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jiang JinChao">
@@ -379,7 +379,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/" itemprop="url">EXCEL VBA连接ACCESS数据库</a></h1>
+                <a class="post-title-link" href="/2015/06/22/2018-04-01-随机不重复数值/" itemprop="url">随机不重复数值</a></h1>
         
 
         <div class="post-meta">
@@ -427,9 +427,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/#comments" itemprop="discussionUrl">
+                <a href="/2015/06/22/2018-04-01-随机不重复数值/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2015/06/22/2018-04-01-随机不重复数值/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -458,14 +458,12 @@
 
       
         
-          <h2 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">Sub a()</span><br><span class="line"></span><br><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">On Error GoTo hhh</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myTable = "SW01"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = "select * from " &amp; myTable</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">for i=1 to 4 '</span>可添加<span class="number">4</span>次</span><br><span class="line"></span><br><span class="line">rs.Fields(<span class="string">"a"</span>) = Cells(<span class="number">5</span> + i, <span class="number">15</span>)</span><br><span class="line"></span><br><span class="line">next i</span><br><span class="line"></span><br><span class="line">rs.Update</span><br><span class="line"></span><br><span class="line">MsgBox <span class="string">"添加成功！"</span>, vbOKOnly + vbInformation, <span class="string">"创建数据"</span></span><br><span class="line"></span><br><span class="line">rs.Close</span><br><span class="line"></span><br><span class="line">cnn.Close</span><br><span class="line"></span><br><span class="line"><span class="built_in">Set</span> rs = Nothing</span><br><span class="line"></span><br><span class="line"><span class="built_in">Set</span> cnn = Nothing</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">hhh:</span><br><span class="line"></span><br><span class="line">MsgBox <span class="string">"添加数据时出现错误!"</span> &amp; vbCrLf &amp; <span class="string">"原因:该编号重复或数据类型不对，请查找原因."</span>, vbCritical, <span class="string">"提示！！！！"</span></span><br><span class="line"></span><br><span class="line">end sub</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"> <a id="more"></a>
+<p>代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line">  Const bb As Integer = <span class="number">1000</span> - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  Dim RndNumber, TempArray(bb), kk(bb), i As Integer</span><br><span class="line"></span><br><span class="line">  Randomize (Timer)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">0</span> To bb</span><br><span class="line"></span><br><span class="line">      TempArray(i) = i</span><br><span class="line"></span><br><span class="line">  Next i</span><br><span class="line"></span><br><span class="line">  j = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  For i = bb To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line"></span><br><span class="line">     RndNumber = Int(i * Rnd)</span><br><span class="line"></span><br><span class="line">     kk(i) = TempArray(RndNumber) + <span class="number">1</span> <span class="string">' 随机不重复数值</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     TempArray(RndNumber) = TempArray(i)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     j = j + 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
+
+          
         
       
     </div>
@@ -2386,28 +2384,12 @@ console.log(func()); //30
 
 
 
-<div class="theme-info">
-  <div class="powered-by"></div>
-  <span class="post-count">全站共57.9k字</span>
-</div>
-
-
         
 <div class="busuanzi-count">
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-    <span class="site-uv" title="总访客量">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
 
-  
-    <span class="site-pv" title="总访问量">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
   
 </div>
 
