@@ -241,6 +241,40 @@
   </entry>
   
   <entry>
+    <title>JavaScript 语言精粹笔记2-方法、毒瘤等</title>
+    <link href="https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note2/"/>
+    <id>https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note2/</id>
+    <published>2018-03-30T00:50:23.543Z</published>
+    <updated>2018-04-04T21:51:07.366Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录一下阅读蝴蝶书的笔记，本篇为书中最后一部分：方法、代码风格、优美的特性、毒瘤、糟粕等。&lt;/p&gt;
+&lt;h2 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;p&gt;这一章主要介绍了一些方法集。这里写几个我不太熟悉的方法和要点吧。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;array.join()&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于IE6/7，使用&lt;code&gt;array.join()&lt;/code&gt;连接大量字符串的效率确实优于使用&lt;code&gt;+&lt;/code&gt;元素运算符。但是目前主流的浏览器，包括IE8以后的版本，都对&lt;code&gt;+&lt;/code&gt;元素运算符连接字符串做了特别优化，性能已经显著高于&lt;code&gt;array.join()&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;number.toExponential(fractionDigits)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;  把这个&lt;code&gt;number&lt;/code&gt;转换成一个指数形式的字符串。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;number.toFixed(fractionDigits)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;  将这个&lt;code&gt;number&lt;/code&gt;转换成一个十进制形式的字符串。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
+    
+      <category term="函数" scheme="https://fjluda.github.io/tags/%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何使用 babel</title>
     <link href="https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/"/>
     <id>https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/</id>
@@ -273,78 +307,11 @@
   </entry>
   
   <entry>
-    <title>JavaScript 语言精粹笔记3-方法、毒瘤等</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note3/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note3/</id>
-    <published>2018-03-30T00:50:23.543Z</published>
-    <updated>2018-04-04T06:40:44.665Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;记录一下阅读蝴蝶书的笔记，本篇为书中最后一部分：方法、代码风格、优美的特性、毒瘤、糟粕等。&lt;/p&gt;
-&lt;h2 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;p&gt;这一章主要介绍了一些方法集。这里写几个我不太熟悉的方法和要点吧。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;array.join()&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;对于IE6/7，使用&lt;code&gt;array.join()&lt;/code&gt;连接大量字符串的效率确实优于使用&lt;code&gt;+&lt;/code&gt;元素运算符。但是目前主流的浏览器，包括IE8以后的版本，都对&lt;code&gt;+&lt;/code&gt;元素运算符连接字符串做了特别优化，性能已经显著高于&lt;code&gt;array.join()&lt;/code&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;number.toExponential(fractionDigits)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;  把这个&lt;code&gt;number&lt;/code&gt;转换成一个指数形式的字符串。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;number.toFixed(fractionDigits)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;  将这个&lt;code&gt;number&lt;/code&gt;转换成一个十进制形式的字符串。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
-    
-      <category term="函数" scheme="https://fjluda.github.io/tags/%E5%87%BD%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript 语言精粹笔记2-继承、数组、正则表达式</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-06-08-JavaScript-good-parts-note2/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-06-08-JavaScript-good-parts-note2/</id>
-    <published>2018-03-30T00:50:23.542Z</published>
-    <updated>2018-04-04T06:40:37.288Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。&lt;/p&gt;
-&lt;h2 id=&quot;继承&quot;&gt;&lt;a href=&quot;#继承&quot; class=&quot;headerlink&quot; title=&quot;继承&quot;&gt;&lt;/a&gt;继承&lt;/h2&gt;&lt;p&gt;继承的两大好处：代码重用，引入一套类型系统的规范。&lt;/p&gt;
-&lt;h3 id=&quot;伪类&quot;&gt;&lt;a href=&quot;#伪类&quot; class=&quot;headerlink&quot; title=&quot;伪类&quot;&gt;&lt;/a&gt;伪类&lt;/h3&gt;&lt;p&gt;JavaScript 通过构造器函数产生对象。&lt;/p&gt;
-&lt;p&gt;构造器调用模式，即用&lt;code&gt;new&lt;/code&gt;前缀去调用一个函数。&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; Mammal = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;name&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name = name&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Mammal.prototype.getName = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.name&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Mammal.prototype.says = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.saying || &lt;span class=&quot;string&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; myMammal = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Mammal(&lt;span class=&quot;string&quot;&gt;&#39;Herb&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(myMammal.getName()) &lt;span class=&quot;comment&quot;&gt;//Herb&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;书中不推荐这样的写法。有很多风险。若忘记添加&lt;code&gt;new&lt;/code&gt;前缀，&lt;code&gt;this&lt;/code&gt;无法绑定到新的对象上。而是绑定到了全局对象上，破坏了全局变量环境。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="Array" scheme="https://fjluda.github.io/tags/Array/"/>
-    
-      <category term="正则" scheme="https://fjluda.github.io/tags/%E6%AD%A3%E5%88%99/"/>
-    
-      <category term="对象" scheme="https://fjluda.github.io/tags/%E5%AF%B9%E8%B1%A1/"/>
-    
-      <category term="继承" scheme="https://fjluda.github.io/tags/%E7%BB%A7%E6%89%BF/"/>
-    
-      <category term="原型" scheme="https://fjluda.github.io/tags/%E5%8E%9F%E5%9E%8B/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JavaScript 语言精粹笔记1-语法、对象、函数</title>
     <link href="https://fjluda.github.io/2018/03/30/2016-06-07-JavaScript-good-parts-note1/"/>
     <id>https://fjluda.github.io/2018/03/30/2016-06-07-JavaScript-good-parts-note1/</id>
     <published>2018-03-30T00:50:23.541Z</published>
-    <updated>2018-04-04T06:40:29.687Z</updated>
+    <updated>2018-04-04T21:50:53.415Z</updated>
     
     <summary type="html">
     
@@ -606,6 +573,50 @@
       <category term="ife" scheme="https://fjluda.github.io/tags/ife/"/>
     
       <category term="面向对象" scheme="https://fjluda.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 中的闭包</title>
+    <link href="https://fjluda.github.io/2015/06/14/2015-06-14-JavaScript-closure/"/>
+    <id>https://fjluda.github.io/2015/06/14/2015-06-14-JavaScript-closure/</id>
+    <published>2015-06-14T06:06:05.000Z</published>
+    <updated>2018-04-04T06:39:33.117Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文为慕课网 &lt;a href=&quot;http://www.imooc.com/learn/277&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;JavaScript深入浅出&lt;/a&gt; JavaScript 中的闭包笔记。&lt;/p&gt;
+&lt;h2 id=&quot;闭包的例子&quot;&gt;&lt;a href=&quot;#闭包的例子&quot; class=&quot;headerlink&quot; title=&quot;闭包的例子&quot;&gt;&lt;/a&gt;闭包的例子&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;function outer() {
+    var localVal = 30;
+    return localVal;
+}
+
+console.log(outer()); //30
+
+function outer2() {
+    var localVal = 30;
+    return function() {
+        return localVal;
+    };
+}
+
+var func = outer2();
+console.log(func()); //30
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;对于第一个普通的函数，在执行过之后，它的局部变量就可以被释放。&lt;/p&gt;
+&lt;p&gt;对于第二个函数，&lt;code&gt;localVal&lt;/code&gt; 是不能被释放的。因为调用 &lt;code&gt;outer2()&lt;/code&gt; 后，返回的是匿名函数，匿名函数可以访问外部的 &lt;code&gt;outer2()&lt;/code&gt; 中的局部变量，并返回了这个局部变量 localVal。当 &lt;code&gt;outer2()&lt;/code&gt; 赋值给 &lt;code&gt;func&lt;/code&gt; 后，再次调用 &lt;code&gt;func()&lt;/code&gt;，仍能访问到局部变量 &lt;code&gt;localVal&lt;/code&gt;。这种情况就是闭包。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
+    
+      <category term="慕课网" scheme="https://fjluda.github.io/tags/%E6%85%95%E8%AF%BE%E7%BD%91/"/>
+    
+      <category term="ife" scheme="https://fjluda.github.io/tags/ife/"/>
+    
+      <category term="闭包" scheme="https://fjluda.github.io/tags/%E9%97%AD%E5%8C%85/"/>
     
   </entry>
   

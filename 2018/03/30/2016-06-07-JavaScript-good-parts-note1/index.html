@@ -154,7 +154,7 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7011d6cfjw1f4ieu7focqj207h05caaf.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7011d6cfjw1f4lrei2b3pj208f06et95.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7011d6cfjw1f4mprafcvhj20ml00xjrj.jpg">
-<meta property="og:updated_time" content="2018-04-04T06:40:29.687Z">
+<meta property="og:updated_time" content="2018-04-04T21:50:53.415Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 语言精粹笔记1-语法、对象、函数">
 <meta name="twitter:description" content="记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。  原书中第一章为精华，做了一些周边介绍，略去。 语法空白这里说一下JavaScript的注释，一种是 /* */ 包围的块注释，另一种是 // 开头的行注释。 因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如： 123/*    var rm_a = /a*/.match(s)*/">
@@ -306,7 +306,7 @@
           
   <li class="menu-item menu-item-guestbook">
     <a href="/guestbook" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />工具</a>
+      <i class="menu-item-icon fa fa-fw fa-cogs"></i> <br />工具</a>
 </li>
 
       
@@ -469,7 +469,7 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。</p>
+        <script src="/assets/js/APlayer.min.js"> </script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。</p>
 <p><img src="https://img3.doubanio.com/lpic/s3651235.jpg" alt=""></p>
 <p>原书中第一章为精华，做了一些周边介绍，略去。</p>
 <h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="空白"><a href="#空白" class="headerlink" title="空白"></a>空白</h3><p>这里说一下JavaScript的注释，一种是 <code>/* */</code> 包围的块注释，另一种是 <code>//</code> 开头的行注释。</p>
@@ -595,7 +595,6 @@
 <p>函数字面量包含4部分，分别是：保留字 function、函数名、参数、花括号中的语句。</p>
 <h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><p>调用一个函数会暂停当前函数的执行，传递控制权和参数给新函数。除了声明时定义的形式参数，还有两个附加参数：<code>this</code>和<code>arguments</code>。参数<code>this</code>在面向对象编程中非常重要，它的值取决于调用的模式。JavaScript中一共有4中调用模式：方法调用模式、函数调用模式、构造器调用模式、apply调用模式。</p>
 <p>实参和形参个数不匹配时，不会有运行时错误。实参过多时，超出的实参被忽略。形参过多时，缺失的值被替换为<code>undefined</code>。</p>
-<p>下面的内容也可以参考我以前的博文 <a href="http://gaohaoyang.github.io/2015/06/12/JavaScript-this/" target="_blank" rel="noopener">JavaScript 中的 this</a></p>
 <h4 id="方法调用模式"><a href="#方法调用模式" class="headerlink" title="方法调用模式"></a>方法调用模式</h4><p>当一个函数被保存为对象的一个属性时，我们称它为一个方法。当一个方法被调用时，<code>this</code>被绑定到该对象。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myObject = &#123;</span><br><span class="line">    value: <span class="number">0</span>,</span><br><span class="line">    increment: <span class="function"><span class="keyword">function</span>(<span class="params">inc</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.value += <span class="keyword">typeof</span> inc === <span class="string">'number'</span> ? inc : <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">myObject.increment()</span><br><span class="line"><span class="built_in">console</span>.log(myObject.value) <span class="comment">//1</span></span><br><span class="line"></span><br><span class="line">myObject.increment(<span class="number">3</span>)</span><br><span class="line"><span class="built_in">console</span>.log(myObject.value) <span class="comment">//4</span></span><br></pre></td></tr></table></figure>
 <h4 id="函数调用模式"><a href="#函数调用模式" class="headerlink" title="函数调用模式"></a>函数调用模式</h4><p>当一个函数并非一个对象的属性时，那么它就是被当做一个函数来调用的。</p>
@@ -640,7 +639,6 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> numberCal = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> half = <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n / <span class="number">2</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> double = <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n * <span class="number">2</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> tribble = <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> n * <span class="number">3</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        half: half,</span><br><span class="line">        double: double,</span><br><span class="line">        tribble: tribble</span><br><span class="line">    &#125;</span><br><span class="line">&#125;())</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(numberCal.half(<span class="number">5</span>)) <span class="comment">//2.5</span></span><br><span class="line"><span class="built_in">console</span>.log(numberCal.half(<span class="number">6</span>)) <span class="comment">//3</span></span><br><span class="line"><span class="built_in">console</span>.log(numberCal.double(<span class="number">7</span>)) <span class="comment">//14</span></span><br><span class="line"><span class="built_in">console</span>.log(numberCal.tribble(<span class="number">7</span>)) <span class="comment">//21</span></span><br></pre></td></tr></table></figure>
 <h3 id="级联"><a href="#级联" class="headerlink" title="级联"></a>级联</h3><p>如果让方法返回<code>this</code>而不是默认的<code>undefined</code>，就可以启用级联，即连续调用。</p>
 <h3 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h3><p>柯里化允许我们把函数与传递给它的参数相结合，产生出一个新的函数。</p>
-<p>详情见以前的博文 <a href="http://gaohaoyang.github.io/2015/06/11/JavaScript-function/#bind--currying" target="_blank" rel="noopener">JavaScript 函数 -bind 与 currying</a>。</p>
 <h3 id="记忆"><a href="#记忆" class="headerlink" title="记忆"></a>记忆</h3><p>函数可以将先前操作的结果记录在某个对象里，从而避免无谓的重复运算。这种优化被称为记忆（memoization）。</p>
 
       
@@ -713,8 +711,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/30/2016-06-08-JavaScript-good-parts-note2/" rel="prev" title="JavaScript 语言精粹笔记2-继承、数组、正则表达式">
-                JavaScript 语言精粹笔记2-继承、数组、正则表达式 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/30/2016-06-14-how-to-use-babel/" rel="prev" title="如何使用 babel">
+                如何使用 babel <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -803,7 +801,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">36</span>
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1047,7 +1045,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">92</span>
+                      
+                    
+                    <span class="site-state-item-count">91</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
