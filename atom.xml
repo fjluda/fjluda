@@ -111,8 +111,7 @@
     
       
       
-        &lt;p&gt;乳化沥青防水涂料是一种非离子型冷施工的防水、黏结材料。施工时呈液态，为棕褐色液体（硬化后成黑色），本产品无毒、无臭、不燃，具有良好的涂覆和黏结性，干燥快，干燥后变成一种稳定的薄膜，是一种“湿流干凝”材料。&lt;/p&gt;
-&lt;h2 id=&quot;原料及制作工艺&quot;&gt;&lt;a href=&quot;#原料及
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;乳化沥青防水涂料是一种非离子型冷施工的防水、黏结材料。施工时呈液态，为棕褐色
       
     
     </summary>
@@ -264,43 +263,11 @@
       <category term="GitHub" scheme="https://fjluda.github.io/categories/GitHub/"/>
     
     
-      <category term="GitHub" scheme="https://fjluda.github.io/tags/GitHub/"/>
-    
       <category term="Git" scheme="https://fjluda.github.io/tags/Git/"/>
     
+      <category term="GitHub" scheme="https://fjluda.github.io/tags/GitHub/"/>
+    
       <category term="分支" scheme="https://fjluda.github.io/tags/%E5%88%86%E6%94%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何使用 babel</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/</id>
-    <published>2018-03-30T00:50:23.543Z</published>
-    <updated>2018-04-04T06:40:53.208Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Babel&lt;/a&gt; 用于将 ES6 的代码转化为 ES5，使得 ES6 可以在目前的浏览器环境下使用。学习使用 babel 是为了使用 ES2015 做准备。本文将介绍如何使用 babel，以及一些相关的配置。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://babeljs.io/images/logo.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;学习 Babel 可以通过其手册 Babel handbook。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;babel-handbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;其中包含多语言版本，分为&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;用户手册&lt;/a&gt;和&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;插件手册&lt;/a&gt;。这是一个很好的学习 Babel 的资料。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="ES2015" scheme="https://fjluda.github.io/tags/ES2015/"/>
-    
-      <category term="ES6" scheme="https://fjluda.github.io/tags/ES6/"/>
-    
-      <category term="ES5" scheme="https://fjluda.github.io/tags/ES5/"/>
-    
-      <category term="babel" scheme="https://fjluda.github.io/tags/babel/"/>
     
   </entry>
   
@@ -339,6 +306,38 @@
   </entry>
   
   <entry>
+    <title>如何使用 babel</title>
+    <link href="https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/"/>
+    <id>https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/</id>
+    <published>2018-03-30T00:50:23.543Z</published>
+    <updated>2018-04-04T06:40:53.208Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Babel&lt;/a&gt; 用于将 ES6 的代码转化为 ES5，使得 ES6 可以在目前的浏览器环境下使用。学习使用 babel 是为了使用 ES2015 做准备。本文将介绍如何使用 babel，以及一些相关的配置。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://babeljs.io/images/logo.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;学习 Babel 可以通过其手册 Babel handbook。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;babel-handbook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中包含多语言版本，分为&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;用户手册&lt;/a&gt;和&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;插件手册&lt;/a&gt;。这是一个很好的学习 Babel 的资料。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="ES2015" scheme="https://fjluda.github.io/tags/ES2015/"/>
+    
+      <category term="ES6" scheme="https://fjluda.github.io/tags/ES6/"/>
+    
+      <category term="ES5" scheme="https://fjluda.github.io/tags/ES5/"/>
+    
+      <category term="babel" scheme="https://fjluda.github.io/tags/babel/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript 语言精粹笔记2-继承、数组、正则表达式</title>
     <link href="https://fjluda.github.io/2018/03/30/2016-06-08-JavaScript-good-parts-note2/"/>
     <id>https://fjluda.github.io/2018/03/30/2016-06-08-JavaScript-good-parts-note2/</id>
@@ -363,9 +362,9 @@
     
       <category term="正则" scheme="https://fjluda.github.io/tags/%E6%AD%A3%E5%88%99/"/>
     
-      <category term="对象" scheme="https://fjluda.github.io/tags/%E5%AF%B9%E8%B1%A1/"/>
-    
       <category term="继承" scheme="https://fjluda.github.io/tags/%E7%BB%A7%E6%89%BF/"/>
+    
+      <category term="对象" scheme="https://fjluda.github.io/tags/%E5%AF%B9%E8%B1%A1/"/>
     
       <category term="原型" scheme="https://fjluda.github.io/tags/%E5%8E%9F%E5%9E%8B/"/>
     
@@ -392,13 +391,13 @@
       <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
     
     
-      <category term="作用域" scheme="https://fjluda.github.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
-    
       <category term="函数" scheme="https://fjluda.github.io/tags/%E5%87%BD%E6%95%B0/"/>
     
-      <category term="this" scheme="https://fjluda.github.io/tags/this/"/>
+      <category term="作用域" scheme="https://fjluda.github.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     
       <category term="闭包" scheme="https://fjluda.github.io/tags/%E9%97%AD%E5%8C%85/"/>
+    
+      <category term="this" scheme="https://fjluda.github.io/tags/this/"/>
     
       <category term="面向对象" scheme="https://fjluda.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
@@ -507,9 +506,9 @@
       <category term="CSS" scheme="https://fjluda.github.io/categories/CSS/"/>
     
     
-      <category term="HTML" scheme="https://fjluda.github.io/tags/HTML/"/>
-    
       <category term="CSS" scheme="https://fjluda.github.io/tags/CSS/"/>
+    
+      <category term="HTML" scheme="https://fjluda.github.io/tags/HTML/"/>
     
       <category term="IE" scheme="https://fjluda.github.io/tags/IE/"/>
     
@@ -535,9 +534,9 @@
     
       <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
     
-      <category term="HTML" scheme="https://fjluda.github.io/tags/HTML/"/>
-    
       <category term="CSS" scheme="https://fjluda.github.io/tags/CSS/"/>
+    
+      <category term="HTML" scheme="https://fjluda.github.io/tags/HTML/"/>
     
       <category term="思维导图" scheme="https://fjluda.github.io/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
     
