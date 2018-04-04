@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://fjluda.github.io/"/>
-  <updated>2018-04-03T15:39:46.797Z</updated>
+  <updated>2018-04-04T00:14:55.383Z</updated>
   <id>https://fjluda.github.io/</id>
   
   <author>
@@ -17,11 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>诏安印象</title>
+    <link href="https://fjluda.github.io/2018/04/04/2018-04-04/"/>
+    <id>https://fjluda.github.io/2018/04/04/2018-04-04/</id>
+    <published>2018-04-03T23:58:55.815Z</published>
+    <updated>2018-04-04T00:14:55.383Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前笔&quot;&gt;&lt;a href=&quot;#前笔&quot; class=&quot;headerlink&quot; title=&quot;前笔&quot;&gt;&lt;/a&gt;前笔&lt;/h2&gt;&lt;p&gt;诏安县是“书画艺术之乡”、“中国民间文化艺术（绘画）之乡、“中国青梅之乡”、原中央苏区县、福建著名的侨乡和重要台胞祖籍地。本文将记录18年在诏安生活与工作上点滴，以备留念！ &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;http://p5mgr4bgm.bkt.clouddn.com/UNADJUSTEDNONRAW_thumb_266.jpg&quot; alt=&quot;UNADJUSTEDNONRAW_thumb_266-w600&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="摄影" scheme="https://fjluda.github.io/categories/%E6%91%84%E5%BD%B1/"/>
+    
+    
+      <category term="摄影" scheme="https://fjluda.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="街拍" scheme="https://fjluda.github.io/tags/%E8%A1%97%E6%8B%8D/"/>
+    
+      <category term="诏安" scheme="https://fjluda.github.io/tags/%E8%AF%8F%E5%AE%89/"/>
+    
+      <category term="生活" scheme="https://fjluda.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="手机" scheme="https://fjluda.github.io/tags/%E6%89%8B%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="https://fjluda.github.io/2018/04/03/2018-4-2-hello-world/"/>
     <id>https://fjluda.github.io/2018/04/03/2018-4-2-hello-world/</id>
     <published>2018-04-02T16:00:00.000Z</published>
-    <updated>2018-04-03T15:39:46.797Z</updated>
+    <updated>2018-04-03T23:53:00.880Z</updated>
     
     <summary type="html">
     
@@ -139,7 +169,7 @@
     
       
       
-        &lt;h2 id=&quot;Ubuntu下所有的快捷方式都在：&quot;&gt;&lt;a href=&quot;#Ubuntu下所有的快捷方式都在：&quot; class=&quot;headerlink&quot; title=&quot;Ubuntu下所有的快捷方式都在：&quot;&gt;&lt;/a&gt;Ubuntu下所有的快捷方式都在：&lt;/h2&gt;&lt;figure class
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h2 id=&quot;Ubuntu下所有的快捷方式都在：&quot;&gt;&lt;a href=&quot;#Ubun
       
     
     </summary>
@@ -164,7 +194,7 @@
     
       
       
-        &lt;p&gt;关于写倒计时大家可能都都比较熟悉，使用 setTimeout 或 setInterval 就可以搞定。几秒钟或者几分钟的倒计时这样写没有问题，但是如果是长时间的倒计时，这样写就会不准确。如果用户修改了他的设备时间，这样的倒计时就没有意义了。今天就说说写一个精确的倒计时的方法
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;p&gt;关于写倒计时大家可能都都比较熟悉，使用 setTimeout 或 setIn
       
     
     </summary>
@@ -183,7 +213,7 @@
     <link href="https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/"/>
     <id>https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/</id>
     <published>2018-03-30T01:15:16.121Z</published>
-    <updated>2018-04-03T15:24:16.722Z</updated>
+    <updated>2018-04-04T00:00:03.712Z</updated>
     
     <summary type="html">
     
@@ -235,32 +265,6 @@
   </entry>
   
   <entry>
-    <title>JavaScript 语言精粹笔记3-方法、毒瘤等</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note3/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note3/</id>
-    <published>2018-03-30T00:50:23.543Z</published>
-    <updated>2018-04-03T00:12:35.498Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;记录一下阅读蝴蝶书的笔记，本篇为书中最后一部分：方法、代码风格、优美的特性、毒瘤、糟粕等。&lt;/p&gt;
-&lt;h2 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;p&gt;这一章主要介绍了一些方法集。这里写
-      
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
-    
-      <category term="函数" scheme="https://fjluda.github.io/tags/%E5%87%BD%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>如何使用 babel</title>
     <link href="https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/"/>
     <id>https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/</id>
@@ -286,6 +290,32 @@
       <category term="ES5" scheme="https://fjluda.github.io/tags/ES5/"/>
     
       <category term="babel" scheme="https://fjluda.github.io/tags/babel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript 语言精粹笔记3-方法、毒瘤等</title>
+    <link href="https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note3/"/>
+    <id>https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note3/</id>
+    <published>2018-03-30T00:50:23.543Z</published>
+    <updated>2018-04-03T00:12:35.498Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;记录一下阅读蝴蝶书的笔记，本篇为书中最后一部分：方法、代码风格、优美的特性、毒瘤、糟粕等。&lt;/p&gt;
+&lt;h2 id=&quot;方法&quot;&gt;&lt;a href=&quot;#方法&quot; class=&quot;headerlink&quot; title=&quot;方法&quot;&gt;&lt;/a&gt;方法&lt;/h2&gt;&lt;p&gt;这一章主要介绍了一些方法集。这里写
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
+    
+      <category term="函数" scheme="https://fjluda.github.io/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
@@ -361,7 +391,7 @@
     <link href="https://fjluda.github.io/2018/03/29/2018-03-29-Markdown%20%E8%AF%AD%E6%B3%95%E5%92%8C%20MWeb%20%E5%86%99%E4%BD%9C%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
     <id>https://fjluda.github.io/2018/03/29/2018-03-29-Markdown 语法和 MWeb 写作使用说明/</id>
     <published>2018-03-29T11:06:05.000Z</published>
-    <updated>2018-04-03T22:40:33.526Z</updated>
+    <updated>2018-04-03T23:59:48.055Z</updated>
     
     <summary type="html">
     
@@ -512,6 +542,35 @@
   </entry>
   
   <entry>
+    <title>EXCEL VBA连接ACCESS数据库</title>
+    <link href="https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL%20VBA%E8%BF%9E%E6%8E%A5ACCESS%E6%95%B0%E6%8D%AE/"/>
+    <id>https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/</id>
+    <published>2015-06-22T01:06:05.000Z</published>
+    <updated>2018-04-03T12:57:07.314Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h2 id=&quot;添加数据&quot;&gt;&lt;a href=&quot;#添加数据&quot; class=&quot;head
+      
+    
+    </summary>
+    
+      <category term="VBA" scheme="https://fjluda.github.io/categories/VBA/"/>
+    
+    
+      <category term="EXCEL" scheme="https://fjluda.github.io/tags/EXCEL/"/>
+    
+      <category term="VBA" scheme="https://fjluda.github.io/tags/VBA/"/>
+    
+      <category term="ACCESS" scheme="https://fjluda.github.io/tags/ACCESS/"/>
+    
+      <category term="数据库" scheme="https://fjluda.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>随机不重复数值</title>
     <link href="https://fjluda.github.io/2015/06/22/2018-04-01-%E9%9A%8F%E6%9C%BA%E4%B8%8D%E9%87%8D%E5%A4%8D%E6%95%B0%E5%80%BC/"/>
     <id>https://fjluda.github.io/2015/06/22/2018-04-01-随机不重复数值/</id>
@@ -537,68 +596,6 @@
       <category term="VBA" scheme="https://fjluda.github.io/tags/VBA/"/>
     
       <category term="代码" scheme="https://fjluda.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EXCEL VBA连接ACCESS数据库</title>
-    <link href="https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL%20VBA%E8%BF%9E%E6%8E%A5ACCESS%E6%95%B0%E6%8D%AE/"/>
-    <id>https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/</id>
-    <published>2015-06-22T01:06:05.000Z</published>
-    <updated>2018-04-03T12:57:07.314Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;添加数据&quot;&gt;&lt;a href=&quot;#添加数据&quot; class=&quot;headerlink&quot; title=&quot;添加数据&quot;&gt;&lt;/a&gt;添加数据&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="VBA" scheme="https://fjluda.github.io/categories/VBA/"/>
-    
-    
-      <category term="EXCEL" scheme="https://fjluda.github.io/tags/EXCEL/"/>
-    
-      <category term="VBA" scheme="https://fjluda.github.io/tags/VBA/"/>
-    
-      <category term="ACCESS" scheme="https://fjluda.github.io/tags/ACCESS/"/>
-    
-      <category term="数据库" scheme="https://fjluda.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Weinre --WebApp 调试工具</title>
-    <link href="https://fjluda.github.io/2015/06/18/2015-06-18-weinre/"/>
-    <id>https://fjluda.github.io/2015/06/18/2015-06-18-weinre/</id>
-    <published>2015-06-17T16:06:05.000Z</published>
-    <updated>2018-04-03T00:11:33.162Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;什么是-weinre？&quot;&gt;&lt;a href=&quot;#什么是-weinre？&quot; class=&quot;headerlink&quot; title=&quot;什么是 weinre？&quot;&gt;&lt;/a&gt;什么是 weinre？&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://people.apache.org/
-      
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
-    
-      <category term="HTML" scheme="https://fjluda.github.io/tags/HTML/"/>
-    
-      <category term="CSS" scheme="https://fjluda.github.io/tags/CSS/"/>
-    
-      <category term="Weinre" scheme="https://fjluda.github.io/tags/Weinre/"/>
-    
-      <category term="WebApp" scheme="https://fjluda.github.io/tags/WebApp/"/>
-    
-      <category term="调试工具" scheme="https://fjluda.github.io/tags/%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
