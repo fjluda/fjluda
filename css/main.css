@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 2;
   color: #555;
   background: #eee;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 h1,
@@ -1124,7 +1124,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 20px;
   font-weight: normal;
-  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: 'Rock Salt', 'Lato', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1231,7 +1231,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1838,7 +1838,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4eb00e;
+  background: #657558;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2271,7 +2271,7 @@ ul.popular-posts .popular-posts-item {
 }
 ul.popular-posts .popular-posts-item .popular-posts-title {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0;
   line-height: 2.4;
 }
@@ -2503,7 +2503,7 @@ ul.breadcrumb {
   margin: 1em 0;
   padding: 0 2em;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
 }
 ul.breadcrumb li {
   display: inline;
@@ -3120,4 +3120,223 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+u,
+.typo-u {
+  text-decoration: underline;
+}
+mark {
+  background: #fffdd1;
+  border-bottom: 1px solid #ffedce;
+  padding: 2px;
+  margin: 0 5px;
+}
+pre,
+code,
+pre tt {
+  font-family: Courier, 'Courier New', monospace;
+}
+pre {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 1em 1.5em;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+small,
+.typo-small,
+figcaption {
+  font-size: 0.9em;
+  color: #888;
+}
+strong,
+b {
+  font-weight: bold;
+  color: #000;
+}
+[draggable] {
+  cursor: move;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.textwrap,
+.textwrap td,
+.textwrap th {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.textwrap-table {
+  table-layout: fixed;
+}
+.serif {
+  font-family: Palatino, Optima, Georgia, serif;
+}
+.typo h1,
+.typo h2,
+.typo h3,
+.typo h4,
+.typo h5,
+.typo h6,
+.typo-h1,
+.typo-h2,
+.typo-h3,
+.typo-h4,
+.typo-h5,
+.typo-h6 {
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+}
+.typo h1,
+.typo-h1 {
+  font-size: 2em;
+}
+.typo h2,
+.typo-h2 {
+  font-size: 1.8em;
+}
+.typo h3,
+.typo-h3 {
+  font-size: 1.6em;
+}
+.typo h4,
+.typo-h4 {
+  font-size: 1.4em;
+}
+.typo h5,
+.typo h6,
+.typo-h5,
+.typo-h6 {
+  font-size: 1.2em;
+}
+.typo ul,
+.typo-ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+.typo ol,
+.typo-ol {
+  list-style: decimal;
+  margin-left: 1.9em;
+}
+.typo li ul,
+.typo li ol,
+.typo-ul ul,
+.typo-ul ol,
+.typo-ol ul,
+.typo-ol ol {
+  margin-bottom: 0.8em;
+  margin-left: 2em;
+}
+.typo li ul,
+.typo-ul ul,
+.typo-ol ul {
+  list-style: circle;
+}
+.typo table th,
+.typo table td,
+.typo-table th,
+.typo-table td,
+.typo table caption {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: #666;
+}
+.typo table th,
+.typo-table th {
+  background: #fbfbfb;
+}
+.typo table thead th,
+.typo-table thead th {
+  background: #f1f1f1;
+}
+.typo table caption {
+  border-bottom: none;
+}
+.typo-input,
+.typo-textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+.typo-em,
+.typo em,
+legend,
+caption {
+  color: #000;
+  font-weight: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+q:before,
+q:after {
+  content: '';
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+:root sub,
+:root sup {
+  vertical-align: baseline; /* for ie9 and other modern browsers */
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+abbr {
+  cursor: help;
+}
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 400;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
 }
