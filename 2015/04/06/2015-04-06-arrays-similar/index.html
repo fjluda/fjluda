@@ -150,7 +150,7 @@
 <meta property="og:site_name" content="JinChao&#39;s Notes">
 <meta property="og:description" content="题目题目来自 慕课网 JavaScript 深入浅出 1-6 编程练习     请在 index.html 文件中，编写 arraysSimilar 函数，实现判断传入的两个数组是否相似。具体需求：     数组中的成员类型相同，顺序可以不同。例如 [1, true] 与 [false, 2] 是相似的。 数组的长度一致。 类型的判断范围，需要区分: String, Boolean, Number">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-03T00:10:05.031Z">
+<meta property="og:updated_time" content="2018-04-04T06:37:49.777Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="判断两个数组是否相似 (arraysSimilar)">
 <meta name="twitter:description" content="题目题目来自 慕课网 JavaScript 深入浅出 1-6 编程练习     请在 index.html 文件中，编写 arraysSimilar 函数，实现判断传入的两个数组是否相似。具体需求：     数组中的成员类型相同，顺序可以不同。例如 [1, true] 与 [false, 2] 是相似的。 数组的长度一致。 类型的判断范围，需要区分: String, Boolean, Number">
@@ -452,13 +452,14 @@
       
 
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>题目来自 <a href="http://imooc.com/code/5760" target="_blank" rel="noopener">慕课网 JavaScript 深入浅出 1-6 编程练习</a>    </p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>题目来自 <a href="http://imooc.com/code/5760" target="_blank" rel="noopener">慕课网 JavaScript 深入浅出 1-6 编程练习</a>    </p>
 <p>请在 index.html 文件中，编写 arraysSimilar 函数，实现判断传入的两个数组是否相似。具体需求：   </p>
 <ol>
 <li>数组中的成员类型相同，顺序可以不同。例如 [1, true] 与 [false, 2] 是相似的。</li>
 <li>数组的长度一致。</li>
 <li>类型的判断范围，需要区分: String, Boolean, Number, undefined, null, 函数, 日期, window.</li>
 </ol>
+<a id="more"></a>
 <p>当以上全部满足，则返回<strong>“判定结果:通过”</strong>，否则返回<strong>“判定结果:不通过”</strong>。    </p>
 <p>题目给出了 index.html 如下：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html; charset=gb18030"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Untitled Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined">   </span></span><br><span class="line"><span class="undefined">        /*</span></span><br><span class="line"><span class="undefined">         * param1 Array</span></span><br><span class="line"><span class="undefined">         * param2 Array</span></span><br><span class="line"><span class="undefined">         * return true or false</span></span><br><span class="line"><span class="undefined">         */</span></span><br><span class="line"><span class="undefined">        function arraysSimilar(arr1, arr2)&#123;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">        &#125;</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"testData.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -552,8 +553,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/04/12/2015-04-12-Syncing-a-fork/" rel="prev" title="同步一个 fork">
-                同步一个 fork <i class="fa fa-chevron-right"></i>
+              <a href="/2015/04/15/2015-04-15-baidu-ife-1/" rel="prev" title="百度Web前端技术学院(1)-HTML, CSS基础">
+                百度Web前端技术学院(1)-HTML, CSS基础 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -642,7 +643,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -693,7 +694,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -912,7 +913,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

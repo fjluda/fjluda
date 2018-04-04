@@ -150,7 +150,7 @@
 <meta property="og:site_name" content="JinChao&#39;s Notes">
 <meta property="og:description" content="本文为慕课网 JavaScript深入浅出 JavaScript 中的闭包笔记。 闭包的例子function outer() {     var localVal = 30;     return localVal; }  console.log(outer()); //30  function outer2() {     var localVal = 30;     return functi">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-03T00:11:09.999Z">
+<meta property="og:updated_time" content="2018-04-04T06:39:33.117Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 中的闭包">
 <meta name="twitter:description" content="本文为慕课网 JavaScript深入浅出 JavaScript 中的闭包笔记。 闭包的例子function outer() {     var localVal = 30;     return localVal; }  console.log(outer()); //30  function outer2() {     var localVal = 30;     return functi">
@@ -452,7 +452,7 @@
       
 
       
-        <p>本文为慕课网 <a href="http://www.imooc.com/learn/277" target="_blank" rel="noopener">JavaScript深入浅出</a> JavaScript 中的闭包笔记。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为慕课网 <a href="http://www.imooc.com/learn/277" target="_blank" rel="noopener">JavaScript深入浅出</a> JavaScript 中的闭包笔记。</p>
 <h2 id="闭包的例子"><a href="#闭包的例子" class="headerlink" title="闭包的例子"></a>闭包的例子</h2><pre><code>function outer() {
     var localVal = 30;
     return localVal;
@@ -471,6 +471,7 @@ var func = outer2();
 console.log(func()); //30
 </code></pre><p>对于第一个普通的函数，在执行过之后，它的局部变量就可以被释放。</p>
 <p>对于第二个函数，<code>localVal</code> 是不能被释放的。因为调用 <code>outer2()</code> 后，返回的是匿名函数，匿名函数可以访问外部的 <code>outer2()</code> 中的局部变量，并返回了这个局部变量 localVal。当 <code>outer2()</code> 赋值给 <code>func</code> 后，再次调用 <code>func()</code>，仍能访问到局部变量 <code>localVal</code>。这种情况就是闭包。</p>
+<a id="more"></a>
 <hr>
 <h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ul>
 <li><p><strong>所谓闭包就是：子函数可以使用父函数中的局部变量。</strong></p>
@@ -726,7 +727,7 @@ console.log(converter); //Uncaught ReferenceError: converter is not defined
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -777,7 +778,7 @@ console.log(converter); //Uncaught ReferenceError: converter is not defined
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -996,7 +997,7 @@ console.log(converter); //Uncaught ReferenceError: converter is not defined
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

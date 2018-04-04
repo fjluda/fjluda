@@ -142,22 +142,22 @@
 
 
 
-  <meta name="description" content="本文为慕课网 JavaScript深入浅出  JavaScript 面向对象笔记。 概念 面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。 ——维基百科  一般面向对象包含：继承，封装，多态，抽象  基于原型的继">
+  <meta name="description" content="本文为慕课网 JavaScript深入浅出  JavaScript 面向对象笔记。 概念 面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。 ——维基百科  一般面向对象包含：继承，封装，多态，抽象">
 <meta name="keywords" content="JavaScript,慕课网,ife,面向对象">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript 面向对象">
 <meta property="og:url" content="https://fjluda.github.io/2015/06/15/2015-06-15-JavaScript-Object-Oriented/index.html">
 <meta property="og:site_name" content="JinChao&#39;s Notes">
-<meta property="og:description" content="本文为慕课网 JavaScript深入浅出  JavaScript 面向对象笔记。 概念 面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。 ——维基百科  一般面向对象包含：继承，封装，多态，抽象  基于原型的继">
+<meta property="og:description" content="本文为慕课网 JavaScript深入浅出  JavaScript 面向对象笔记。 概念 面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。 ——维基百科  一般面向对象包含：继承，封装，多态，抽象">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-prototype.png">
 <meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-oop-gao.png">
 <meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-原型链.png">
 <meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-new prototype.png">
-<meta property="og:updated_time" content="2018-04-03T00:11:18.101Z">
+<meta property="og:updated_time" content="2018-04-04T06:39:39.979Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 面向对象">
-<meta name="twitter:description" content="本文为慕课网 JavaScript深入浅出  JavaScript 面向对象笔记。 概念 面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。 ——维基百科  一般面向对象包含：继承，封装，多态，抽象  基于原型的继">
+<meta name="twitter:description" content="本文为慕课网 JavaScript深入浅出  JavaScript 面向对象笔记。 概念 面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。 ——维基百科  一般面向对象包含：继承，封装，多态，抽象">
 <meta name="twitter:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-prototype.png">
 
 
@@ -457,12 +457,13 @@
       
 
       
-        <p>本文为慕课网 <a href="http://www.imooc.com/learn/277" target="_blank" rel="noopener">JavaScript深入浅出</a>  JavaScript 面向对象笔记。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为慕课网 <a href="http://www.imooc.com/learn/277" target="_blank" rel="noopener">JavaScript深入浅出</a>  JavaScript 面向对象笔记。</p>
 <h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><blockquote>
 <p>面向对象程序设计（Object-oriented programming，OOP）是一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的实例。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。</p>
 <p>——维基百科</p>
 </blockquote>
 <p>一般面向对象包含：继承，封装，多态，抽象</p>
+<a id="more"></a>
 <hr>
 <h2 id="基于原型的继承"><a href="#基于原型的继承" class="headerlink" title="基于原型的继承"></a>基于原型的继承</h2><pre><code>function Foo() {
     this.y = 2;
@@ -923,7 +924,7 @@ moduleA = function() {
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -974,7 +975,7 @@ moduleA = function() {
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1193,7 +1194,7 @@ moduleA = function() {
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

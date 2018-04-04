@@ -152,7 +152,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img.alicdn.com/tfs/TB18QnlOpXXXXcVXpXXXXXXXXXX-388-256.png">
 <meta property="og:image" content="https://img.alicdn.com/tfs/TB1LBzjOpXXXXcnXpXXXXXXXXXX-154-71.png">
-<meta property="og:updated_time" content="2018-04-02T23:50:18.985Z">
+<meta property="og:updated_time" content="2018-04-04T06:41:20.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="这是我自己来测试的md页面">
 <meta name="twitter:description" content="关于写倒计时大家可能都都比较熟悉，使用 setTimeout 或 setInterval 就可以搞定。几秒钟或者几分钟的倒计时这样写没有问题，但是如果是长时间的倒计时，这样写就会不准确。如果用户修改了他的设备时间，这样的倒计时就没有意义了。今天就说说写一个精确的倒计时的方法。  原理众所周知 setTimeout 或者 setInterval 调用的时候会有微小的误差。有人做了一个 demo 来观">
@@ -464,9 +464,10 @@
 <ul>
 <li>初始化时请求一次服务器时间 serverTime，再 new 一个设备时间 deviceTime</li>
 <li>deviceTime 与 serverTime 的差作为时间偏移修正</li>
-<li>每次递归时 new 一个系统时间，解决 setTimeout 不准确的问题</li>
+<li>每次递归时 new 一个系统时间，解决 setTimeout 不准确的问题<a id="more"></a>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2></li>
 </ul>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>获取剩余时间的代码如下：</p>
+<p>获取剩余时间的代码如下：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取剩余时间</span></span><br><span class="line"><span class="comment"> * @param  &#123;Number&#125; endTime    截止时间</span></span><br><span class="line"><span class="comment"> * @param  &#123;Number&#125; deviceTime 设备时间</span></span><br><span class="line"><span class="comment"> * @param  &#123;Number&#125; serverTime 服务端时间</span></span><br><span class="line"><span class="comment"> * @return &#123;Object&#125;            剩余时间对象</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">let</span> getRemainTime = <span class="function">(<span class="params">endTime, deviceTime, serverTime</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> t = endTime - <span class="built_in">Date</span>.parse(<span class="keyword">new</span> <span class="built_in">Date</span>()) - serverTime + deviceTime</span><br><span class="line">    <span class="keyword">let</span> seconds = <span class="built_in">Math</span>.floor((t / <span class="number">1000</span>) % <span class="number">60</span>)</span><br><span class="line">    <span class="keyword">let</span> minutes = <span class="built_in">Math</span>.floor((t / <span class="number">1000</span> / <span class="number">60</span>) % <span class="number">60</span>)</span><br><span class="line">    <span class="keyword">let</span> hours = <span class="built_in">Math</span>.floor((t / (<span class="number">1000</span> * <span class="number">60</span> * <span class="number">60</span>)) % <span class="number">24</span>)</span><br><span class="line">    <span class="keyword">let</span> days = <span class="built_in">Math</span>.floor(t / (<span class="number">1000</span> * <span class="number">60</span> * <span class="number">60</span> * <span class="number">24</span>))</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        <span class="string">'total'</span>: t,</span><br><span class="line">        <span class="string">'days'</span>: days,</span><br><span class="line">        <span class="string">'hours'</span>: hours,</span><br><span class="line">        <span class="string">'minutes'</span>: minutes,</span><br><span class="line">        <span class="string">'seconds'</span>: seconds</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><del>获取服务器时间可以使用 mtop 接口 <code>mtop.common.getTimestamp</code> </del></p>
 <p>然后可以通过下面的方式来使用：</p>
@@ -531,8 +532,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/30/2016-07-07-git-clone-not-master-branch/" rel="next" title="Git 如何 clone 非 master 分支的代码">
-                <i class="fa fa-chevron-left"></i> Git 如何 clone 非 master 分支的代码
+              <a href="/2018/03/30/2016-10-16-shuffle-algorithm/" rel="next" title="Fisher–Yates shuffle 洗牌算法">
+                <i class="fa fa-chevron-left"></i> Fisher–Yates shuffle 洗牌算法
               </a>
             
           </div>
@@ -631,7 +632,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -682,7 +683,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -901,7 +902,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

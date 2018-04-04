@@ -150,7 +150,7 @@
 <meta property="og:site_name" content="JinChao&#39;s Notes">
 <meta property="og:description" content="Ubuntu下所有的快捷方式都在：1/usr/share/applications 解压这里我将pycharm下载并解压到了/home/snakeson/developer文件夹下 这里的pycharm.sh是批处理执行文件，prcharm.png是快捷方式图标 终端打开使用Ubuntu终端进行打开：方法一（使用vim）：1sudo vi  /usr/share/applications/pych">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-02T23:48:52.463Z">
+<meta property="og:updated_time" content="2018-04-04T06:41:46.527Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04设置Pycharm桌面快捷键">
 <meta name="twitter:description" content="Ubuntu下所有的快捷方式都在：1/usr/share/applications 解压这里我将pycharm下载并解压到了/home/snakeson/developer文件夹下 这里的pycharm.sh是批处理执行文件，prcharm.png是快捷方式图标 终端打开使用Ubuntu终端进行打开：方法一（使用vim）：1sudo vi  /usr/share/applications/pych">
@@ -458,7 +458,7 @@
 <h2 id="终端打开"><a href="#终端打开" class="headerlink" title="终端打开"></a>终端打开</h2><p>使用Ubuntu终端进行打开：<br>方法一（使用vim）：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi  /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure></p>
 <p>方法二（使用gedit）：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit  /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
-<p>然后就会弹出一个新框：</p>
+<p>然后就会弹出一个新框：<br><a id="more"></a></p>
 <h2 id="张贴"><a href="#张贴" class="headerlink" title="张贴"></a>张贴</h2><p>我们将下面的内容贴上去：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">[Desktop Entry]</span><br><span class="line">Type=Application</span><br><span class="line">Name=Pycharm</span><br><span class="line">GenericName=Pycharm3</span><br><span class="line">Comment=Pycharm3:The Python IDE</span><br><span class="line">Exec=<span class="string">"/home/snakeson/developer/pycharm-community-2017.2.3/bin/pycharm.sh"</span> %f</span><br><span class="line">Icon=<span class="regexp">/home/</span>snakeson/developer/pycharm-community<span class="number">-2017.2</span><span class="number">.3</span>/bin/pycharm.png</span><br><span class="line">Terminal=pycharm</span><br><span class="line">Categories=Pycharm;</span><br></pre></td></tr></table></figure></p>
 <hr>
 <p>注意一定要将Desktop Entry复制进去，也就是上面的全部都要复制进去，这里我们需要替换掉两个地方：<strong>Exec=”xx”</strong>和<strong>Icon=</strong>,这里要替换掉我们的pycharm解压的目录，当然了，我已经替换好了，如果你的目录跟我的目录不一样的话，你得把路径给换了，不管你是pycharm2017还是pycharm2016,，例如Comment什么的都不要改变，只变上面提到的两个路径就可以了。</p>
@@ -617,7 +617,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -668,7 +668,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -887,7 +887,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

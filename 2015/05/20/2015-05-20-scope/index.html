@@ -150,7 +150,7 @@
 <meta property="og:site_name" content="JinChao&#39;s Notes">
 <meta property="og:description" content="JavaScript 作用域作用域就是变量与函数的可访问范围。在JavaScript中，变量的作用域有全局作用域和局部作用域两种。  全局作用域(Global Scope)在代码中任何地方都能访问到的对象拥有全局作用域，一般来说以下 3 种情形拥有全局作用域。  最外层函数和在最外层函数外面定义的变量拥有全局作用域  123456789101112var outVariable = &quot;我是最外层变">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-03T00:10:44.347Z">
+<meta property="og:updated_time" content="2018-04-04T06:38:53.113Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 作用域和作用域链">
 <meta name="twitter:description" content="JavaScript 作用域作用域就是变量与函数的可访问范围。在JavaScript中，变量的作用域有全局作用域和局部作用域两种。  全局作用域(Global Scope)在代码中任何地方都能访问到的对象拥有全局作用域，一般来说以下 3 种情形拥有全局作用域。  最外层函数和在最外层函数外面定义的变量拥有全局作用域  123456789101112var outVariable = &quot;我是最外层变">
@@ -452,13 +452,14 @@
       
 
       
-        <h2 id="JavaScript-作用域"><a href="#JavaScript-作用域" class="headerlink" title="JavaScript 作用域"></a>JavaScript 作用域</h2><p>作用域就是变量与函数的可访问范围。在JavaScript中，变量的作用域有全局作用域和局部作用域两种。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="JavaScript-作用域"><a href="#JavaScript-作用域" class="headerlink" title="JavaScript 作用域"></a>JavaScript 作用域</h2><p>作用域就是变量与函数的可访问范围。在JavaScript中，变量的作用域有全局作用域和局部作用域两种。</p>
 <hr>
 <h3 id="全局作用域-Global-Scope"><a href="#全局作用域-Global-Scope" class="headerlink" title="全局作用域(Global Scope)"></a>全局作用域(Global Scope)</h3><p>在代码中任何地方都能访问到的对象拥有全局作用域，一般来说以下 3 种情形拥有全局作用域。</p>
 <ol>
 <li>最外层函数和在最外层函数外面定义的变量拥有全局作用域</li>
 </ol>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> outVariable = <span class="string">"我是最外层变量"</span>; <span class="comment">//最外层变量</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">outFun</span>(<span class="params"></span>) </span>&#123; <span class="comment">//最外层函数</span></span><br><span class="line">    <span class="keyword">var</span> inVariable = <span class="string">"内层变量"</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">innerFun</span>(<span class="params"></span>) </span>&#123; <span class="comment">//内层函数</span></span><br><span class="line">        <span class="built_in">console</span>.log(inVariable);</span><br><span class="line">    &#125;</span><br><span class="line">    innerFun();</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(outVariable); <span class="comment">//我是最外层变量</span></span><br><span class="line">outFun(); <span class="comment">//内层变量</span></span><br><span class="line"><span class="built_in">console</span>.log(inVariable); <span class="comment">//inVariable is not defined</span></span><br><span class="line">innerFun(); <span class="comment">//innerFun is not defined</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <ol start="2">
 <li>所有末定义直接赋值的变量自动声明为拥有全局作用域</li>
 </ol>
@@ -693,7 +694,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -744,7 +745,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -963,7 +964,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

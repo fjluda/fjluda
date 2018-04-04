@@ -150,7 +150,7 @@
 <meta property="og:site_name" content="JinChao&#39;s Notes">
 <meta property="og:description" content="本文为慕课网 JavaScript深入浅出 JavaScript 中的 this笔记。 全局的 this全局 this 一般指向全局对象，浏览器中的全局对象就是 window。 例如： 12345console.log(this.document === document); //trueconsole.log(this === window); //truethis.a = 91;console">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-03T00:11:01.276Z">
+<meta property="og:updated_time" content="2018-04-04T06:39:18.912Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 中的 this">
 <meta name="twitter:description" content="本文为慕课网 JavaScript深入浅出 JavaScript 中的 this笔记。 全局的 this全局 this 一般指向全局对象，浏览器中的全局对象就是 window。 例如： 12345console.log(this.document === document); //trueconsole.log(this === window); //truethis.a = 91;console">
@@ -452,10 +452,11 @@
       
 
       
-        <p>本文为慕课网 <a href="http://www.imooc.com/learn/277" target="_blank" rel="noopener">JavaScript深入浅出</a> JavaScript 中的 this笔记。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为慕课网 <a href="http://www.imooc.com/learn/277" target="_blank" rel="noopener">JavaScript深入浅出</a> JavaScript 中的 this笔记。</p>
 <h2 id="全局的-this"><a href="#全局的-this" class="headerlink" title="全局的 this"></a>全局的 this</h2><p>全局 this 一般指向全局对象，浏览器中的全局对象就是 <code>window</code>。</p>
 <p>例如：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span>.document === <span class="built_in">document</span>); <span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">this</span> === <span class="built_in">window</span>); <span class="comment">//true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">this</span>.a = <span class="number">91</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a); <span class="comment">//91</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h2 id="一般函数的-this"><a href="#一般函数的-this" class="headerlink" title="一般函数的 this"></a>一般函数的 this</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(f1() === <span class="built_in">window</span>);<span class="comment">//true, global object</span></span><br></pre></td></tr></table></figure>
 <p>可以看到一般函数的 this 也指向 window，在 nodeJS 中为 global object</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f2</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="meta">    "use strict"</span>;<span class="comment">//使用严格模式</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(f1() === <span class="literal">undefined</span>);<span class="comment">//true</span></span><br></pre></td></tr></table></figure>
@@ -634,7 +635,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -685,7 +686,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -904,7 +905,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

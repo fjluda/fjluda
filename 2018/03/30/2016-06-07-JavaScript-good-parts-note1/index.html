@@ -142,22 +142,22 @@
 
 
 
-  <meta name="description" content="记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。  原书中第一章为精华，做了一些周边介绍，略去。 语法空白这里说一下JavaScript的注释，一种是 /* */ 包围的块注释，另一种是 // 开头的行注释。 因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如： 123/*    var rm_a = /a*/.match(s)*/ 标识">
+  <meta name="description" content="记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。  原书中第一章为精华，做了一些周边介绍，略去。 语法空白这里说一下JavaScript的注释，一种是 /* */ 包围的块注释，另一种是 // 开头的行注释。 因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如： 123/*    var rm_a = /a*/.match(s)*/">
 <meta name="keywords" content="作用域,函数,this,闭包,面向对象,对象">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript 语言精粹笔记1-语法、对象、函数">
 <meta property="og:url" content="https://fjluda.github.io/2018/03/30/2016-06-07-JavaScript-good-parts-note1/index.html">
 <meta property="og:site_name" content="JinChao&#39;s Notes">
-<meta property="og:description" content="记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。  原书中第一章为精华，做了一些周边介绍，略去。 语法空白这里说一下JavaScript的注释，一种是 /* */ 包围的块注释，另一种是 // 开头的行注释。 因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如： 123/*    var rm_a = /a*/.match(s)*/ 标识">
+<meta property="og:description" content="记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。  原书中第一章为精华，做了一些周边介绍，略去。 语法空白这里说一下JavaScript的注释，一种是 /* */ 包围的块注释，另一种是 // 开头的行注释。 因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如： 123/*    var rm_a = /a*/.match(s)*/">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img3.doubanio.com/lpic/s3651235.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7011d6cfjw1f4ieu7focqj207h05caaf.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7011d6cfjw1f4lrei2b3pj208f06et95.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/7011d6cfjw1f4mprafcvhj20ml00xjrj.jpg">
-<meta property="og:updated_time" content="2018-04-03T00:12:32.532Z">
+<meta property="og:updated_time" content="2018-04-04T06:40:29.687Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 语言精粹笔记1-语法、对象、函数">
-<meta name="twitter:description" content="记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。  原书中第一章为精华，做了一些周边介绍，略去。 语法空白这里说一下JavaScript的注释，一种是 /* */ 包围的块注释，另一种是 // 开头的行注释。 因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如： 123/*    var rm_a = /a*/.match(s)*/ 标识">
+<meta name="twitter:description" content="记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。  原书中第一章为精华，做了一些周边介绍，略去。 语法空白这里说一下JavaScript的注释，一种是 /* */ 包围的块注释，另一种是 // 开头的行注释。 因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如： 123/*    var rm_a = /a*/.match(s)*/">
 <meta name="twitter:image" content="https://img3.doubanio.com/lpic/s3651235.jpg">
 
 
@@ -457,12 +457,13 @@
       
 
       
-        <p>记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>记录一下阅读蝴蝶书的笔记，本篇为第一部分包含书中前三章内容：语法、对象和函数。</p>
 <p><img src="https://img3.doubanio.com/lpic/s3651235.jpg" alt=""></p>
 <p>原书中第一章为精华，做了一些周边介绍，略去。</p>
 <h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="空白"><a href="#空白" class="headerlink" title="空白"></a>空白</h3><p>这里说一下JavaScript的注释，一种是 <code>/* */</code> 包围的块注释，另一种是 <code>//</code> 开头的行注释。</p>
 <p>因为块注释的字符可能是JavaScript中正则表达式字面量，因此不是很安全，如：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    var rm_a = /a*/</span>.match(s)</span><br><span class="line">*<span class="regexp">/</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><p>标识符由一个字母开头，后面可选择性的加上一个或多个字母、数字或下划线。要避免保留字。</p>
 <p>标识符被用于语句、变量、参数、属性名、运算符和标记。</p>
 <h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h3><p>可以存在指数部分，100和1e2完全相等</p>
@@ -790,7 +791,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -841,7 +842,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -1060,7 +1061,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

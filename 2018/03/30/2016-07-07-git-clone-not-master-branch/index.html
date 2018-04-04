@@ -142,19 +142,19 @@
 
 
 
-  <meta name="description" content="问题描述我们每次使用命令 1git clone git@gitlab.xxx.com:xxxxx.git 默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在daily/1.4.1分支上，我们希望拿到这个分支上的代码。  解决方法刚刚开周会的时候，自己洋洋得意的分享我的解决方案，但是……经过与团队成员的的讨论，自">
+  <meta name="description" content="问题描述我们每次使用命令 1git clone git@gitlab.xxx.com:xxxxx.git 默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在daily/1.4.1分支上，我们希望拿到这个分支上的代码。">
 <meta name="keywords" content="GitHub,Git,分支">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git 如何 clone 非 master 分支的代码">
 <meta property="og:url" content="https://fjluda.github.io/2018/03/30/2016-07-07-git-clone-not-master-branch/index.html">
 <meta property="og:site_name" content="JinChao&#39;s Notes">
-<meta property="og:description" content="问题描述我们每次使用命令 1git clone git@gitlab.xxx.com:xxxxx.git 默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在daily/1.4.1分支上，我们希望拿到这个分支上的代码。  解决方法刚刚开周会的时候，自己洋洋得意的分享我的解决方案，但是……经过与团队成员的的讨论，自">
+<meta property="og:description" content="问题描述我们每次使用命令 1git clone git@gitlab.xxx.com:xxxxx.git 默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在daily/1.4.1分支上，我们希望拿到这个分支上的代码。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png">
-<meta property="og:updated_time" content="2018-04-02T23:50:14.350Z">
+<meta property="og:updated_time" content="2018-04-04T06:41:06.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 如何 clone 非 master 分支的代码">
-<meta name="twitter:description" content="问题描述我们每次使用命令 1git clone git@gitlab.xxx.com:xxxxx.git 默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在daily/1.4.1分支上，我们希望拿到这个分支上的代码。  解决方法刚刚开周会的时候，自己洋洋得意的分享我的解决方案，但是……经过与团队成员的的讨论，自">
+<meta name="twitter:description" content="问题描述我们每次使用命令 1git clone git@gitlab.xxx.com:xxxxx.git 默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在daily/1.4.1分支上，我们希望拿到这个分支上的代码。">
 <meta name="twitter:image" content="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png">
 
 
@@ -454,10 +454,10 @@
       
 
       
-        <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>我们每次使用命令</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>我们每次使用命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@gitlab.xxx.com:xxxxx.git</span><br></pre></td></tr></table></figure>
 <p>默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在<code>daily/1.4.1</code>分支上，我们希望拿到这个分支上的代码。</p>
-<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png"></p>
+<p><img src="https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png" alt="7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png"><br><a id="more"></a></p>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p><strong>刚刚开周会的时候，自己洋洋得意的分享我的解决方案，但是……经过与团队成员的的讨论，自己的方法弱爆了，现在把更优雅的方法写一下。原来写的方法并不太适合用在这个场景里。</strong> 我之前写的方法在文章后面。</p>
 <p>直接使用命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -r #查看远程分支</span><br></pre></td></tr></table></figure>
@@ -534,8 +534,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/30/2016-10-16-shuffle-algorithm/" rel="next" title="Fisher–Yates shuffle 洗牌算法">
-                <i class="fa fa-chevron-left"></i> Fisher–Yates shuffle 洗牌算法
+              <a href="/2018/03/30/2016-06-14-how-to-use-babel/" rel="next" title="如何使用 babel">
+                <i class="fa fa-chevron-left"></i> 如何使用 babel
               </a>
             
           </div>
@@ -544,8 +544,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/30/2017-12-04-test-my-webapp/" rel="prev" title="这是我自己来测试的md页面">
-                这是我自己来测试的md页面 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/30/2016-10-16-shuffle-algorithm/" rel="prev" title="Fisher–Yates shuffle 洗牌算法">
+                Fisher–Yates shuffle 洗牌算法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -634,7 +634,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -685,7 +685,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -904,7 +904,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

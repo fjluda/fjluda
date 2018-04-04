@@ -150,7 +150,7 @@
 <meta property="og:site_name" content="JinChao&#39;s Notes">
 <meta property="og:description" content="记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。 继承继承的两大好处：代码重用，引入一套类型系统的规范。 伪类JavaScript 通过构造器函数产生对象。 构造器调用模式，即用new前缀去调用一个函数。 1234567891011121314var Mammal = function(name) &amp;#123;    this.name = name&amp;#125;Mamm">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-03T00:08:38.831Z">
+<meta property="og:updated_time" content="2018-04-04T06:40:37.288Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 语言精粹笔记2-继承、数组、正则表达式">
 <meta name="twitter:description" content="记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。 继承继承的两大好处：代码重用，引入一套类型系统的规范。 伪类JavaScript 通过构造器函数产生对象。 构造器调用模式，即用new前缀去调用一个函数。 1234567891011121314var Mammal = function(name) &amp;#123;    this.name = name&amp;#125;Mamm">
@@ -452,12 +452,12 @@
       
 
       
-        <p>记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>记录一下阅读蝴蝶书的笔记，本篇为书中以下章节的笔记：继承、数组和正则表达式。</p>
 <h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>继承的两大好处：代码重用，引入一套类型系统的规范。</p>
 <h3 id="伪类"><a href="#伪类" class="headerlink" title="伪类"></a>伪类</h3><p>JavaScript 通过构造器函数产生对象。</p>
 <p>构造器调用模式，即用<code>new</code>前缀去调用一个函数。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Mammal = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Mammal.prototype.getName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Mammal.prototype.says = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.saying || <span class="string">''</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myMammal = <span class="keyword">new</span> Mammal(<span class="string">'Herb'</span>)</span><br><span class="line"><span class="built_in">console</span>.log(myMammal.getName()) <span class="comment">//Herb</span></span><br></pre></td></tr></table></figure>
-<p>书中不推荐这样的写法。有很多风险。若忘记添加<code>new</code>前缀，<code>this</code>无法绑定到新的对象上。而是绑定到了全局对象上，破坏了全局变量环境。</p>
+<p>书中不推荐这样的写法。有很多风险。若忘记添加<code>new</code>前缀，<code>this</code>无法绑定到新的对象上。而是绑定到了全局对象上，破坏了全局变量环境。<br><a id="more"></a></p>
 <h3 id="对象说明符"><a href="#对象说明符" class="headerlink" title="对象说明符"></a>对象说明符</h3><p>上一节中的构造器可能要接受一大串参数。我们可以这样写：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myObject = Maker(&#123;</span><br><span class="line">    first: f,</span><br><span class="line">    middle: m,</span><br><span class="line">    last: l,</span><br><span class="line">    state: s,</span><br><span class="line">    city: c</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>将JSON对象传递给构造器，而它返回一个构造完全的对象。</p>
@@ -658,7 +658,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -709,7 +709,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">19</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -928,7 +928,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">103</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
