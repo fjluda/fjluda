@@ -18,8 +18,8 @@
   
   <entry>
     <title>诏安印象</title>
-    <link href="https://fjluda.github.io/2018/04/04/2018-04-04/"/>
-    <id>https://fjluda.github.io/2018/04/04/2018-04-04/</id>
+    <link href="https://fjluda.github.io/2018/04/04/2018-04-04-%E8%AF%8F%E5%AE%89%E5%8D%B0%E8%B1%A1/"/>
+    <id>https://fjluda.github.io/2018/04/04/2018-04-04-诏安印象/</id>
     <published>2018-04-03T23:58:55.815Z</published>
     <updated>2018-04-04T00:22:51.119Z</updated>
     
@@ -209,34 +209,6 @@
   </entry>
   
   <entry>
-    <title>Fisher–Yates shuffle 洗牌算法</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/</id>
-    <published>2018-03-30T01:15:16.121Z</published>
-    <updated>2018-04-04T00:00:03.712Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。&lt;/p&gt;
-&lt;p&gt;本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Riffle_shuffle.jpg/320px-Riffle_shuffle.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="算法" scheme="https://fjluda.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="shuffle" scheme="https://fjluda.github.io/tags/shuffle/"/>
-    
-      <category term="乱序" scheme="https://fjluda.github.io/tags/%E4%B9%B1%E5%BA%8F/"/>
-    
-      <category term="洗牌" scheme="https://fjluda.github.io/tags/%E6%B4%97%E7%89%8C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Git 如何 clone 非 master 分支的代码</title>
     <link href="https://fjluda.github.io/2018/03/30/2016-07-07-git-clone-not-master-branch/"/>
     <id>https://fjluda.github.io/2018/03/30/2016-07-07-git-clone-not-master-branch/</id>
@@ -261,6 +233,34 @@
       <category term="Git" scheme="https://fjluda.github.io/tags/Git/"/>
     
       <category term="分支" scheme="https://fjluda.github.io/tags/%E5%88%86%E6%94%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fisher–Yates shuffle 洗牌算法</title>
+    <link href="https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/"/>
+    <id>https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/</id>
+    <published>2018-03-30T01:15:16.121Z</published>
+    <updated>2018-04-04T00:00:03.712Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;简单来说 Fisher–Yates shuffle 算法是一个用来将一个有限集合生成一个随机排列的算法（数组随机排序）。这个算法生成的随机排列是等概率的。同时这个算法非常高效。&lt;/p&gt;
+&lt;p&gt;本文主要介绍这个算法的来源、演变、原理。并举出一个例子为大家清晰的描述每次迭代过程。最后使用 JavaScript 代码将算法实现。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Riffle_shuffle.jpg/320px-Riffle_shuffle.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="算法" scheme="https://fjluda.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="shuffle" scheme="https://fjluda.github.io/tags/shuffle/"/>
+    
+      <category term="乱序" scheme="https://fjluda.github.io/tags/%E4%B9%B1%E5%BA%8F/"/>
+    
+      <category term="洗牌" scheme="https://fjluda.github.io/tags/%E6%B4%97%E7%89%8C/"/>
     
   </entry>
   
@@ -480,6 +480,32 @@
   </entry>
   
   <entry>
+    <title>浅谈倒装式沥青路面结构在福建高速中的应用</title>
+    <link href="https://fjluda.github.io/2015/12/12/2015-12-12-%E6%B5%85%E8%B0%88%E5%80%92%E8%A3%85%E5%BC%8F%E6%B2%A5%E9%9D%92%E8%B7%AF%E9%9D%A2%E7%BB%93%E6%9E%84%E5%9C%A8%E7%A6%8F%E5%BB%BA%E9%AB%98%E9%80%9F%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/"/>
+    <id>https://fjluda.github.io/2015/12/12/2015-12-12-浅谈倒装式沥青路面结构在福建高速中的应用/</id>
+    <published>2015-12-11T16:00:00.000Z</published>
+    <updated>2018-04-04T04:55:38.230Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h2&gt;&lt;p&gt;福建省第一条高速公路，福泉高速公路从1999年正式开通，到2015年”十二五”末，已建成通车里程4817公里，并实现县县通高速目标。这十几年高速公路大建设过程中，伴随社会经济不断发展，交通量猛增，造成早期路面损坏较为严重,例如反射裂缝。本文结合福建省高速建设工作实际，介绍沥青碎石、级配碎石与稳定粒料半刚性基层组合结构形式（简称倒装式），有效减少路面反射性裂缝，延长道路使用寿命，减少管奍费用，提高社会经济效益。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="沥青路面" scheme="https://fjluda.github.io/categories/%E6%B2%A5%E9%9D%92%E8%B7%AF%E9%9D%A2/"/>
+    
+    
+      <category term="论文" scheme="https://fjluda.github.io/tags/%E8%AE%BA%E6%96%87/"/>
+    
+      <category term="沥青路面" scheme="https://fjluda.github.io/tags/%E6%B2%A5%E9%9D%92%E8%B7%AF%E9%9D%A2/"/>
+    
+      <category term="结构" scheme="https://fjluda.github.io/tags/%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="倒装" scheme="https://fjluda.github.io/tags/%E5%80%92%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
     <title>在低版本 IE 中点击空 block 元素的问题</title>
     <link href="https://fjluda.github.io/2015/07/24/2015-07-24-low-IE-click-empty-block-bug/"/>
     <id>https://fjluda.github.io/2015/07/24/2015-07-24-low-IE-click-empty-block-bug/</id>
@@ -567,35 +593,6 @@
       <category term="VBA" scheme="https://fjluda.github.io/tags/VBA/"/>
     
       <category term="代码" scheme="https://fjluda.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EXCEL VBA连接ACCESS数据库</title>
-    <link href="https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL%20VBA%E8%BF%9E%E6%8E%A5ACCESS%E6%95%B0%E6%8D%AE/"/>
-    <id>https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/</id>
-    <published>2015-06-22T01:06:05.000Z</published>
-    <updated>2018-04-03T12:57:07.314Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h2 id=&quot;添加数据&quot;&gt;&lt;a href=&quot;#添加数据&quot; class=&quot;head
-      
-    
-    </summary>
-    
-      <category term="VBA" scheme="https://fjluda.github.io/categories/VBA/"/>
-    
-    
-      <category term="EXCEL" scheme="https://fjluda.github.io/tags/EXCEL/"/>
-    
-      <category term="VBA" scheme="https://fjluda.github.io/tags/VBA/"/>
-    
-      <category term="ACCESS" scheme="https://fjluda.github.io/tags/ACCESS/"/>
-    
-      <category term="数据库" scheme="https://fjluda.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
