@@ -360,6 +360,163 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JinChao's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/" itemprop="url">EXCEL VBA连接ACCESS数据库</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-22T09:06:05+08:00">2015-06-22</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VBA/" itemprop="url" rel="index"><span itemprop="name">VBA</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">Sub a()</span><br><span class="line"></span><br><span class="line"><span class="string">'Option Explicit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public myData As String, myTable As String, SQL As String</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public cnn As ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Public rs As ADODB.Recordset</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">On Error GoTo hhh</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myData = ThisWorkbook.Path &amp; "\SWDB.mdb"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    Set cnn = New ADODB.Connection</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    With cnn</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Provider = "Microsoft.Ace.OleDB.12.0"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        .Open myData</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    End With</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">myTable = "SW01"</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">SQL = "select * from " &amp; myTable</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">for i=1 to 4 '</span>可添加<span class="number">4</span>次</span><br><span class="line"></span><br><span class="line">rs.Fields(<span class="string">"a"</span>) = Cells(<span class="number">5</span> + i, <span class="number">15</span>)</span><br><span class="line"></span><br><span class="line">next i</span><br><span class="line"></span><br><span class="line">rs.Update</span><br><span class="line"></span><br><span class="line">MsgBox <span class="string">"添加成功！"</span>, vbOKOnly + vbInformation, <span class="string">"创建数据"</span></span><br><span class="line"></span><br><span class="line">rs.Close</span><br><span class="line"></span><br><span class="line">cnn.Close</span><br><span class="line"></span><br><span class="line"><span class="built_in">Set</span> rs = Nothing</span><br><span class="line"></span><br><span class="line"><span class="built_in">Set</span> cnn = Nothing</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">hhh:</span><br><span class="line"></span><br><span class="line">MsgBox <span class="string">"添加数据时出现错误!"</span> &amp; vbCrLf &amp; <span class="string">"原因:该编号重复或数据类型不对，请查找原因."</span>, vbCritical, <span class="string">"提示！！！！"</span></span><br><span class="line"></span><br><span class="line">end sub</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2015/06/18/2015-06-18-weinre/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1823,169 +1980,6 @@ console.log(func()); //30
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://fjluda.github.io/2015/04/06/2015-04-06-arrays-similar/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JinChao's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/04/06/2015-04-06-arrays-similar/" itemprop="url">判断两个数组是否相似 (arraysSimilar)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-06T15:14:54+08:00">2015-04-06</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/04/06/2015-04-06-arrays-similar/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/04/06/2015-04-06-arrays-similar/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>题目来自 <a href="http://imooc.com/code/5760" target="_blank" rel="noopener">慕课网 JavaScript 深入浅出 1-6 编程练习</a>    </p>
-<p>请在 index.html 文件中，编写 arraysSimilar 函数，实现判断传入的两个数组是否相似。具体需求：   </p>
-<ol>
-<li>数组中的成员类型相同，顺序可以不同。例如 [1, true] 与 [false, 2] 是相似的。</li>
-<li>数组的长度一致。</li>
-<li>类型的判断范围，需要区分: String, Boolean, Number, undefined, null, 函数, 日期, window.</li>
-</ol>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/04/06/2015-04-06-arrays-similar/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2037,7 +2031,7 @@ console.log(func()); //30
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">35</span>
+                    <span class="site-state-item-count">36</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2283,7 +2277,17 @@ console.log(func()); //30
                     
                       
                     
-                    <span class="site-state-item-count">91</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">95</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -2555,6 +2559,8 @@ console.log(func()); //30
   
     
       
+        
+      
     
       
     
@@ -2576,6 +2582,29 @@ console.log(func()); //30
     
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
   
 
 
