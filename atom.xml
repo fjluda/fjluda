@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://fjluda.github.io/"/>
+  <link href="http://jiangjinchao.pro/"/>
   <updated>2018-04-05T12:38:11.375Z</updated>
-  <id>https://fjluda.github.io/</id>
+  <id>http://jiangjinchao.pro/</id>
   
   <author>
     <name>Jiang JinChao</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Next默认目录结构</title>
-    <link href="https://fjluda.github.io/2018/04/05/2018-04-05-Next%E9%BB%98%E8%AE%A4%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/"/>
-    <id>https://fjluda.github.io/2018/04/05/2018-04-05-Next默认目录结构/</id>
+    <link href="http://jiangjinchao.pro/2018/04/05/2018-04-05-Next%E9%BB%98%E8%AE%A4%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/"/>
+    <id>http://jiangjinchao.pro/2018/04/05/2018-04-05-Next默认目录结构/</id>
     <published>2018-04-05T12:07:56.869Z</published>
     <updated>2018-04-05T12:38:11.375Z</updated>
     
@@ -44,21 +44,21 @@
     
     </summary>
     
-      <category term="Next" scheme="https://fjluda.github.io/categories/Next/"/>
+      <category term="Next" scheme="http://jiangjinchao.pro/categories/Next/"/>
     
     
-      <category term="Next" scheme="https://fjluda.github.io/tags/Next/"/>
+      <category term="Next" scheme="http://jiangjinchao.pro/tags/Next/"/>
     
-      <category term="结构" scheme="https://fjluda.github.io/tags/%E7%BB%93%E6%9E%84/"/>
+      <category term="结构" scheme="http://jiangjinchao.pro/tags/%E7%BB%93%E6%9E%84/"/>
     
-      <category term="目录" scheme="https://fjluda.github.io/tags/%E7%9B%AE%E5%BD%95/"/>
+      <category term="目录" scheme="http://jiangjinchao.pro/tags/%E7%9B%AE%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>诏安印象</title>
-    <link href="https://fjluda.github.io/2018/04/04/2018-04-04-%E8%AF%8F%E5%AE%89%E5%8D%B0%E8%B1%A1/"/>
-    <id>https://fjluda.github.io/2018/04/04/2018-04-04-诏安印象/</id>
+    <link href="http://jiangjinchao.pro/2018/04/04/2018-04-04-%E8%AF%8F%E5%AE%89%E5%8D%B0%E8%B1%A1/"/>
+    <id>http://jiangjinchao.pro/2018/04/04/2018-04-04-诏安印象/</id>
     <published>2018-04-03T23:58:55.815Z</published>
     <updated>2018-04-04T00:22:51.119Z</updated>
     
@@ -70,25 +70,25 @@
     
     </summary>
     
-      <category term="摄影" scheme="https://fjluda.github.io/categories/%E6%91%84%E5%BD%B1/"/>
+      <category term="摄影" scheme="http://jiangjinchao.pro/categories/%E6%91%84%E5%BD%B1/"/>
     
     
-      <category term="摄影" scheme="https://fjluda.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+      <category term="摄影" scheme="http://jiangjinchao.pro/tags/%E6%91%84%E5%BD%B1/"/>
     
-      <category term="街拍" scheme="https://fjluda.github.io/tags/%E8%A1%97%E6%8B%8D/"/>
+      <category term="街拍" scheme="http://jiangjinchao.pro/tags/%E8%A1%97%E6%8B%8D/"/>
     
-      <category term="诏安" scheme="https://fjluda.github.io/tags/%E8%AF%8F%E5%AE%89/"/>
+      <category term="诏安" scheme="http://jiangjinchao.pro/tags/%E8%AF%8F%E5%AE%89/"/>
     
-      <category term="生活" scheme="https://fjluda.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+      <category term="生活" scheme="http://jiangjinchao.pro/tags/%E7%94%9F%E6%B4%BB/"/>
     
-      <category term="手机" scheme="https://fjluda.github.io/tags/%E6%89%8B%E6%9C%BA/"/>
+      <category term="手机" scheme="http://jiangjinchao.pro/tags/%E6%89%8B%E6%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://fjluda.github.io/2018/04/03/2018-4-2-hello-world/"/>
-    <id>https://fjluda.github.io/2018/04/03/2018-4-2-hello-world/</id>
+    <link href="http://jiangjinchao.pro/2018/04/03/2018-4-2-hello-world/"/>
+    <id>http://jiangjinchao.pro/2018/04/03/2018-4-2-hello-world/</id>
     <published>2018-04-02T16:00:00.000Z</published>
     <updated>2018-04-05T09:07:23.996Z</updated>
     
@@ -102,21 +102,21 @@
     
     </summary>
     
-      <category term="搭建博客" scheme="https://fjluda.github.io/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="搭建博客" scheme="http://jiangjinchao.pro/categories/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="npm" scheme="https://fjluda.github.io/tags/npm/"/>
+      <category term="npm" scheme="http://jiangjinchao.pro/tags/npm/"/>
     
-      <category term="hexo" scheme="https://fjluda.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://jiangjinchao.pro/tags/hexo/"/>
     
-      <category term="github" scheme="https://fjluda.github.io/tags/github/"/>
+      <category term="github" scheme="http://jiangjinchao.pro/tags/github/"/>
     
   </entry>
   
   <entry>
     <title>橡胶沥青应力吸收层施工方案</title>
-    <link href="https://fjluda.github.io/2018/04/01/2018-04-01-%E6%A9%A1%E8%83%B6%E6%B2%A5%E9%9D%92%E5%BA%94%E5%8A%9B%E5%90%B8%E6%94%B6%E5%B1%82%E6%96%BD%E5%B7%A5%E6%96%B9%E6%A1%88/"/>
-    <id>https://fjluda.github.io/2018/04/01/2018-04-01-橡胶沥青应力吸收层施工方案/</id>
+    <link href="http://jiangjinchao.pro/2018/04/01/2018-04-01-%E6%A9%A1%E8%83%B6%E6%B2%A5%E9%9D%92%E5%BA%94%E5%8A%9B%E5%90%B8%E6%94%B6%E5%B1%82%E6%96%BD%E5%B7%A5%E6%96%B9%E6%A1%88/"/>
+    <id>http://jiangjinchao.pro/2018/04/01/2018-04-01-橡胶沥青应力吸收层施工方案/</id>
     <published>2018-04-01T01:06:05.000Z</published>
     <updated>2018-04-03T15:24:42.830Z</updated>
     
@@ -126,23 +126,23 @@
     
     </summary>
     
-      <category term="施工方案" scheme="https://fjluda.github.io/categories/%E6%96%BD%E5%B7%A5%E6%96%B9%E6%A1%88/"/>
+      <category term="施工方案" scheme="http://jiangjinchao.pro/categories/%E6%96%BD%E5%B7%A5%E6%96%B9%E6%A1%88/"/>
     
     
-      <category term="施工" scheme="https://fjluda.github.io/tags/%E6%96%BD%E5%B7%A5/"/>
+      <category term="施工" scheme="http://jiangjinchao.pro/tags/%E6%96%BD%E5%B7%A5/"/>
     
-      <category term="橡胶沥青" scheme="https://fjluda.github.io/tags/%E6%A9%A1%E8%83%B6%E6%B2%A5%E9%9D%92/"/>
+      <category term="橡胶沥青" scheme="http://jiangjinchao.pro/tags/%E6%A9%A1%E8%83%B6%E6%B2%A5%E9%9D%92/"/>
     
-      <category term="应力吸收层" scheme="https://fjluda.github.io/tags/%E5%BA%94%E5%8A%9B%E5%90%B8%E6%94%B6%E5%B1%82/"/>
+      <category term="应力吸收层" scheme="http://jiangjinchao.pro/tags/%E5%BA%94%E5%8A%9B%E5%90%B8%E6%94%B6%E5%B1%82/"/>
     
-      <category term="路面" scheme="https://fjluda.github.io/tags/%E8%B7%AF%E9%9D%A2/"/>
+      <category term="路面" scheme="http://jiangjinchao.pro/tags/%E8%B7%AF%E9%9D%A2/"/>
     
   </entry>
   
   <entry>
     <title>非离子乳化沥青防水涂料的配方及制作工艺</title>
-    <link href="https://fjluda.github.io/2018/03/31/2018-03-31-%E9%9D%9E%E7%A6%BB%E5%AD%90%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92%E9%98%B2%E6%B0%B4%E6%B6%82%E6%96%99%E7%9A%84%E9%85%8D%E6%96%B9%E5%8F%8A%E5%88%B6%E4%BD%9C%E5%B7%A5%E8%89%BA/"/>
-    <id>https://fjluda.github.io/2018/03/31/2018-03-31-非离子乳化沥青防水涂料的配方及制作工艺/</id>
+    <link href="http://jiangjinchao.pro/2018/03/31/2018-03-31-%E9%9D%9E%E7%A6%BB%E5%AD%90%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92%E9%98%B2%E6%B0%B4%E6%B6%82%E6%96%99%E7%9A%84%E9%85%8D%E6%96%B9%E5%8F%8A%E5%88%B6%E4%BD%9C%E5%B7%A5%E8%89%BA/"/>
+    <id>http://jiangjinchao.pro/2018/03/31/2018-03-31-非离子乳化沥青防水涂料的配方及制作工艺/</id>
     <published>2018-03-31T01:06:05.000Z</published>
     <updated>2018-04-02T23:47:58.337Z</updated>
     
@@ -155,23 +155,23 @@
     
     </summary>
     
-      <category term="乳化沥青" scheme="https://fjluda.github.io/categories/%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
+      <category term="乳化沥青" scheme="http://jiangjinchao.pro/categories/%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
     
     
-      <category term="工艺" scheme="https://fjluda.github.io/tags/%E5%B7%A5%E8%89%BA/"/>
+      <category term="工艺" scheme="http://jiangjinchao.pro/tags/%E5%B7%A5%E8%89%BA/"/>
     
-      <category term="乳化沥青" scheme="https://fjluda.github.io/tags/%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
+      <category term="乳化沥青" scheme="http://jiangjinchao.pro/tags/%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
     
-      <category term="防水" scheme="https://fjluda.github.io/tags/%E9%98%B2%E6%B0%B4/"/>
+      <category term="防水" scheme="http://jiangjinchao.pro/tags/%E9%98%B2%E6%B0%B4/"/>
     
-      <category term="配方" scheme="https://fjluda.github.io/tags/%E9%85%8D%E6%96%B9/"/>
+      <category term="配方" scheme="http://jiangjinchao.pro/tags/%E9%85%8D%E6%96%B9/"/>
     
   </entry>
   
   <entry>
     <title>SBS胶乳改性乳化沥青稳定性研究</title>
-    <link href="https://fjluda.github.io/2018/03/30/2018-03-30-SBS%E8%83%B6%E4%B9%B3%E6%94%B9%E6%80%A7%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%A0%94%E7%A9%B6/"/>
-    <id>https://fjluda.github.io/2018/03/30/2018-03-30-SBS胶乳改性乳化沥青稳定性研究/</id>
+    <link href="http://jiangjinchao.pro/2018/03/30/2018-03-30-SBS%E8%83%B6%E4%B9%B3%E6%94%B9%E6%80%A7%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92%E7%A8%B3%E5%AE%9A%E6%80%A7%E7%A0%94%E7%A9%B6/"/>
+    <id>http://jiangjinchao.pro/2018/03/30/2018-03-30-SBS胶乳改性乳化沥青稳定性研究/</id>
     <published>2018-03-30T11:06:05.000Z</published>
     <updated>2018-04-03T15:41:12.855Z</updated>
     
@@ -183,23 +183,23 @@
     
     </summary>
     
-      <category term="改性乳化沥青" scheme="https://fjluda.github.io/categories/%E6%94%B9%E6%80%A7%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
+      <category term="改性乳化沥青" scheme="http://jiangjinchao.pro/categories/%E6%94%B9%E6%80%A7%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
     
     
-      <category term="工艺" scheme="https://fjluda.github.io/tags/%E5%B7%A5%E8%89%BA/"/>
+      <category term="工艺" scheme="http://jiangjinchao.pro/tags/%E5%B7%A5%E8%89%BA/"/>
     
-      <category term="SBS" scheme="https://fjluda.github.io/tags/SBS/"/>
+      <category term="SBS" scheme="http://jiangjinchao.pro/tags/SBS/"/>
     
-      <category term="改性乳化沥青" scheme="https://fjluda.github.io/tags/%E6%94%B9%E6%80%A7%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
+      <category term="改性乳化沥青" scheme="http://jiangjinchao.pro/tags/%E6%94%B9%E6%80%A7%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
     
-      <category term="稳定性" scheme="https://fjluda.github.io/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7/"/>
+      <category term="稳定性" scheme="http://jiangjinchao.pro/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu16.04设置Pycharm桌面快捷键</title>
-    <link href="https://fjluda.github.io/2018/03/30/2017-12-13-Ubuntu16.04-pycharm-icon-setting/"/>
-    <id>https://fjluda.github.io/2018/03/30/2017-12-13-Ubuntu16.04-pycharm-icon-setting/</id>
+    <link href="http://jiangjinchao.pro/2018/03/30/2017-12-13-Ubuntu16.04-pycharm-icon-setting/"/>
+    <id>http://jiangjinchao.pro/2018/03/30/2017-12-13-Ubuntu16.04-pycharm-icon-setting/</id>
     <published>2018-03-30T01:15:16.124Z</published>
     <updated>2018-04-04T06:41:46.527Z</updated>
     
@@ -215,19 +215,19 @@
     
     </summary>
     
-      <category term="SnakeSon" scheme="https://fjluda.github.io/categories/SnakeSon/"/>
+      <category term="SnakeSon" scheme="http://jiangjinchao.pro/categories/SnakeSon/"/>
     
     
-      <category term="Ubuntu" scheme="https://fjluda.github.io/tags/Ubuntu/"/>
+      <category term="Ubuntu" scheme="http://jiangjinchao.pro/tags/Ubuntu/"/>
     
-      <category term="Pycharm" scheme="https://fjluda.github.io/tags/Pycharm/"/>
+      <category term="Pycharm" scheme="http://jiangjinchao.pro/tags/Pycharm/"/>
     
   </entry>
   
   <entry>
     <title>Git 如何 clone 非 master 分支的代码</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-07-07-git-clone-not-master-branch/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-07-07-git-clone-not-master-branch/</id>
+    <link href="http://jiangjinchao.pro/2018/03/30/2016-07-07-git-clone-not-master-branch/"/>
+    <id>http://jiangjinchao.pro/2018/03/30/2016-07-07-git-clone-not-master-branch/</id>
     <published>2018-03-30T01:15:16.121Z</published>
     <updated>2018-04-04T06:41:06.362Z</updated>
     
@@ -240,21 +240,21 @@
     
     </summary>
     
-      <category term="GitHub" scheme="https://fjluda.github.io/categories/GitHub/"/>
+      <category term="GitHub" scheme="http://jiangjinchao.pro/categories/GitHub/"/>
     
     
-      <category term="Git" scheme="https://fjluda.github.io/tags/Git/"/>
+      <category term="Git" scheme="http://jiangjinchao.pro/tags/Git/"/>
     
-      <category term="GitHub" scheme="https://fjluda.github.io/tags/GitHub/"/>
+      <category term="GitHub" scheme="http://jiangjinchao.pro/tags/GitHub/"/>
     
-      <category term="分支" scheme="https://fjluda.github.io/tags/%E5%88%86%E6%94%AF/"/>
+      <category term="分支" scheme="http://jiangjinchao.pro/tags/%E5%88%86%E6%94%AF/"/>
     
   </entry>
   
   <entry>
     <title>Fisher–Yates shuffle 洗牌算法</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-10-16-shuffle-algorithm/</id>
+    <link href="http://jiangjinchao.pro/2018/03/30/2016-10-16-shuffle-algorithm/"/>
+    <id>http://jiangjinchao.pro/2018/03/30/2016-10-16-shuffle-algorithm/</id>
     <published>2018-03-30T01:15:16.121Z</published>
     <updated>2018-04-04T00:00:03.712Z</updated>
     
@@ -266,23 +266,23 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://jiangjinchao.pro/categories/JavaScript/"/>
     
     
-      <category term="算法" scheme="https://fjluda.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="http://jiangjinchao.pro/tags/%E7%AE%97%E6%B3%95/"/>
     
-      <category term="shuffle" scheme="https://fjluda.github.io/tags/shuffle/"/>
+      <category term="shuffle" scheme="http://jiangjinchao.pro/tags/shuffle/"/>
     
-      <category term="乱序" scheme="https://fjluda.github.io/tags/%E4%B9%B1%E5%BA%8F/"/>
+      <category term="乱序" scheme="http://jiangjinchao.pro/tags/%E4%B9%B1%E5%BA%8F/"/>
     
-      <category term="洗牌" scheme="https://fjluda.github.io/tags/%E6%B4%97%E7%89%8C/"/>
+      <category term="洗牌" scheme="http://jiangjinchao.pro/tags/%E6%B4%97%E7%89%8C/"/>
     
   </entry>
   
   <entry>
     <title>如何使用 babel</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-06-14-how-to-use-babel/</id>
+    <link href="http://jiangjinchao.pro/2018/03/30/2016-06-14-how-to-use-babel/"/>
+    <id>http://jiangjinchao.pro/2018/03/30/2016-06-14-how-to-use-babel/</id>
     <published>2018-03-30T00:50:23.543Z</published>
     <updated>2018-04-04T06:40:53.208Z</updated>
     
@@ -298,23 +298,23 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://jiangjinchao.pro/categories/JavaScript/"/>
     
     
-      <category term="ES2015" scheme="https://fjluda.github.io/tags/ES2015/"/>
+      <category term="ES2015" scheme="http://jiangjinchao.pro/tags/ES2015/"/>
     
-      <category term="ES6" scheme="https://fjluda.github.io/tags/ES6/"/>
+      <category term="ES6" scheme="http://jiangjinchao.pro/tags/ES6/"/>
     
-      <category term="ES5" scheme="https://fjluda.github.io/tags/ES5/"/>
+      <category term="ES5" scheme="http://jiangjinchao.pro/tags/ES5/"/>
     
-      <category term="babel" scheme="https://fjluda.github.io/tags/babel/"/>
+      <category term="babel" scheme="http://jiangjinchao.pro/tags/babel/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript 语言精粹笔记2-方法、毒瘤等</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note2/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-06-10-JavaScript-good-parts-note2/</id>
+    <link href="http://jiangjinchao.pro/2018/03/30/2016-06-10-JavaScript-good-parts-note2/"/>
+    <id>http://jiangjinchao.pro/2018/03/30/2016-06-10-JavaScript-good-parts-note2/</id>
     <published>2018-03-30T00:50:23.543Z</published>
     <updated>2018-04-04T21:51:07.366Z</updated>
     
@@ -336,19 +336,19 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://jiangjinchao.pro/categories/JavaScript/"/>
     
     
-      <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://jiangjinchao.pro/tags/JavaScript/"/>
     
-      <category term="函数" scheme="https://fjluda.github.io/tags/%E5%87%BD%E6%95%B0/"/>
+      <category term="函数" scheme="http://jiangjinchao.pro/tags/%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript 语言精粹笔记1-语法、对象、函数</title>
-    <link href="https://fjluda.github.io/2018/03/30/2016-06-07-JavaScript-good-parts-note1/"/>
-    <id>https://fjluda.github.io/2018/03/30/2016-06-07-JavaScript-good-parts-note1/</id>
+    <link href="http://jiangjinchao.pro/2018/03/30/2016-06-07-JavaScript-good-parts-note1/"/>
+    <id>http://jiangjinchao.pro/2018/03/30/2016-06-07-JavaScript-good-parts-note1/</id>
     <published>2018-03-30T00:50:23.541Z</published>
     <updated>2018-04-04T21:50:53.415Z</updated>
     
@@ -363,27 +363,27 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://jiangjinchao.pro/categories/JavaScript/"/>
     
     
-      <category term="this" scheme="https://fjluda.github.io/tags/this/"/>
+      <category term="this" scheme="http://jiangjinchao.pro/tags/this/"/>
     
-      <category term="函数" scheme="https://fjluda.github.io/tags/%E5%87%BD%E6%95%B0/"/>
+      <category term="函数" scheme="http://jiangjinchao.pro/tags/%E5%87%BD%E6%95%B0/"/>
     
-      <category term="闭包" scheme="https://fjluda.github.io/tags/%E9%97%AD%E5%8C%85/"/>
+      <category term="闭包" scheme="http://jiangjinchao.pro/tags/%E9%97%AD%E5%8C%85/"/>
     
-      <category term="作用域" scheme="https://fjluda.github.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
+      <category term="作用域" scheme="http://jiangjinchao.pro/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     
-      <category term="对象" scheme="https://fjluda.github.io/tags/%E5%AF%B9%E8%B1%A1/"/>
+      <category term="对象" scheme="http://jiangjinchao.pro/tags/%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="面向对象" scheme="https://fjluda.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+      <category term="面向对象" scheme="http://jiangjinchao.pro/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
   <entry>
     <title>Markdown 语法和 MWeb 写作使用说明</title>
-    <link href="https://fjluda.github.io/2018/03/29/2018-03-29-Markdown%20%E8%AF%AD%E6%B3%95%E5%92%8C%20MWeb%20%E5%86%99%E4%BD%9C%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
-    <id>https://fjluda.github.io/2018/03/29/2018-03-29-Markdown 语法和 MWeb 写作使用说明/</id>
+    <link href="http://jiangjinchao.pro/2018/03/29/2018-03-29-Markdown%20%E8%AF%AD%E6%B3%95%E5%92%8C%20MWeb%20%E5%86%99%E4%BD%9C%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
+    <id>http://jiangjinchao.pro/2018/03/29/2018-03-29-Markdown 语法和 MWeb 写作使用说明/</id>
     <published>2018-03-29T11:06:05.000Z</published>
     <updated>2018-04-03T23:59:48.055Z</updated>
     
@@ -398,21 +398,21 @@
     
     </summary>
     
-      <category term="Markdown" scheme="https://fjluda.github.io/categories/Markdown/"/>
+      <category term="Markdown" scheme="http://jiangjinchao.pro/categories/Markdown/"/>
     
     
-      <category term="Markdown" scheme="https://fjluda.github.io/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://jiangjinchao.pro/tags/Markdown/"/>
     
-      <category term="MWeb" scheme="https://fjluda.github.io/tags/MWeb/"/>
+      <category term="MWeb" scheme="http://jiangjinchao.pro/tags/MWeb/"/>
     
-      <category term="语法" scheme="https://fjluda.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
+      <category term="语法" scheme="http://jiangjinchao.pro/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>工具</title>
-    <link href="https://fjluda.github.io/2018/01/01/2018-04-05-%E5%B7%A5%E5%85%B7/"/>
-    <id>https://fjluda.github.io/2018/01/01/2018-04-05-工具/</id>
+    <link href="http://jiangjinchao.pro/2018/01/01/2018-04-05-%E5%B7%A5%E5%85%B7/"/>
+    <id>http://jiangjinchao.pro/2018/01/01/2018-04-05-工具/</id>
     <published>2017-12-31T23:08:28.000Z</published>
     <updated>2018-04-05T12:07:57.418Z</updated>
     
@@ -439,15 +439,15 @@
     
     </summary>
     
-      <category term="工具" scheme="https://fjluda.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://jiangjinchao.pro/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
   </entry>
   
   <entry>
     <title>浅谈正则表达式中的分组和引用</title>
-    <link href="https://fjluda.github.io/2016/05/06/2016-05-06-regular-expression-group/"/>
-    <id>https://fjluda.github.io/2016/05/06/2016-05-06-regular-expression-group/</id>
+    <link href="http://jiangjinchao.pro/2016/05/06/2016-05-06-regular-expression-group/"/>
+    <id>http://jiangjinchao.pro/2016/05/06/2016-05-06-regular-expression-group/</id>
     <published>2016-05-06T03:40:18.000Z</published>
     <updated>2018-04-04T06:40:20.896Z</updated>
     
@@ -462,21 +462,21 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://jiangjinchao.pro/categories/JavaScript/"/>
     
     
-      <category term="正则" scheme="https://fjluda.github.io/tags/%E6%AD%A3%E5%88%99/"/>
+      <category term="正则" scheme="http://jiangjinchao.pro/tags/%E6%AD%A3%E5%88%99/"/>
     
-      <category term="Regular" scheme="https://fjluda.github.io/tags/Regular/"/>
+      <category term="Regular" scheme="http://jiangjinchao.pro/tags/Regular/"/>
     
-      <category term="分组" scheme="https://fjluda.github.io/tags/%E5%88%86%E7%BB%84/"/>
+      <category term="分组" scheme="http://jiangjinchao.pro/tags/%E5%88%86%E7%BB%84/"/>
     
   </entry>
   
   <entry>
     <title>应用SPSS进行沥青路面压实度的动态控制</title>
-    <link href="https://fjluda.github.io/2015/08/05/2018-04-05-%E5%BA%94%E7%94%A8SPSS%E8%BF%9B%E8%A1%8C%E6%B2%A5%E9%9D%92%E8%B7%AF%E9%9D%A2%E5%8E%8B%E5%AE%9E%E5%BA%A6%E7%9A%84%E5%8A%A8%E6%80%81%E6%8E%A7%E5%88%B6/"/>
-    <id>https://fjluda.github.io/2015/08/05/2018-04-05-应用SPSS进行沥青路面压实度的动态控制/</id>
+    <link href="http://jiangjinchao.pro/2015/08/05/2018-04-05-%E5%BA%94%E7%94%A8SPSS%E8%BF%9B%E8%A1%8C%E6%B2%A5%E9%9D%92%E8%B7%AF%E9%9D%A2%E5%8E%8B%E5%AE%9E%E5%BA%A6%E7%9A%84%E5%8A%A8%E6%80%81%E6%8E%A7%E5%88%B6/"/>
+    <id>http://jiangjinchao.pro/2015/08/05/2018-04-05-应用SPSS进行沥青路面压实度的动态控制/</id>
     <published>2015-08-04T16:00:00.000Z</published>
     <updated>2018-04-05T06:55:00.330Z</updated>
     
@@ -493,35 +493,35 @@
     
     </summary>
     
-      <category term="沥青混合料" scheme="https://fjluda.github.io/categories/%E6%B2%A5%E9%9D%92%E6%B7%B7%E5%90%88%E6%96%99/"/>
+      <category term="沥青混合料" scheme="http://jiangjinchao.pro/categories/%E6%B2%A5%E9%9D%92%E6%B7%B7%E5%90%88%E6%96%99/"/>
     
     
-      <category term="贝雷参数" scheme="https://fjluda.github.io/tags/%E8%B4%9D%E9%9B%B7%E5%8F%82%E6%95%B0/"/>
+      <category term="贝雷参数" scheme="http://jiangjinchao.pro/tags/%E8%B4%9D%E9%9B%B7%E5%8F%82%E6%95%B0/"/>
     
-      <category term="沥青混合料" scheme="https://fjluda.github.io/tags/%E6%B2%A5%E9%9D%92%E6%B7%B7%E5%90%88%E6%96%99/"/>
+      <category term="沥青混合料" scheme="http://jiangjinchao.pro/tags/%E6%B2%A5%E9%9D%92%E6%B7%B7%E5%90%88%E6%96%99/"/>
     
-      <category term="VMA" scheme="https://fjluda.github.io/tags/VMA/"/>
+      <category term="VMA" scheme="http://jiangjinchao.pro/tags/VMA/"/>
     
-      <category term="模型" scheme="https://fjluda.github.io/tags/%E6%A8%A1%E5%9E%8B/"/>
+      <category term="模型" scheme="http://jiangjinchao.pro/tags/%E6%A8%A1%E5%9E%8B/"/>
     
-      <category term="SPSS" scheme="https://fjluda.github.io/tags/SPSS/"/>
+      <category term="SPSS" scheme="http://jiangjinchao.pro/tags/SPSS/"/>
     
-      <category term="论文" scheme="https://fjluda.github.io/tags/%E8%AE%BA%E6%96%87/"/>
+      <category term="论文" scheme="http://jiangjinchao.pro/tags/%E8%AE%BA%E6%96%87/"/>
     
-      <category term="沥青公路" scheme="https://fjluda.github.io/tags/%E6%B2%A5%E9%9D%92%E5%85%AC%E8%B7%AF/"/>
+      <category term="沥青公路" scheme="http://jiangjinchao.pro/tags/%E6%B2%A5%E9%9D%92%E5%85%AC%E8%B7%AF/"/>
     
-      <category term="压实度" scheme="https://fjluda.github.io/tags/%E5%8E%8B%E5%AE%9E%E5%BA%A6/"/>
+      <category term="压实度" scheme="http://jiangjinchao.pro/tags/%E5%8E%8B%E5%AE%9E%E5%BA%A6/"/>
     
-      <category term="工程质量" scheme="https://fjluda.github.io/tags/%E5%B7%A5%E7%A8%8B%E8%B4%A8%E9%87%8F/"/>
+      <category term="工程质量" scheme="http://jiangjinchao.pro/tags/%E5%B7%A5%E7%A8%8B%E8%B4%A8%E9%87%8F/"/>
     
-      <category term="动态管理" scheme="https://fjluda.github.io/tags/%E5%8A%A8%E6%80%81%E7%AE%A1%E7%90%86/"/>
+      <category term="动态管理" scheme="http://jiangjinchao.pro/tags/%E5%8A%A8%E6%80%81%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>在低版本 IE 中点击空 block 元素的问题</title>
-    <link href="https://fjluda.github.io/2015/07/24/2015-07-24-low-IE-click-empty-block-bug/"/>
-    <id>https://fjluda.github.io/2015/07/24/2015-07-24-low-IE-click-empty-block-bug/</id>
+    <link href="http://jiangjinchao.pro/2015/07/24/2015-07-24-low-IE-click-empty-block-bug/"/>
+    <id>http://jiangjinchao.pro/2015/07/24/2015-07-24-low-IE-click-empty-block-bug/</id>
     <published>2015-07-23T16:06:05.000Z</published>
     <updated>2018-04-04T06:40:12.742Z</updated>
     
@@ -532,23 +532,23 @@
     
     </summary>
     
-      <category term="CSS" scheme="https://fjluda.github.io/categories/CSS/"/>
+      <category term="CSS" scheme="http://jiangjinchao.pro/categories/CSS/"/>
     
     
-      <category term="HTML" scheme="https://fjluda.github.io/tags/HTML/"/>
+      <category term="HTML" scheme="http://jiangjinchao.pro/tags/HTML/"/>
     
-      <category term="CSS" scheme="https://fjluda.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="http://jiangjinchao.pro/tags/CSS/"/>
     
-      <category term="IE" scheme="https://fjluda.github.io/tags/IE/"/>
+      <category term="IE" scheme="http://jiangjinchao.pro/tags/IE/"/>
     
-      <category term="兼容性" scheme="https://fjluda.github.io/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
+      <category term="兼容性" scheme="http://jiangjinchao.pro/tags/%E5%85%BC%E5%AE%B9%E6%80%A7/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript 阶段总结</title>
-    <link href="https://fjluda.github.io/2015/07/09/2015-07-09-JavaScript-Net/"/>
-    <id>https://fjluda.github.io/2015/07/09/2015-07-09-JavaScript-Net/</id>
+    <link href="http://jiangjinchao.pro/2015/07/09/2015-07-09-JavaScript-Net/"/>
+    <id>http://jiangjinchao.pro/2015/07/09/2015-07-09-JavaScript-Net/</id>
     <published>2015-07-08T16:06:05.000Z</published>
     <updated>2018-04-04T06:40:02.601Z</updated>
     
@@ -558,25 +558,25 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://fjluda.github.io/categories/JavaScript/"/>
+      <category term="JavaScript" scheme="http://jiangjinchao.pro/categories/JavaScript/"/>
     
     
-      <category term="JavaScript" scheme="https://fjluda.github.io/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://jiangjinchao.pro/tags/JavaScript/"/>
     
-      <category term="HTML" scheme="https://fjluda.github.io/tags/HTML/"/>
+      <category term="HTML" scheme="http://jiangjinchao.pro/tags/HTML/"/>
     
-      <category term="CSS" scheme="https://fjluda.github.io/tags/CSS/"/>
+      <category term="CSS" scheme="http://jiangjinchao.pro/tags/CSS/"/>
     
-      <category term="思维导图" scheme="https://fjluda.github.io/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
+      <category term="思维导图" scheme="http://jiangjinchao.pro/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/"/>
     
-      <category term="技能树" scheme="https://fjluda.github.io/tags/%E6%8A%80%E8%83%BD%E6%A0%91/"/>
+      <category term="技能树" scheme="http://jiangjinchao.pro/tags/%E6%8A%80%E8%83%BD%E6%A0%91/"/>
     
   </entry>
   
   <entry>
     <title>随机不重复数值</title>
-    <link href="https://fjluda.github.io/2015/06/22/2018-04-01-%E9%9A%8F%E6%9C%BA%E4%B8%8D%E9%87%8D%E5%A4%8D%E6%95%B0%E5%80%BC/"/>
-    <id>https://fjluda.github.io/2015/06/22/2018-04-01-随机不重复数值/</id>
+    <link href="http://jiangjinchao.pro/2015/06/22/2018-04-01-%E9%9A%8F%E6%9C%BA%E4%B8%8D%E9%87%8D%E5%A4%8D%E6%95%B0%E5%80%BC/"/>
+    <id>http://jiangjinchao.pro/2015/06/22/2018-04-01-随机不重复数值/</id>
     <published>2015-06-22T01:06:05.000Z</published>
     <updated>2018-04-03T15:39:37.104Z</updated>
     
@@ -589,21 +589,21 @@
     
     </summary>
     
-      <category term="VBA" scheme="https://fjluda.github.io/categories/VBA/"/>
+      <category term="VBA" scheme="http://jiangjinchao.pro/categories/VBA/"/>
     
     
-      <category term="EXCEL" scheme="https://fjluda.github.io/tags/EXCEL/"/>
+      <category term="EXCEL" scheme="http://jiangjinchao.pro/tags/EXCEL/"/>
     
-      <category term="VBA" scheme="https://fjluda.github.io/tags/VBA/"/>
+      <category term="VBA" scheme="http://jiangjinchao.pro/tags/VBA/"/>
     
-      <category term="代码" scheme="https://fjluda.github.io/tags/%E4%BB%A3%E7%A0%81/"/>
+      <category term="代码" scheme="http://jiangjinchao.pro/tags/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
   <entry>
     <title>EXCEL VBA连接ACCESS数据库</title>
-    <link href="https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL%20VBA%E8%BF%9E%E6%8E%A5ACCESS%E6%95%B0%E6%8D%AE/"/>
-    <id>https://fjluda.github.io/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/</id>
+    <link href="http://jiangjinchao.pro/2015/06/22/2018-04-01-EXCEL%20VBA%E8%BF%9E%E6%8E%A5ACCESS%E6%95%B0%E6%8D%AE/"/>
+    <id>http://jiangjinchao.pro/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/</id>
     <published>2015-06-22T01:06:05.000Z</published>
     <updated>2018-04-04T06:43:12.286Z</updated>
     
@@ -613,16 +613,16 @@
     
     </summary>
     
-      <category term="VBA" scheme="https://fjluda.github.io/categories/VBA/"/>
+      <category term="VBA" scheme="http://jiangjinchao.pro/categories/VBA/"/>
     
     
-      <category term="EXCEL" scheme="https://fjluda.github.io/tags/EXCEL/"/>
+      <category term="EXCEL" scheme="http://jiangjinchao.pro/tags/EXCEL/"/>
     
-      <category term="VBA" scheme="https://fjluda.github.io/tags/VBA/"/>
+      <category term="VBA" scheme="http://jiangjinchao.pro/tags/VBA/"/>
     
-      <category term="ACCESS" scheme="https://fjluda.github.io/tags/ACCESS/"/>
+      <category term="ACCESS" scheme="http://jiangjinchao.pro/tags/ACCESS/"/>
     
-      <category term="数据库" scheme="https://fjluda.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="数据库" scheme="http://jiangjinchao.pro/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
