@@ -127,7 +127,14 @@
 
     <url>
         <loc>https://fjluda.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
-        <lastmod>2018-04-05T10:56:12.469Z</lastmod>
+        <lastmod>2018-04-05T12:07:57.418Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fjluda.github.io/categories/Next/</loc>
+        <lastmod>2018-04-05T12:38:11.375Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

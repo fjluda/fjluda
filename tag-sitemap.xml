@@ -107,6 +107,13 @@
     </url>
 
     <url>
+        <loc>https://fjluda.github.io/tags/%E5%B7%A5%E8%89%BA/</loc>
+        <lastmod>2018-04-03T15:41:12.855Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://fjluda.github.io/tags/SBS/</loc>
         <lastmod>2018-04-03T15:41:12.855Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -122,13 +129,6 @@
 
     <url>
         <loc>https://fjluda.github.io/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7/</loc>
-        <lastmod>2018-04-03T15:41:12.855Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://fjluda.github.io/tags/%E5%B7%A5%E8%89%BA/</loc>
         <lastmod>2018-04-03T15:41:12.855Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -366,14 +366,14 @@
     </url>
 
     <url>
-        <loc>https://fjluda.github.io/tags/CSS/</loc>
+        <loc>https://fjluda.github.io/tags/HTML/</loc>
         <lastmod>2018-04-04T06:40:12.742Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://fjluda.github.io/tags/HTML/</loc>
+        <loc>https://fjluda.github.io/tags/CSS/</loc>
         <lastmod>2018-04-04T06:40:12.742Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -429,6 +429,13 @@
     </url>
 
     <url>
+        <loc>https://fjluda.github.io/tags/Baidu/</loc>
+        <lastmod>2018-04-04T06:40:58.861Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://fjluda.github.io/tags/ife/</loc>
         <lastmod>2018-04-04T06:40:58.861Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -444,13 +451,6 @@
 
     <url>
         <loc>https://fjluda.github.io/tags/Regular/</loc>
-        <lastmod>2018-04-04T06:40:58.861Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://fjluda.github.io/tags/Baidu/</loc>
         <lastmod>2018-04-04T06:40:58.861Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -541,7 +541,7 @@
     </url>
 
     <url>
-        <loc>https://fjluda.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
+        <loc>https://fjluda.github.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
         <lastmod>2018-04-04T21:50:53.415Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -555,7 +555,7 @@
     </url>
 
     <url>
-        <loc>https://fjluda.github.io/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/</loc>
+        <loc>https://fjluda.github.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
         <lastmod>2018-04-04T21:50:53.415Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -604,14 +604,14 @@
     </url>
 
     <url>
-        <loc>https://fjluda.github.io/tags/%E8%AE%BA%E6%96%87/</loc>
+        <loc>https://fjluda.github.io/tags/SPSS/</loc>
         <lastmod>2018-04-05T06:55:00.330Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://fjluda.github.io/tags/SPSS/</loc>
+        <loc>https://fjluda.github.io/tags/%E8%AE%BA%E6%96%87/</loc>
         <lastmod>2018-04-05T06:55:00.330Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -662,6 +662,27 @@
     <url>
         <loc>https://fjluda.github.io/tags/github/</loc>
         <lastmod>2018-04-05T09:07:23.996Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fjluda.github.io/tags/Next/</loc>
+        <lastmod>2018-04-05T12:38:11.375Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fjluda.github.io/tags/%E7%BB%93%E6%9E%84/</loc>
+        <lastmod>2018-04-05T12:38:11.375Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://fjluda.github.io/tags/%E7%9B%AE%E5%BD%95/</loc>
+        <lastmod>2018-04-05T12:38:11.375Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

@@ -142,18 +142,18 @@
 
 
 
-  <meta name="description" content="代码如下： 1234567891011121314151617181920212223242526272829sub a()  Const bb As Integer = 1000 - 1  Dim RndNumber, TempArray(bb), kk(bb), i As Integer  Randomize (Timer)For i = 0 To bb      TempArray(i)">
+  <meta name="description" content="代码如下： 1234567891011121314151617181920212223242526272829sub a()  Const bb As Integer = 1000 - 1  Dim RndNumber, TempArray(bb), kk(bb), i As Integer  Randomize (Timer)For i = 0 To bb      TempArray(i">
 <meta name="keywords" content="EXCEL,VBA,代码">
 <meta property="og:type" content="article">
 <meta property="og:title" content="随机不重复数值">
 <meta property="og:url" content="https://fjluda.github.io/2015/06/22/2018-04-01-随机不重复数值/index.html">
 <meta property="og:site_name" content="JinChao&#39;s Notes">
-<meta property="og:description" content="代码如下： 1234567891011121314151617181920212223242526272829sub a()  Const bb As Integer = 1000 - 1  Dim RndNumber, TempArray(bb), kk(bb), i As Integer  Randomize (Timer)For i = 0 To bb      TempArray(i)">
+<meta property="og:description" content="代码如下： 1234567891011121314151617181920212223242526272829sub a()  Const bb As Integer = 1000 - 1  Dim RndNumber, TempArray(bb), kk(bb), i As Integer  Randomize (Timer)For i = 0 To bb      TempArray(i">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-04-03T15:39:37.104Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="随机不重复数值">
-<meta name="twitter:description" content="代码如下： 1234567891011121314151617181920212223242526272829sub a()  Const bb As Integer = 1000 - 1  Dim RndNumber, TempArray(bb), kk(bb), i As Integer  Randomize (Timer)For i = 0 To bb      TempArray(i)">
+<meta name="twitter:description" content="代码如下： 1234567891011121314151617181920212223242526272829sub a()  Const bb As Integer = 1000 - 1  Dim RndNumber, TempArray(bb), kk(bb), i As Integer  Randomize (Timer)For i = 0 To bb      TempArray(i">
 
 
 
@@ -486,7 +486,7 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"> <a id="more"></a>
+        <script src="/assets/js/APlayer.min.js"> </script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"> <a id="more"></a>
 <p>代码如下：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line">  Const bb As Integer = <span class="number">1000</span> - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  Dim RndNumber, TempArray(bb), kk(bb), i As Integer</span><br><span class="line"></span><br><span class="line">  Randomize (Timer)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">0</span> To bb</span><br><span class="line"></span><br><span class="line">      TempArray(i) = i</span><br><span class="line"></span><br><span class="line">  Next i</span><br><span class="line"></span><br><span class="line">  j = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  For i = bb To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line"></span><br><span class="line">     RndNumber = Int(i * Rnd)</span><br><span class="line"></span><br><span class="line">     kk(i) = TempArray(RndNumber) + <span class="number">1</span> <span class="string">' 随机不重复数值</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     TempArray(RndNumber) = TempArray(i)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     j = j + 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
 
@@ -544,8 +544,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/06/18/2015-06-18-weinre/" rel="next" title="Weinre --WebApp 调试工具">
-                <i class="fa fa-chevron-left"></i> Weinre --WebApp 调试工具
+              <a href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/" rel="next" title="EXCEL VBA连接ACCESS数据库">
+                <i class="fa fa-chevron-left"></i> EXCEL VBA连接ACCESS数据库
               </a>
             
           </div>
@@ -554,8 +554,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/" rel="prev" title="EXCEL VBA连接ACCESS数据库">
-                EXCEL VBA连接ACCESS数据库 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/07/09/2015-07-09-JavaScript-Net/" rel="prev" title="JavaScript 阶段总结">
+                JavaScript 阶段总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -635,7 +635,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">37</span>
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -684,7 +684,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">18</span>
+                      
+                    
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -893,7 +895,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">95</span>
+                    <span class="site-state-item-count">98</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
