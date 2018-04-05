@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jiangjinchao.pro/"/>
-  <updated>2018-04-05T22:59:55.840Z</updated>
+  <updated>2018-04-05T23:02:16.269Z</updated>
   <id>http://jiangjinchao.pro/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://jiangjinchao.pro/2018/04/06/%202018--4-05-%E5%90%AC%E5%A5%B9%E7%9A%84%E5%A3%B0%E9%9F%B3%EF%BC%8C%E4%BC%9A%E4%B8%8A%E7%98%BE/"/>
     <id>http://jiangjinchao.pro/2018/04/06/ 2018--4-05-听她的声音，会上瘾/</id>
     <published>2018-04-05T16:29:50.131Z</published>
-    <updated>2018-04-05T22:59:55.840Z</updated>
+    <updated>2018-04-05T23:02:16.269Z</updated>
     
     <summary type="html">
     
@@ -209,13 +209,13 @@
       <category term="改性乳化沥青" scheme="http://jiangjinchao.pro/categories/%E6%94%B9%E6%80%A7%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
     
     
+      <category term="工艺" scheme="http://jiangjinchao.pro/tags/%E5%B7%A5%E8%89%BA/"/>
+    
       <category term="SBS" scheme="http://jiangjinchao.pro/tags/SBS/"/>
     
       <category term="改性乳化沥青" scheme="http://jiangjinchao.pro/tags/%E6%94%B9%E6%80%A7%E4%B9%B3%E5%8C%96%E6%B2%A5%E9%9D%92/"/>
     
       <category term="稳定性" scheme="http://jiangjinchao.pro/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7/"/>
-    
-      <category term="工艺" scheme="http://jiangjinchao.pro/tags/%E5%B7%A5%E8%89%BA/"/>
     
   </entry>
   
@@ -490,9 +490,9 @@
     
       <category term="正则" scheme="http://jiangjinchao.pro/tags/%E6%AD%A3%E5%88%99/"/>
     
-      <category term="分组" scheme="http://jiangjinchao.pro/tags/%E5%88%86%E7%BB%84/"/>
-    
       <category term="Regular" scheme="http://jiangjinchao.pro/tags/Regular/"/>
+    
+      <category term="分组" scheme="http://jiangjinchao.pro/tags/%E5%88%86%E7%BB%84/"/>
     
   </entry>
   
@@ -519,25 +519,25 @@
       <category term="沥青混合料" scheme="http://jiangjinchao.pro/categories/%E6%B2%A5%E9%9D%92%E6%B7%B7%E5%90%88%E6%96%99/"/>
     
     
-      <category term="沥青混合料" scheme="http://jiangjinchao.pro/tags/%E6%B2%A5%E9%9D%92%E6%B7%B7%E5%90%88%E6%96%99/"/>
-    
-      <category term="论文" scheme="http://jiangjinchao.pro/tags/%E8%AE%BA%E6%96%87/"/>
-    
-      <category term="沥青公路" scheme="http://jiangjinchao.pro/tags/%E6%B2%A5%E9%9D%92%E5%85%AC%E8%B7%AF/"/>
-    
       <category term="贝雷参数" scheme="http://jiangjinchao.pro/tags/%E8%B4%9D%E9%9B%B7%E5%8F%82%E6%95%B0/"/>
     
-      <category term="压实度" scheme="http://jiangjinchao.pro/tags/%E5%8E%8B%E5%AE%9E%E5%BA%A6/"/>
-    
-      <category term="工程质量" scheme="http://jiangjinchao.pro/tags/%E5%B7%A5%E7%A8%8B%E8%B4%A8%E9%87%8F/"/>
-    
-      <category term="动态管理" scheme="http://jiangjinchao.pro/tags/%E5%8A%A8%E6%80%81%E7%AE%A1%E7%90%86/"/>
+      <category term="沥青混合料" scheme="http://jiangjinchao.pro/tags/%E6%B2%A5%E9%9D%92%E6%B7%B7%E5%90%88%E6%96%99/"/>
     
       <category term="VMA" scheme="http://jiangjinchao.pro/tags/VMA/"/>
     
       <category term="模型" scheme="http://jiangjinchao.pro/tags/%E6%A8%A1%E5%9E%8B/"/>
     
       <category term="SPSS" scheme="http://jiangjinchao.pro/tags/SPSS/"/>
+    
+      <category term="论文" scheme="http://jiangjinchao.pro/tags/%E8%AE%BA%E6%96%87/"/>
+    
+      <category term="沥青公路" scheme="http://jiangjinchao.pro/tags/%E6%B2%A5%E9%9D%92%E5%85%AC%E8%B7%AF/"/>
+    
+      <category term="压实度" scheme="http://jiangjinchao.pro/tags/%E5%8E%8B%E5%AE%9E%E5%BA%A6/"/>
+    
+      <category term="工程质量" scheme="http://jiangjinchao.pro/tags/%E5%B7%A5%E7%A8%8B%E8%B4%A8%E9%87%8F/"/>
+    
+      <category term="动态管理" scheme="http://jiangjinchao.pro/tags/%E5%8A%A8%E6%80%81%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
@@ -597,15 +597,18 @@
   </entry>
   
   <entry>
-    <title>EXCEL VBA连接ACCESS数据库</title>
-    <link href="http://jiangjinchao.pro/2015/06/22/2018-04-01-EXCEL%20VBA%E8%BF%9E%E6%8E%A5ACCESS%E6%95%B0%E6%8D%AE/"/>
-    <id>http://jiangjinchao.pro/2015/06/22/2018-04-01-EXCEL VBA连接ACCESS数据/</id>
+    <title>随机不重复数值</title>
+    <link href="http://jiangjinchao.pro/2015/06/22/2018-04-01-%E9%9A%8F%E6%9C%BA%E4%B8%8D%E9%87%8D%E5%A4%8D%E6%95%B0%E5%80%BC/"/>
+    <id>http://jiangjinchao.pro/2015/06/22/2018-04-01-随机不重复数值/</id>
     <published>2015-06-22T01:06:05.000Z</published>
-    <updated>2018-04-04T06:43:12.286Z</updated>
+    <updated>2018-04-03T15:39:37.104Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;添加数据&quot;&gt;&lt;a href=&quot;#添加数据&quot; class=&quot;headerlink&quot; title=&quot;添加数据&quot;&gt;&lt;/a&gt;添加数据&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Sub a()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&#39;Option Explicit&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Public myData As String, myTable As String, SQL As String&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Public cnn As ADODB.Connection&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;Public rs As ADODB.Recordset&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;On Error GoTo hhh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;myData = ThisWorkbook.Path &amp;amp; &quot;\SWDB.mdb&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;    Set cnn = New ADODB.Connection&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;    With cnn&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;        .Provider = &quot;Microsoft.Ace.OleDB.12.0&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;        .Open myData&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;    End With&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;myTable = &quot;SW01&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;SQL = &quot;select * from &quot; &amp;amp; myTable&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;for i=1 to 4 &#39;&lt;/span&gt;可添加&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;次&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rs.Fields(&lt;span class=&quot;string&quot;&gt;&quot;a&quot;&lt;/span&gt;) = Cells(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt; + i, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;next i&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rs.Update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MsgBox &lt;span class=&quot;string&quot;&gt;&quot;添加成功！&quot;&lt;/span&gt;, vbOKOnly + vbInformation, &lt;span class=&quot;string&quot;&gt;&quot;创建数据&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;rs.Close&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cnn.Close&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;Set&lt;/span&gt; rs = Nothing&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;Set&lt;/span&gt; cnn = Nothing&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hhh:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;MsgBox &lt;span class=&quot;string&quot;&gt;&quot;添加数据时出现错误!&quot;&lt;/span&gt; &amp;amp; vbCrLf &amp;amp; &lt;span class=&quot;string&quot;&gt;&quot;原因:该编号重复或数据类型不对，请查找原因.&quot;&lt;/span&gt;, vbCritical, &lt;span class=&quot;string&quot;&gt;&quot;提示！！！！&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;end sub&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.
+      
     
     </summary>
     
@@ -616,9 +619,7 @@
     
       <category term="VBA" scheme="http://jiangjinchao.pro/tags/VBA/"/>
     
-      <category term="ACCESS" scheme="http://jiangjinchao.pro/tags/ACCESS/"/>
-    
-      <category term="数据库" scheme="http://jiangjinchao.pro/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="代码" scheme="http://jiangjinchao.pro/tags/%E4%BB%A3%E7%A0%81/"/>
     
   </entry>
   
