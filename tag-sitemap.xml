@@ -668,21 +668,28 @@
 
     <url>
         <loc>http://jiangjinchao.pro/tags/Next/</loc>
-        <lastmod>2018-04-05T12:38:11.375Z</lastmod>
+        <lastmod>2018-04-05T16:33:12.793Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://jiangjinchao.pro/tags/%E7%BB%93%E6%9E%84/</loc>
-        <lastmod>2018-04-05T12:38:11.375Z</lastmod>
+        <lastmod>2018-04-05T16:33:12.793Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://jiangjinchao.pro/tags/%E7%9B%AE%E5%BD%95/</loc>
-        <lastmod>2018-04-05T12:38:11.375Z</lastmod>
+        <lastmod>2018-04-05T16:33:12.793Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jiangjinchao.pro/tags/%E7%94%B5%E5%8F%B0/</loc>
+        <lastmod>2018-04-05T16:34:12.624Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
