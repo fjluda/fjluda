@@ -248,19 +248,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[随机不重复数值]]></title>
-    <url>%2F2015%2F06%2F22%2F2018-04-01-%E9%9A%8F%E6%9C%BA%E4%B8%8D%E9%87%8D%E5%A4%8D%E6%95%B0%E5%80%BC%2F</url>
-    <content type="text"><![CDATA[代码如下： 1234567891011121314151617181920212223242526272829sub a() Const bb As Integer = 1000 - 1 Dim RndNumber, TempArray(bb), kk(bb), i As Integer Randomize (Timer)For i = 0 To bb TempArray(i) = i Next i j = 1 For i = bb To 1 Step -1 RndNumber = Int(i * Rnd) kk(i) = TempArray(RndNumber) + 1 ' 随机不重复数值 TempArray(RndNumber) = TempArray(i) j = j + 1 Next iend sub]]></content>
-      <categories>
-        <category>VBA</category>
-      </categories>
-      <tags>
-        <tag>EXCEL</tag>
-        <tag>VBA</tag>
-        <tag>代码</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[EXCEL VBA连接ACCESS数据库]]></title>
     <url>%2F2015%2F06%2F22%2F2018-04-01-EXCEL%20VBA%E8%BF%9E%E6%8E%A5ACCESS%E6%95%B0%E6%8D%AE%2F</url>
     <content type="text"><![CDATA[添加数据1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253Sub a()'Option ExplicitPublic myData As String, myTable As String, SQL As StringPublic cnn As ADODB.ConnectionPublic rs As ADODB.RecordsetOn Error GoTo hhhmyData = ThisWorkbook.Path &amp; "\SWDB.mdb" Set cnn = New ADODB.Connection With cnn .Provider = "Microsoft.Ace.OleDB.12.0" .Open myData End WithmyTable = "SW01"SQL = "select * from " &amp; myTablefor i=1 to 4 '可添加4次rs.Fields("a") = Cells(5 + i, 15)next irs.UpdateMsgBox "添加成功！", vbOKOnly + vbInformation, "创建数据"rs.Closecnn.CloseSet rs = NothingSet cnn = Nothinghhh:MsgBox "添加数据时出现错误!" &amp; vbCrLf &amp; "原因:该编号重复或数据类型不对，请查找原因.", vbCritical, "提示！！！！"end sub 修改数据1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950'Option ExplicitPublic myData As String, myTable As String, SQL As StringPublic cnn As ADODB.ConnectionPublic rs As ADODB.RecordsetmyData = ThisWorkbook.Path &amp; "\SWDB.mdb"Set cnn = New ADODB.Connection With cnn .Provider = "Microsoft.Ace.OleDB.12.0" .Open myData End WithmyTable = "SWHH"On Error GoTo hhhSQL1 = "update " &amp; myTable &amp; " set "SQL = SQL1 &amp; "盒号='" &amp; [a2] &amp; "' , 盒质量=" &amp; [b2] &amp; " , 保存时间= " &amp; da &amp; " where 盒号='" &amp; [a2] &amp; "'"Set rs = cnn.Execute(SQL)Set rs = New ADODB.Recordsetrs.Open SQL, cnn, adOpenKeyset, adLockOptimisticrs.Closecnn.CloseSet rs = NothingSet cnn = Nothinghhh: MsgBox "保存数据出现错误!" &amp; vbCrLf &amp; "原因:该编号重复或数据类型不对.", vbCritical, "保存数据"end sub 查询数据12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455'Option ExplicitPublic myData As String, myTable As String, SQL As StringPublic cnn As ADODB.ConnectionPublic rs As ADODB.RecordsetmyData = ThisWorkbook.Path &amp; "\SWDB.mdb"Set cnn = New ADODB.Connection With cnn .Provider = "Microsoft.Ace.OleDB.12.0" .Open myData End WithSQL = "select * from " &amp; myTable &amp; " where KID=" &amp; [s2] &amp; " order by ID DESC"Set rs = cnn.Execute(SQL)Set rs = New ADODB.Recordsetrs.Open SQL, cnn, adOpenKeyset, adLockOptimisticIf rs.RecordCount &gt; 0 Then For i = 1 To rs.RecordCount Cells(5 + i, 2) = rs.Fields("a") rs.MoveNext Next iElse MsgBox "没有查询到相关数据", vbCriticalEnd Ifrs.Closecnn.CloseSet rs = NothingSet cnn = Nothingend sub 删除数据123456789101112131415161718192021222324252627282930313233343536373839404142434445sub a()'Option ExplicitPublic myData As String, myTable As String, SQL As StringPublic cnn As ADODB.ConnectionPublic rs As ADODB.RecordsetmyData = ThisWorkbook.Path &amp; "\SWDB.mdb" Set cnn = New ADODB.Connection With cnn .Provider = "Microsoft.Ace.OleDB.12.0" .Open myData End Withif MsgBox("本数据删除后,将无法恢复!" &amp; vbCrLf &amp; "是否要删除?", vbQuestion + vbYesNo, "删除数据") = vbNo Then Exit SubmyTable = "SW01"SQL = "delete from " &amp; myTable &amp; " where KID= " &amp; [s2]Set rs = cnn.Execute(SQL)Set rs = New ADODB.Recordsetrs.Open SQL, cnn, adOpenKeyset, adLockOptimisticMsgBox "已经成功将序号为： " &amp; [s2] &amp; " 数据删除！", vbInformationrs.Closecnn.CloseSet rs = NothingSet cnn = Nothingend sub]]></content>
@@ -272,6 +259,19 @@
         <tag>VBA</tag>
         <tag>ACCESS</tag>
         <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[随机不重复数值]]></title>
+    <url>%2F2015%2F06%2F22%2F2018-04-01-%E9%9A%8F%E6%9C%BA%E4%B8%8D%E9%87%8D%E5%A4%8D%E6%95%B0%E5%80%BC%2F</url>
+    <content type="text"><![CDATA[代码如下： 1234567891011121314151617181920212223242526272829sub a() Const bb As Integer = 1000 - 1 Dim RndNumber, TempArray(bb), kk(bb), i As Integer Randomize (Timer)For i = 0 To bb TempArray(i) = i Next i j = 1 For i = bb To 1 Step -1 RndNumber = Int(i * Rnd) kk(i) = TempArray(RndNumber) + 1 ' 随机不重复数值 TempArray(RndNumber) = TempArray(i) j = j + 1 Next iend sub]]></content>
+      <categories>
+        <category>VBA</category>
+      </categories>
+      <tags>
+        <tag>EXCEL</tag>
+        <tag>VBA</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -511,20 +511,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Excel绘制泰勒曲线级配图]]></title>
-    <url>%2F2010%2F07%2F29%2F2018-04-01-Excel%E7%BB%98%E5%88%B6%E6%B3%B0%E5%8B%92%E6%9B%B2%E7%BA%BF%E7%BA%A7%E9%85%8D%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[前言矿料级配在公路工程中有着重要的应用，合理设置不同矿料间的比例对工程质量、成本等方面有着很大影响。因此，在配合比计划阶段经常需要先绘制出合成级配图，为分析配料比例提供详细的信息。我们知道现行技术规范规定级配图的绘制必须采用泰勒曲线。而泰勒曲线的特点是X轴（孔径）是不等距的，且需要按某一个规律变化间距。实际上我们需要在图表X轴上显示的是筛孔孔径（如：31.5、26.5、19和16等）。这为我们在绘制级配图时制造了困难。 朋友和同事经常问我要怎样才能准确绘制级配图，今天我把主要绘制步骤和小技巧写出来，供大家参考。所谓条条大路通罗马，大家有更好方法可以一起分享！ 绘制前准备工作准备好矿料筛分数据（以下沥青矿料数据），如图: 根据上面的基础数据，我们可以绘制下面出矿料合成级配图 转换孔径数据。为了绘制不等距的X轴，我们先将孔径数据转泰勒曲线系数（规程已有转好系数），表中的单元格C2就是转好的。 建立一个辅助线，先在表上填写有关数据，我在单元格C7：O7中全部填0，具体作用后面会详细说明。 绘制图表绘制基础图表拉选单元格C2：O6,并在菜单栏中的[插入]→[图表]选项,打开[图表向导]对话框。选择[XY散点图]在图表类型中的[平滑散点图]，点击[完成]，这时基础图表已完成，如图 隐藏图表刻度范围选中图表，然后右击鼠标，在弹出的快捷菜单中选择[图表选项]选项，打开[图表选项对话框]，选择其中的[坐标轴]选项卡，取消[数值(X)轴]选项,最后[确定]。如图: 调整图表Y轴的刻度范围。双击图表的Y轴，打开[坐标轴格式]对话框，选择[刻度]选项卡，设置Y坐标轴的刻度范围,最后[确定]。如图： 增加辅助X轴在图表上右击选择[数据源]在[系列]中添加[名称]：‘辅助X轴’；[X值]选择单元格C2：O2(泰勒曲线）；[Y值]选择单元格C7：O7(辅助线），最后[确定]，如图： 在[图表]工具栏中选择“系列‘辅助X轴’”，然后单击[数据系列格式]按钮。如图： 选择[误差线Y]，显示方式为[正偏差]，误差量选择[定值]，参数设100（因为X轴最大值设为100，也理解通过率100）。选择[图案]，[线形]选‘无’，[数据标记]选‘无’。如图： 选择[数据标志]，[数据标签包括]选‘Y值’，最后按[确定]键。 关联数据标志在我们看到的图表如下，X轴全部是0值，因为报表上辅助线上的值都是0值，而最终我们希望得到的是实际的筛孔孔径（如：31.5）。因此，需求将X轴的数据标示和单元格进行关联，选择第二个数据标志，在编辑栏中输入“=Sheet1!$O$1”。如图： 在[图表]工具栏中选择“系列‘辅助X轴’数据标志”，然后单击[数据系列格式]按钮。选择[对齐]，[标签位置]选‘下方’；[方向]选文本方向为90度。按[确定]键，如图： 其他孔径的关联数据标志，重复上面的步骤，依次将其他数据标志和单元格进行关联，实现X轴为实际的筛孔孔径。 美化图表适当调整图表的大小，查看最后的图表效果如下图： 最后,矿料合成级配图与Excel的规划求解功能（具体看“VBA调用‘规划求解’自动合成矿料级配”）结合使用，能大大提高你的工作效率。成为你工作中非常实用的工具。]]></content>
-      <categories>
-        <category>Excel</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-        <tag>试验</tag>
-        <tag>级配</tag>
-        <tag>泰勒曲线</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[VBA调用‘规划求解’自动合成矿料级配]]></title>
     <url>%2F2010%2F07%2F29%2F2018-04-01-VBA%E8%B0%83%E7%94%A8%E2%80%98%E8%A7%84%E5%88%92%E6%B1%82%E8%A7%A3%E2%80%99%E8%87%AA%E5%8A%A8%E5%90%88%E6%88%90%E7%9F%BF%E6%96%99%E7%BA%A7%E9%85%8D%2F</url>
     <content type="text"><![CDATA[试验检测技术人员都知道，已知五、六档甚至七档集料计算合成成符合技术规范及级配关键点的控制要求,是非常消耗脑力和时间，特别是没有经验的检测人员更困难。因此我们可利用计算机的信息处理能力，为我们分忧解难。Excel是办公中最常用的办公软件之一，其功能非常强大，能利用好相关功能,会有意想不到的效果。 规划求解也称作“假设分析”，是一个非常好用的工具，经常用于查看更改某些单元格中的变量对工作表中公式结果的影响，例如： 121. 根据已知结果倒推变量应赋予的初值：已知各档级配通过率及矿料的级配范围，可以用单变量求解、循环引用，也可规划求解得出配合比例。2. 根据已知参数和配比，寻找最佳组合方案：这种应用案例居多。 利用Excel2003提供的规划求解可以进行级配合成、最佳沥青用量的选定、沥青混合料拌和楼的标定等问题. 常规操作规划求解过程中,美中不足的是除了限制变量个数、求解时间有时候比较长外，还有是如果变量不多、算法也不难，但有许多需要求解的值，而每一次改变都要重复操作，弹出规划求解对话框、求解。 以上常规操作无法避免的问题，在利用VBA调用规划求解宏却可以很好的解决。从而更好的提高工作效率。通过工程上最常用的配合比级配比例的选定（例子为沥青混合料配合比）进行说明. 代码如下： 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758 Sub ww() '取消密码保护 ActiveSheet.Unprotect Password:=123 Range("C4:C11").Select Selection.ClearContents ' 全部重设 SolverReset '规划求解参数设置 Solverok setcell=设置目标单元格: 'MaxMinVal 对应于是否要解决目标单元对最大值 (1)、 最小值 (2), 或特定值 (3) 'ValueOf 指定要匹配目标单元值。 如果您设置 MaxMinVal 为 3, 必须指定该参数。 '如果将设置为 1 或 2, MaxMinVal 才能省略该参数。 'ByChange 指定单元格或区域的单元格， 将更改 'SolverAdd (CellRef, 关系, FormulaText) '1 值是否小于或等于 =&lt; '2 vaue 等于 (=)。 '3 值是否大于或等于 &gt;= '4 值是整数 '5 是二进制（值是零或一个） 'FormulaText 引用一个或多个单元格构成右边的 constraint Solverok setcell:=Range("$D$12"), maxminval:=3, ValueOf:=100, bychange:=Range("c4:c11") SolverAdd CellRef:=Range("d12"), Relation:=2, FormulaText:=Range("q12") SolverAdd CellRef:=Range("d12"), Relation:=3, FormulaText:=Range("d17") SolverAdd CellRef:=Range("d12"), Relation:=1, FormulaText:=Range("d16") SolverAdd CellRef:=Range("e12"), Relation:=3, FormulaText:=Range("e17") SolverAdd CellRef:=Range("e12"), Relation:=1, FormulaText:=Range("e16") SolverAdd CellRef:=Range("f12"), Relation:=3, FormulaText:=Range("f17") SolverAdd CellRef:=Range("f12"), Relation:=1, FormulaText:=Range("f16") SolverAdd CellRef:=Range("g12"), Relation:=3, FormulaText:=Range("g17") SolverAdd CellRef:=Range("g12"), Relation:=1, FormulaText:=Range("g16") SolverAdd CellRef:=Range("h12"), Relation:=3, FormulaText:=Range("h17") SolverAdd CellRef:=Range("h12"), Relation:=1, FormulaText:=Range("h16") SolverAdd CellRef:=Range("i12"), Relation:=3, FormulaText:=Range("i17") SolverAdd CellRef:=Range("i12"), Relation:=1, FormulaText:=Range("i16") SolverAdd CellRef:=Range("j12"), Relation:=3, FormulaText:=Range("j17") SolverAdd CellRef:=Range("j12"), Relation:=1, FormulaText:=Range("j16") SolverAdd CellRef:=Range("k12"), Relation:=3, FormulaText:=Range("k17") SolverAdd CellRef:=Range("k12"), Relation:=1, FormulaText:=Range("k16") SolverAdd CellRef:=Range("l12"), Relation:=3, FormulaText:=Range("l17") SolverAdd CellRef:=Range("l12"), Relation:=1, FormulaText:=Range("l16") SolverAdd CellRef:=Range("m12"), Relation:=3, FormulaText:=Range("m17") SolverAdd CellRef:=Range("m12"), Relation:=1, FormulaText:=Range("m16") SolverAdd CellRef:=Range("n12"), Relation:=3, FormulaText:=Range("n17") SolverAdd CellRef:=Range("n12"), Relation:=1, FormulaText:=Range("n16") SolverAdd CellRef:=Range("o12"), Relation:=3, FormulaText:=Range("o17") SolverAdd CellRef:=Range("o12"), Relation:=1, FormulaText:=Range("o16") SolverAdd CellRef:=Range("p12"), Relation:=3, FormulaText:=Range("p17") SolverAdd CellRef:=Range("p12"), Relation:=1, FormulaText:=Range("p16") SolverSolve UserFinish:=True SolverFinish KeepFinal:=1 '密码保护 ActiveSheet.Protect Contents:=True, Scenarios:=True, AllowFormattingCells:=True, Password:=123 End Sub 最后点击“合成级配线”一切OK！ 1注：泰勒曲线绘制可以看我写的《Excel绘制泰勒曲线级配图》]]></content>
@@ -537,6 +523,20 @@
         <tag>试验</tag>
         <tag>级配</tag>
         <tag>规划求解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Excel绘制泰勒曲线级配图]]></title>
+    <url>%2F2010%2F07%2F29%2F2018-04-01-Excel%E7%BB%98%E5%88%B6%E6%B3%B0%E5%8B%92%E6%9B%B2%E7%BA%BF%E7%BA%A7%E9%85%8D%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[前言矿料级配在公路工程中有着重要的应用，合理设置不同矿料间的比例对工程质量、成本等方面有着很大影响。因此，在配合比计划阶段经常需要先绘制出合成级配图，为分析配料比例提供详细的信息。我们知道现行技术规范规定级配图的绘制必须采用泰勒曲线。而泰勒曲线的特点是X轴（孔径）是不等距的，且需要按某一个规律变化间距。实际上我们需要在图表X轴上显示的是筛孔孔径（如：31.5、26.5、19和16等）。这为我们在绘制级配图时制造了困难。 朋友和同事经常问我要怎样才能准确绘制级配图，今天我把主要绘制步骤和小技巧写出来，供大家参考。所谓条条大路通罗马，大家有更好方法可以一起分享！ 绘制前准备工作准备好矿料筛分数据（以下沥青矿料数据），如图: 根据上面的基础数据，我们可以绘制下面出矿料合成级配图 转换孔径数据。为了绘制不等距的X轴，我们先将孔径数据转泰勒曲线系数（规程已有转好系数），表中的单元格C2就是转好的。 建立一个辅助线，先在表上填写有关数据，我在单元格C7：O7中全部填0，具体作用后面会详细说明。 绘制图表绘制基础图表拉选单元格C2：O6,并在菜单栏中的[插入]→[图表]选项,打开[图表向导]对话框。选择[XY散点图]在图表类型中的[平滑散点图]，点击[完成]，这时基础图表已完成，如图 隐藏图表刻度范围选中图表，然后右击鼠标，在弹出的快捷菜单中选择[图表选项]选项，打开[图表选项对话框]，选择其中的[坐标轴]选项卡，取消[数值(X)轴]选项,最后[确定]。如图: 调整图表Y轴的刻度范围。双击图表的Y轴，打开[坐标轴格式]对话框，选择[刻度]选项卡，设置Y坐标轴的刻度范围,最后[确定]。如图： 增加辅助X轴在图表上右击选择[数据源]在[系列]中添加[名称]：‘辅助X轴’；[X值]选择单元格C2：O2(泰勒曲线）；[Y值]选择单元格C7：O7(辅助线），最后[确定]，如图： 在[图表]工具栏中选择“系列‘辅助X轴’”，然后单击[数据系列格式]按钮。如图： 选择[误差线Y]，显示方式为[正偏差]，误差量选择[定值]，参数设100（因为X轴最大值设为100，也理解通过率100）。选择[图案]，[线形]选‘无’，[数据标记]选‘无’。如图： 选择[数据标志]，[数据标签包括]选‘Y值’，最后按[确定]键。 关联数据标志在我们看到的图表如下，X轴全部是0值，因为报表上辅助线上的值都是0值，而最终我们希望得到的是实际的筛孔孔径（如：31.5）。因此，需求将X轴的数据标示和单元格进行关联，选择第二个数据标志，在编辑栏中输入“=Sheet1!$O$1”。如图： 在[图表]工具栏中选择“系列‘辅助X轴’数据标志”，然后单击[数据系列格式]按钮。选择[对齐]，[标签位置]选‘下方’；[方向]选文本方向为90度。按[确定]键，如图： 其他孔径的关联数据标志，重复上面的步骤，依次将其他数据标志和单元格进行关联，实现X轴为实际的筛孔孔径。 美化图表适当调整图表的大小，查看最后的图表效果如下图： 最后,矿料合成级配图与Excel的规划求解功能（具体看“VBA调用‘规划求解’自动合成矿料级配”）结合使用，能大大提高你的工作效率。成为你工作中非常实用的工具。]]></content>
+      <categories>
+        <category>Excel</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
+        <tag>试验</tag>
+        <tag>级配</tag>
+        <tag>泰勒曲线</tag>
       </tags>
   </entry>
 </search>
