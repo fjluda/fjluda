@@ -107,13 +107,6 @@
     </url>
 
     <url>
-        <loc>http://jiangjinchao.pro/tags/%E5%B7%A5%E8%89%BA/</loc>
-        <lastmod>2018-04-03T15:41:12.855Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://jiangjinchao.pro/tags/SBS/</loc>
         <lastmod>2018-04-03T15:41:12.855Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -129,6 +122,13 @@
 
     <url>
         <loc>http://jiangjinchao.pro/tags/%E7%A8%B3%E5%AE%9A%E6%80%A7/</loc>
+        <lastmod>2018-04-03T15:41:12.855Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://jiangjinchao.pro/tags/%E5%B7%A5%E8%89%BA/</loc>
         <lastmod>2018-04-03T15:41:12.855Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
