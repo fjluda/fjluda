@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Rock Salt:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.1.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.1.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="摘要公路沥青混合料配合比设计中矿料间隙率（VMA）是一项非常重要的技术指标，现行规范对不同类型的沥青混合料提出了最小VMA值要求，本文通过近年热门的沥青混合料级配选定方法-贝雷法，结合我司在福建省建设的8条相同结构层的高速公路路面工程，提取其中一层配合比设计的VMA参数与其对应级配线通过计算贝雷参数CA、Fac和Faf，应用SPSS统计软件进行回归预测模型的建立。通过新建项目对该模型进行验证并评估">
+<meta name="keywords" content="公路,沥青混合料,论文,贝雷参数,VMA,模型,SPSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="沥青混合料贝雷参数与VMA模型建立">
+<meta property="og:url" content="http://jiangjinchao.pro/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html">
+<meta property="og:site_name" content="JinChao&#39;s Notes">
+<meta property="og:description" content="摘要公路沥青混合料配合比设计中矿料间隙率（VMA）是一项非常重要的技术指标，现行规范对不同类型的沥青混合料提出了最小VMA值要求，本文通过近年热门的沥青混合料级配选定方法-贝雷法，结合我司在福建省建设的8条相同结构层的高速公路路面工程，提取其中一层配合比设计的VMA参数与其对应级配线通过计算贝雷参数CA、Fac和Faf，应用SPSS统计软件进行回归预测模型的建立。通过新建项目对该模型进行验证并评估">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.03.49.png">
+<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.07.39.png">
+<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.11.16.png">
+<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.12.26.png">
+<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.12.16.png">
+<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.12.44.png">
+<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.12.01.png">
+<meta property="og:updated_time" content="2018-04-04T21:44:51.209Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="沥青混合料贝雷参数与VMA模型建立">
+<meta name="twitter:description" content="摘要公路沥青混合料配合比设计中矿料间隙率（VMA）是一项非常重要的技术指标，现行规范对不同类型的沥青混合料提出了最小VMA值要求，本文通过近年热门的沥青混合料级配选定方法-贝雷法，结合我司在福建省建设的8条相同结构层的高速公路路面工程，提取其中一层配合比设计的VMA参数与其对应级配线通过计算贝雷参数CA、Fac和Faf，应用SPSS统计软件进行回归预测模型的建立。通过新建项目对该模型进行验证并评估">
+<meta name="twitter:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.03.49.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="JinChao's Notes" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://jiangjinchao.pro/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>沥青混合料贝雷参数与VMA模型建立 | JinChao's Notes</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+<a href="http://jiangjinchao.pro" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> 
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">JinChao's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+          
+  <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+</li>
+
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jiangjinchao.pro/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JinChao's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">沥青混合料贝雷参数与VMA模型建立</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2013-04-15T00:00:00+08:00">2013-04-15</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/沥青混合料/" itemprop="url" rel="index"><span itemprop="name">沥青混合料</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             热度： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="/assets/js/APlayer.min.js"> </script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>公路沥青混合料配合比设计中矿料间隙率（VMA）是一项非常重要的技术指标，现行规范对不同类型的沥青混合料提出了最小VMA值要求，本文通过近年热门的沥青混合料级配选定方法-贝雷法，结合我司在福建省建设的8条相同结构层的高速公路路面工程，提取其中一层配合比设计的VMA参数与其对应级配线通过计算贝雷参数CA、Fac和Faf，应用SPSS统计软件进行回归预测模型的建立。通过新建项目对该模型进行验证并评估应用价值。</p>
+<p><strong>关键词：</strong>  <code>公路沥青混合料</code>  <code>配合比设计</code>  <code>矿料间隙率</code>  <code>贝雷法</code></p>
+<h2 id="贝雷法概述"><a href="#贝雷法概述" class="headerlink" title="贝雷法概述"></a>贝雷法概述</h2><p>贝雷法是由美国伊利诺州交通部的RobertD.Bailey发明的一种确定沥青混合料级配的方法，其的主要设计思想是：粗集料相互嵌挤所形成的空隙由细集料来填充，这些集料即相互嵌挤形成次级骨架，同时又形成更小一级的空隙结构，这又需要更细的集料来填充，这样逐级填充，从而形成多级嵌挤结构。 贝雷法的数学模型是平面圆，也即将集料的形状假设为圆，再平面化。粗细集料分界点就成为级配设计的出发点。当三个圆球相互嵌挤，接触面分别是球面或平面时贝雷分析了四种可能的组合，所形成的空隙率分别是圆直径的0.15、0.20、0.24、0.29倍。贝雷法取其平均值以最大公称尺寸（D）的0.22倍对应的筛孔孔径作为混合料中粗细集料的分界点,大于分界点的集料是粗集料，小于分界点的集料是细集料，同样，细集料也按照此原理分成细集料中的粗集料与细集料中的细集料，并形成依次的填充状态。</p>
+<h2 id="贝雷参数确定"><a href="#贝雷参数确定" class="headerlink" title="贝雷参数确定"></a>贝雷参数确定</h2><p>以沈海复线高速公司莆田B1合同段ATB-25柔性基层沥青路面为例，粗细集料分档分别为19-26.5：9.5-19：4.75-9.5：0-4.75：矿粉=18：36：14：30：2，其设计级配如表所示。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>31.5</th>
+<th>26.5</th>
+<th>16</th>
+<th>13.2</th>
+<th>9.5</th>
+<th>4.75</th>
+<th>2.36</th>
+<th>1.18</th>
+<th>0.6</th>
+<th>0.3</th>
+<th>0.15</th>
+<th>0.075</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>设计级配</td>
+<td>100</td>
+<td>94.5</td>
+<td>73.3</td>
+<td>59.7</td>
+<td>52.4</td>
+<td>44.1</td>
+<td>29.7</td>
+<td>20.5</td>
+<td>15.6</td>
+<td>10.8</td>
+<td>7.9</td>
+<td>6.0</td>
+</tr>
+<tr>
+<td>上限</td>
+<td>100</td>
+<td>100</td>
+<td>80</td>
+<td>62</td>
+<td>52</td>
+<td>40</td>
+<td>32</td>
+<td>25</td>
+<td>18</td>
+<td>14</td>
+<td>10</td>
+<td>6</td>
+</tr>
+<tr>
+<td>下限</td>
+<td>90</td>
+<td>60</td>
+<td>48</td>
+<td>42</td>
+<td>32</td>
+<td>20</td>
+<td>15</td>
+<td>10</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<p>由设计级配表得公称最大粒径（ NMPS）为26.5mm，通过0.22倍的因子计算级配控制点得相应通过率见下表（<code>级配控制点汇总表</code>）。</p>
+<table>
+<thead>
+<tr>
+<th>级配控制点</th>
+<th>计算筛孔（mm）</th>
+<th>套用筛孔（mm）</th>
+<th>通过率（%）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NMPS</td>
+<td>26.5</td>
+<td>26.5</td>
+<td>94.5</td>
+</tr>
+<tr>
+<td>NMPS/2</td>
+<td>13.2</td>
+<td>13.2</td>
+<td>52.4</td>
+</tr>
+<tr>
+<td>PCS</td>
+<td>5.83</td>
+<td>4.75</td>
+<td>29.7</td>
+</tr>
+<tr>
+<td>SCS</td>
+<td>1.05</td>
+<td>1.18</td>
+<td>15.6</td>
+</tr>
+<tr>
+<td>TCS</td>
+<td>0.26</td>
+<td>0.3</td>
+<td>7.9</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>粗细集料的分界点（PCS）PCS=NMPS<em>0.22=26.5</em>0.22=5.83≈4.75mm<br><code>式中：PCS为第一控制筛孔，粗细集料分界筛孔。</code></p>
+</li>
+<li><p>细集料的分界点（SCS、TCS）<br>SCS=PCS<em>0.22=4.75</em>0.22=1.05≈1.18mm；TCS=SCS<em>0.22=1.18</em>0.22=0.26≈0.3mm<br><code>式中：SCS为第二控制筛孔，TCS为第三控制筛孔。</code></p>
+</li>
+</ul>
+<h2 id="检验参数计算"><a href="#检验参数计算" class="headerlink" title="检验参数计算"></a>检验参数计算</h2><ol>
+<li><strong>CA</strong>比： </li>
+</ol>
+<p>$$<br>  CA=\frac{P_{NMPS/2}-P_{PCS}}{100-P_{NMPS/2}}=0.486<br>$$ </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">式中:  为第一控制筛孔的通过率，%。 为最大公称粒径一半的通过率，%。</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li><p><strong>FAc</strong>比：</p>
+<p>$$<br>F_{ac}=\frac{P_{Scs}}{P_{Pcs}}=0.525<br>$$ </p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">式中:  为第二控制筛孔的通过率，%。</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li><p><strong>FAf</strong>比：</p>
+<p>$$<br>F_{af}=\frac{P_{Tcs}}{P_{Scs}}=0.506<br>$$ </p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">式中:  为第三控制筛孔的通过率，%。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>以上计算参数参考李安，何昌轩，陈李锋《密级配沥青稳定碎石混合料性能研究》一文对ATB-25柔性基层相关贝雷参数范围的研究，参考范围见表3 合成级配检验参数表。</p>
+</blockquote>
+<h2 id="VMA与贝雷参数预测模型建立"><a href="#VMA与贝雷参数预测模型建立" class="headerlink" title="VMA与贝雷参数预测模型建立"></a>VMA与贝雷参数预测模型建立</h2><p>本文笔者通过福建省8条高速公路采用ATB-25柔性基层沥青路面目标配合比选用的3条线级配线进行分析，并计算CA、FAc、FAf参数以及通过马氏试验计算出VMA<code>如表4</code>所示。</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.03.49.png" alt="屏幕快照 2018-04-04 上午11.03.49-w500"></p>
+<p>影响VMA的因素有非常多，本文主要通过SPSS（Statistical Product and Service Solutions）统计软件建立贝雷参数与VMA的回归模型进行分析，检验预测模型的回归效果。通过实际应用检验回归预测模型的可行性。</p>
+<p>通过SPSS非线性回归分析进行模型拟合，因变量为ＶＭＡ，采用Levenverg-Marquardt估计方法，设置平方和收敛性和参数收敛性同为1E-8，计算出迭代数为5.1时连续残差平方和之间的相对减少量最多为 SSCON = 1E-8系统停止运行，如表5所示。</p>
+<p>模型公式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ＶＭＡ=a+b*CA+c*FAC+d*FAF+e*CA*CA+f*FAC*FAC+g*FAF*FAF+h*CA*FAC+j*CA*FAF+i*FAC*FAF</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.07.39.png" alt="屏幕快照 2018-04-04 上午11.07.39-w500"></p>
+<p>SPSS统计参数评估值可以分析预测模型影响显著的变量有i、c和j，分别为FAc<em>FAf、FAC、CA</em>FAf，而影响不显著的变量有d,e分别为FAf和CA<em>CA（<code>见表6，未调整前参数估计值表</code>），模型的拟合优度检验结果显示Ｒ2为0.937，采用德宾-沃森统计量</em>(Durbin-Watson)检验残差是否存在自相关，其取值范围介于0~4之间，其值越接近2，说明变量之间是相互独立的, 本文拟合优度检验结果Durbin-Watson为２.689. </p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.11.16.png" alt="屏幕快照 2018-04-04 上午11.11.16-w500"></p>
+<p>笔者决定取消FAf和CA*CA变量并重新调整模型，应用SPSS得出参数估计值（见表7，调整后参数估计值表）。</p>
+<p>模型公式为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ＶＭＡ＝a+b*CA+c*FAC+f*FAC*FAC+g*FAF*FAF+h*CA*FAC+j*CA*FAF+i*FAC*FAFgmf</span><br></pre></td></tr></table></figure>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.12.26.png" alt="屏幕快照 2018-04-04 上午11.12.26-w500"></p>
+<p>调整后模型的拟合优度检验结果显示Ｒ2为0.935，durbin－watson为2.514.说明线性拟合两种方法测量的关系是适合的, 试验数据的误差为随机误差,所得参数估计值的相关性见<code>表8</code>。</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.12.16.png" alt="屏幕快照 2018-04-04 上午11.12.16-w500"></p>
+<p>通过线性回归置性区间采用95%水平值进行方差Anova分析，回归模型F值为318.923, P 值为0.000, 因此笔者采用的这个回归模型是有统计学意义的, 系数检验的结果见<code>表9</code>。</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.12.44.png" alt="屏幕快照 2018-04-04 上午11.12.44-w500"></p>
+<p>根据回归预测模型，因变量VMA，自变量CA、FAC、FAC^2、FAf^2、CA<em>FAC、CA</em>FAf及FAC*FAf得出回归公式。<br>回归公式:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">VMA=67.112+10.898.CA-194.898.FAC+37.717.FAC^2-50.027.FAf^2+101.346.CA.FAC-145.783.CA.FAf+208.213.FAC.FAf</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其中R2为0.935，通过案例诊断分析最小残差为-0.00193，预测值为12.9137，最大残差为-0.25949，预测值为13.5685。VMA的实际值和预测值结果诊断见<code>表10</code>。</p>
+</blockquote>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-04 上午11.12.01.png" alt="屏幕快照 2018-04-04 上午11.12.01-w500"></p>
+<p>从<code>表10</code>案例诊断表可以看出24组级配所预测的VMA与实际VMA均相差不大，回归方程为二次关系，回归效果显著可进行实际工程应用。</p>
+<p>因此我们进行沥青混合料配合比设计时，通过选定的级配线计算出贝雷参数再通过回归模型计算出VMA的预测值，进行判断该级配VMA的预测值是否符合公路路面施工技术规范规定最小VMA要求。从而优化沥青混合料配合比设计过程。</p>
+<h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>贝雷法在沥青混合料中的应用，使配合比设计级配的选定有了进一步的认识而更好的优化级配线，笔者建议先计算出CA、FAc、FAf三个参数后再根据已定级配线反算松装密度的K值修正百分比，再评价级配骨架是否紧密且易于施工。</p>
+<p>笔者通过SPSS统计软件的非线性回归分析变量参数并采用方差Anovaa方法确定预测公式如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">VMA=67.112+10.898.CA-194.898.FAC+37.717.FAC^2-50.027.FAf^2+101.346.CA.FAC-145.783.CA.FAf+208.213.FAC.Faf.</span><br></pre></td></tr></table></figure></p>
+<p>通过同行很多研究表明VMA指标更加依赖于集料级配线，且集料公称最大粒径对VMA的影响非常大，本文仅通过ATB-25柔性基层公称最大粒径为26.5mm且不考虑沥青用量影响情况下所进行的回归预测模型的建立，该模型使配合比设计人员在ATB-25沥青混合料级配选线阶段通过计算贝雷参数并预测该级配的VMA值，判断是否合理并作相应调整。通过结合贝雷参数与VMA预测模型的建立使沥青混合料配合计设计更加科学，同时其他类型的沥青混合料配合比设计也可通过此方法建立预测模型。因此非常具有实际工程的应用价值。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[1]William R V , William J P, Samuel H C.Bailey method for gradation selection in HMAmixture design[R] .Transportation Research Circular Number E- C044,2002.</span><br><span class="line">[2]李安，何昌轩，陈李锋.密级配沥青稳定碎石混合料性能研究[J].公路，2010,(01)</span><br><span class="line">[3]谢志华. 谈谈 Durbin-Watson检验[J].预测，1987,(06)</span><br></pre></td></tr></table></figure>
+<hr>
+
+      
+    </div>
+
+    
+      
+
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>江锦朝</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://jiangjinchao.pro/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html" title="沥青混合料贝雷参数与VMA模型建立">http://jiangjinchao.pro/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/公路/" rel="tag"><i class="fa fa-tag"></i>公路</a>
+          
+            <a href="/tags/沥青混合料/" rel="tag"><i class="fa fa-tag"></i>沥青混合料</a>
+          
+            <a href="/tags/论文/" rel="tag"><i class="fa fa-tag"></i>论文</a>
+          
+            <a href="/tags/贝雷参数/" rel="tag"><i class="fa fa-tag"></i>贝雷参数</a>
+          
+            <a href="/tags/VMA/" rel="tag"><i class="fa fa-tag"></i>VMA</a>
+          
+            <a href="/tags/模型/" rel="tag"><i class="fa fa-tag"></i>模型</a>
+          
+            <a href="/tags/SPSS/" rel="tag"><i class="fa fa-tag"></i>SPSS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2012/12/05/技术文档/水泥稳定碎石及级配碎石生产拌和楼标定.html" rel="next" title="水泥稳定碎石及级配碎石生产拌和楼标定">
+                <i class="fa fa-chevron-left"></i> 水泥稳定碎石及级配碎石生产拌和楼标定
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/01/04/沥青混合料/沥青混合料级配优选参数SSC.html" rel="prev" title="沥青混合料级配优选参数SSC">
+                沥青混合料级配优选参数SSC <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Jiang JinChao" />
+            
+              <p class="site-author-name" itemprop="name">Jiang JinChao</p>
+              <p class="site-description motion-element" itemprop="description">The dog equally study, the gentleman equally plays.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">104</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i>500px</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#贝雷法概述"><span class="nav-number">2.</span> <span class="nav-text">贝雷法概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#贝雷参数确定"><span class="nav-number">3.</span> <span class="nav-text">贝雷参数确定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检验参数计算"><span class="nav-number">4.</span> <span class="nav-text">检验参数计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VMA与贝雷参数预测模型建立"><span class="nav-number">5.</span> <span class="nav-text">VMA与贝雷参数预测模型建立</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结论"><span class="nav-number">6.</span> <span class="nav-text">结论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">7.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jiang JinChao</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.70</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.1.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="true"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.1.0"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://jiangjinchao.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://jiangjinchao.pro/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html';
+        this.page.identifier = '/2013/04/15/沥青混合料/沥青混合料贝雷参数与VMA模型建立.html';
+        this.page.title = '沥青混合料贝雷参数与VMA模型建立';
+      };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://jiangjinchao.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#more");
+  
+  </script>
+
+
+</body>
+</html>
